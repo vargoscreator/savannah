@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>SAVANNAH</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="index.html">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <div class="header__content">
+                    <a class="header__btn btn" href="#">Go to store</a>
+                    <a class="header__user" href="#">
+                        <div class="header__user-image">
+                            <img src="img/user.webp" alt="">
+                        </div>
+                        <p class="header__user-name">Adam</p>
+                    </a>
+                </div>
+                <button class="header__burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="22" viewBox="0 0 34 22" fill="none">
+                        <path d="M0 2C0 0.895431 0.895431 0 2 0H32C33.1046 0 34 0.895431 34 2C34 3.10457 33.1046 4 32 4H2C0.89543 4 0 3.10457 0 2Z" fill="black"/>
+                        <path d="M0 20C0 18.8954 0.895431 18 2 18H32C33.1046 18 34 18.8954 34 20C34 21.1046 33.1046 22 32 22H2C0.89543 22 0 21.1046 0 20Z" fill="black"/>
+                        <path d="M0 11C0 9.89543 0.895431 9 2 9H32C33.1046 9 34 9.89543 34 11C34 12.1046 33.1046 13 32 13H2C0.89543 13 0 12.1046 0 11Z" fill="black"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero__bg">
+                <img src="img/hero/bg.webp" alt="">
+            </div>
+            <div class="hero__animate">
+                <div class="hero__icon">
+                    <img src="img/hero/icon.webp" alt="">
+                </div>
+                <div class="hero__icon">
+                    <img src="img/hero/icon.webp" alt="">
+                </div>
+                <div class="hero__main">
+                    <img src="img/hero/image.webp" alt="">
+                </div>
+                <div class="hero__chatacters">
+                    <img src="img/hero/image-2.webp" alt="">
+                </div>
+                <div class="hero__hovered">
+                    <img src="img/hero/image-3.webp" alt="">
+                </div>
+            </div>
+            <div class="container">
+                <div class="hero__inner">
+                    <p class="hero__name">Choose your hero. <br>Enter the battle. Win glory. <br>Trade your legacy</p>
+                    <p class="hero__name">Welcome to the gamified token distribution platform</p>
+                    <h1 class="hero__title">
+                        SAVANNAH
+                        <img src="img/savannah.svg" alt="SAVANNAH">
+                    </h1>
+                    <div class="hero__buttons">
+                        <a class="hero__btn btn-2" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                                <path d="M0.166382 4.53072L12.7214 2.78544V15.0736H0.166382M14.2337 2.53612L30.8682 0.0784912V14.9667H14.2337M0.166382 16.3701H12.7214V28.6938L0.166382 26.9129M14.2337 16.5339H30.8682V31.2797L14.2337 28.8933M40.2582 6.13352L42.6355 6.14777L46.3282 19.7182C46.5919 20.6656 46.7854 21.6344 46.9049 22.6174C48.1921 17.0611 49.9505 11.6472 51.4416 6.16201L53.499 6.16914L56.6782 17.923C57.0756 19.4831 57.5926 21.0218 57.7508 22.6246C58.9114 17.0682 60.5748 11.6543 61.9007 6.16914L64.2429 6.15845L59.038 25.0359H56.5059L52.7429 11.4655C52.5319 10.7353 52.4439 9.98024 52.3771 9.22158C52.2787 9.87339 52.1872 10.5323 52.0254 11.1699L48.2273 24.9896C47.3832 25.0359 46.5392 25.0395 45.6952 25.0323L40.2793 6.15489M65.5793 6.27599C65.624 5.91642 65.8023 5.58763 66.078 5.35655C66.3537 5.12547 66.7059 5.00947 67.0631 5.03216C67.4202 5.05486 67.7554 5.21454 68.0003 5.47871C68.2453 5.74288 68.3817 6.09167 68.3817 6.45408C68.3817 6.81649 68.2453 7.16528 68.0003 7.42945C67.7554 7.69362 67.4202 7.8533 67.0631 7.876C66.7059 7.89869 66.3537 7.78269 66.078 7.55161C65.8023 7.32053 65.624 6.99174 65.5793 6.63217M65.8958 11.4762H68.0059V25.011H65.8958M73.6891 13.656C74.8953 11.4833 77.7088 10.4789 79.9771 11.4833C81.7813 12.1957 82.453 14.3114 82.5092 16.1136C82.6077 19.077 82.5268 22.044 82.5514 25.0074C81.8481 25.0074 81.1447 25.0074 80.4414 25.0038C80.4062 22.1544 80.5117 19.305 80.3921 16.4556C80.3359 15.0451 79.745 13.3497 78.2293 12.9899C76.0137 12.3132 73.8086 14.3327 73.7383 16.5517C73.675 19.3655 73.7348 22.19 73.7137 25.0074H71.6036V11.4762H73.7137L73.6855 13.656M95.1206 5.06498H97.2307V25.011H95.1276L95.0678 22.8383C93.545 25.6093 89.4761 26.222 87.155 24.1668C85.4915 22.7172 84.9851 20.3557 85.073 18.2186C85.0906 16.0531 85.794 13.7664 87.4996 12.3417C89.7152 10.4967 93.6189 10.6036 95.1663 13.3141L95.1522 5.05074M90.6155 12.9223C88.9274 13.193 87.7845 14.753 87.468 16.3665C87.053 18.3112 87.1268 20.5694 88.3366 22.2078C89.6449 23.9674 92.5216 24.0065 93.9284 22.3432C94.8779 21.3388 95.1522 19.8998 95.1593 18.5677C95.1698 17.143 95.2894 15.5402 94.3574 14.3648C93.5345 13.1787 92.0012 12.6445 90.6296 12.9401M105.319 11.1592C107.201 10.9918 109.293 11.291 110.7 12.6694C112.297 14.1653 112.775 16.4805 112.684 18.5819C112.659 20.4875 111.963 22.4287 110.584 23.7465C107.707 26.3965 102.355 25.8124 100.526 22.1722C99.0911 19.1198 99.3794 14.9062 102.003 12.591C102.942 11.7861 104.131 11.4156 105.309 11.1521M104.929 13.0897C101.834 14.0514 101.307 18.1474 102.274 20.8544C103.047 23.2479 106.037 24.3093 108.217 23.1909C109.677 22.5141 110.341 20.8401 110.482 19.3085C110.64 17.5277 110.5 15.4974 109.251 14.1083C108.196 12.9045 106.41 12.648 104.925 13.0861M113.76 11.4762H115.961L118.564 21.1642C118.74 21.7697 118.81 22.3966 118.873 23.0235C119.868 19.1411 121.124 15.33 122.256 11.4833L124.18 11.494C125.147 15.3407 126.35 19.1162 127.152 23.0342C127.978 19.1874 129.156 15.3763 130.071 11.5652C130.774 11.5296 131.485 11.5189 132.195 11.5118L128.221 25.0466H126.033C125.084 21.3779 123.853 17.7805 123.079 14.0763C122.165 17.7805 120.888 21.3779 119.844 25.0466H117.734L113.76 11.5118M137.322 11.12C138.641 11.0274 139.985 11.1556 141.226 11.6472C141.571 12.3096 141.303 13.1787 141.384 13.9267C139.907 12.9899 137.868 12.3951 136.25 13.3461C135.149 13.9516 135.096 15.7432 136.169 16.4093C137.706 17.4172 139.658 17.6808 141.022 18.9737C142.527 20.4412 142.162 23.2479 140.4 24.352C138.254 25.734 135.441 25.5987 133.19 24.5444L133.173 22.1508C134.769 23.3832 137.006 24.0671 138.94 23.1909C140.055 22.621 140.111 20.89 139.13 20.1634C137.593 19.0165 135.473 18.8348 134.136 17.403C132.789 16.0281 133.032 13.485 134.534 12.3453C135.307 11.6222 136.362 11.405 137.347 11.1236M152.093 5.84858L152.832 5.74172V25.011H150.75L150.774 8.94733C149.448 9.87339 148.017 10.6712 146.449 11.1129L146.473 8.97582C148.513 8.27415 150.377 7.1415 152.065 5.82008M160.533 5.81296C162.362 5.50308 164.402 6.17982 165.492 7.75413C167.04 9.96243 167.18 12.8119 167.258 15.412C167.205 18.1688 166.906 21.1464 165.169 23.3903C163.568 25.5167 160.28 26.0154 158.135 24.4518C156.394 23.1802 155.708 20.9612 155.402 18.8954C155.051 15.8429 155.086 12.6266 156.13 9.7416C156.792 7.76481 158.423 6.07297 160.526 5.82364M160.203 7.73632C158.328 8.50567 157.79 10.7496 157.53 12.5803C157.256 15.1235 157.192 17.7449 157.79 20.2382C158.089 21.4705 158.719 22.7777 159.925 23.3191C161.297 24.0172 163.125 23.4153 163.829 22.0476C164.979 20.0352 165.007 17.6309 165.024 15.3514C164.979 13.1431 164.891 10.7923 163.688 8.86897C162.974 7.7007 161.437 7.23055 160.192 7.73632" fill="white"/>
+                            </svg>
+                            Download
+                            <span class="btn-noise"></span>
+                        </a>
+                        <a class="hero__btn btn-3" href="#">PLAY ONLINE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="headerMenuSection">
+            <div class="headerMenu">
+                <button class="headerMenu__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                        <path d="M0.979161 0.979158C1.76021 0.198109 3.02654 0.198109 3.80759 0.979158L25.0208 22.1924C25.8018 22.9734 25.8018 24.2397 25.0208 25.0208C24.2397 25.8018 22.9734 25.8018 22.1924 25.0208L0.979161 3.80759C0.198112 3.02654 0.198113 1.76021 0.979161 0.979158Z" fill="white"/>
+                        <path d="M0.979097 25.0208C0.198048 24.2398 0.198048 22.9735 0.979097 22.1924L22.1923 0.979215C22.9733 0.198166 24.2397 0.198166 25.0207 0.979215C25.8018 1.76026 25.8018 3.02659 25.0207 3.80764L3.80752 25.0208C3.02648 25.8019 1.76015 25.8019 0.979097 25.0208Z" fill="white"/>
+                    </svg>
+                </button>
+                <nav class="headerMenu__list">
+                    <ul>
+                        <li>
+                            <a class="active" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Profile</a>
+                        </li>
+                        <li>
+                            <a href="#">Inventory</a>
+                        </li>
+                        <li>
+                            <a href="#">Marketplace</a>
+                        </li>
+                        <li>
+                            <a href="#">Server Statistics</a>
+                        </li>
+                    </ul>
+                    <a class="header__user" href="#">
+                        <div class="header__user-image">
+                            <img src="img/user.webp" alt="">
+                        </div>
+                        <p class="header__user-name">Adam</p>
+                    </a>
+                </nav>
+            </div>
+            <div class="headerMenu__hud">
+                <img src="img/hud.webp" alt="">
+            </div>
+        </div>
+        <div class="main-block">
+            <section class="enjoy">
+                <div class="enjoy__bg">
+                    <img src="img/enjoy/bg.webp" alt="">
+                </div>
+                <div class="container">
+                    <div class="enjoy__inner">
+                        <div class="enjoy__loading">
+                            <p class="enjoy__loading-name">LOADING</p>
+                            <div class="enjoy__loading-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="284" height="32" viewBox="0 0 284 32" fill="none">
+                                    <path d="M15.548 0.907227H0.5V31.0189H15.548V0.907227Z" fill="#044F55"/>
+                                    <path d="M36.1828 0.907227H21.1348V31.0189H36.1828V0.907227Z" fill="#035C63"/>
+                                    <path d="M56.8215 0.907227H41.7734V31.0189H56.8215V0.907227Z" fill="#027881"/>
+                                    <path d="M77.4602 0.907227H62.4121V31.0189H77.4602V0.907227Z" fill="#01A6B3"/>
+                                    <path d="M98.0949 0.907227H83.0469V31.0189H98.0949V0.907227Z" fill="#03BCCA"/>
+                                    <path d="M118.734 0.907227H103.686V31.0189H118.734V0.907227Z" fill="#1DC5D2"/>
+                                    <path d="M139.368 0.907227H124.32V31.0189H139.368V0.907227Z" fill="#1DC5D2"/>
+                                    <path d="M160.007 0.907227H144.959V31.0189H160.007V0.907227Z" fill="#1DC5D2"/>
+                                    <path d="M180.642 0.907227H165.594V31.0189H180.642V0.907227Z" fill="#1DC5D2"/>
+                                    <path d="M201.281 0.907227H186.232V31.0189H201.281V0.907227Z" fill="#1DC5D2"/>
+                                    <path d="M221.915 0.907227H206.867V31.0189H221.915V0.907227Z" fill="#1DC5D2"/>
+                                    <path d="M242.554 0.907227H227.506V31.0189H242.554V0.907227Z" fill="#1DC5D2"/>
+                                    <path d="M263.189 0.907227H248.141V31.0189H263.189V0.907227Z" fill="#1DC5D2"/>
+                                    <path d="M283.827 0.907227H268.779V31.0189H283.827V0.907227Z" fill="#1DC5D2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="enjoy__content">
+                            <h2 class="enjoy__title"><span><img src="img/enjoy/icon-1.webp" alt=""><img src="img/enjoy/icon-2.webp" alt=""><img src="img/enjoy/icon-3.webp" alt=""> <img src="img/enjoy/enjoy.svg" alt="ENJOY"></span> <img src="img/enjoy/valuable-rewards.svg" alt="VALUABLE REWARDS"> <span>and</span> <span>social interactions</span></h2>
+                            <a class="enjoy__btn btn" href="#">Go to store</a>
+                            <div class="enjoy__icon"><img src="img/enjoy/icon-4.webp" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="storeSelects">
+                <div class="storeSelects__lines">
+                            <div class="storeSelects__line">
+                                <div class="storeSelects__line-inner">
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Character</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-image">
+                                            <img src="img/lines/icon-1.webp" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Marketplace</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-icon">
+                                            <img src="img/lines/icon-3.svg" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="storeSelects__line-block storeSelects__line-small">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">by</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters <br>& invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-image">
+                                            <img src="img/lines/icon-1.webp" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Quests</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-icon">
+                                            <img src="img/lines/icon-3.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Character</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-image">
+                                            <img src="img/lines/icon-1.webp" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Marketplace</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-icon">
+                                            <img src="img/lines/icon-3.svg" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="storeSelects__line-block storeSelects__line-small">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">by</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-image">
+                                            <img src="img/lines/icon-1.webp" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Quests</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-icon">
+                                            <img src="img/lines/icon-3.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Character</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-image">
+                                            <img src="img/lines/icon-1.webp" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Marketplace</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-icon">
+                                            <img src="img/lines/icon-3.svg" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="storeSelects__line-block storeSelects__line-small">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">by</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters <br>& invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-image">
+                                            <img src="img/lines/icon-1.webp" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Quests</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-icon">
+                                            <img src="img/lines/icon-3.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Character</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-image">
+                                            <img src="img/lines/icon-1.webp" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Marketplace</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-icon">
+                                            <img src="img/lines/icon-3.svg" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="storeSelects__line-block storeSelects__line-small">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">by</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-image">
+                                            <img src="img/lines/icon-1.webp" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Quests</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-icon">
+                                            <img src="img/lines/icon-3.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="storeSelects__line-second">
+                                <div class="storeSelects__line-inner">
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Character</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-image">
+                                            <img src="img/lines/icon-1.webp" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-icon">
+                                            <img src="img/lines/icon-4.svg" alt="">
+                                        </div>
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Marketplace</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-image">
+                                            <img src="img/lines/icon-1.webp" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-icon">
+                                            <img src="img/lines/icon-4.svg" alt="">
+                                        </div>
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">by Upgrade</h4>
+                                            <p class="storeSelects__line-descr"> your characters & invest</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Quests</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-icon">
+                                            <img src="img/lines/icon-3.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Character</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-image">
+                                            <img src="img/lines/icon-1.webp" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-icon">
+                                            <img src="img/lines/icon-4.svg" alt="">
+                                        </div>
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Marketplace</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-image">
+                                            <img src="img/lines/icon-1.webp" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-icon">
+                                            <img src="img/lines/icon-4.svg" alt="">
+                                        </div>
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">by Upgrade</h4>
+                                            <p class="storeSelects__line-descr"> your characters & invest</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Quests</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-icon">
+                                            <img src="img/lines/icon-3.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Character</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-image">
+                                            <img src="img/lines/icon-1.webp" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-icon">
+                                            <img src="img/lines/icon-4.svg" alt="">
+                                        </div>
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Marketplace</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-image">
+                                            <img src="img/lines/icon-1.webp" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-icon">
+                                            <img src="img/lines/icon-4.svg" alt="">
+                                        </div>
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">by Upgrade</h4>
+                                            <p class="storeSelects__line-descr"> your characters & invest</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Quests</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-icon">
+                                            <img src="img/lines/icon-3.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Character</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-image">
+                                            <img src="img/lines/icon-1.webp" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-icon">
+                                            <img src="img/lines/icon-4.svg" alt="">
+                                        </div>
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Marketplace</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-image">
+                                            <img src="img/lines/icon-1.webp" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-icon">
+                                            <img src="img/lines/icon-4.svg" alt="">
+                                        </div>
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">by Upgrade</h4>
+                                            <p class="storeSelects__line-descr"> your characters & invest</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="storeSelects__line-block">
+                                        <div class="storeSelects__line-content">
+                                            <h4 class="storeSelects__line-name">Quests</h4>
+                                            <p class="storeSelects__line-descr">Upgrade your characters & invest</p>
+                                        </div>
+                                        <div class="storeSelects__line-icon">
+                                            <img src="img/lines/icon-3.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                <div class="container">
+                    <div class="storeSelects__inner">
+                        <div class="storeSelects__icon">
+                            <img src="img/storeSelects/icon-1.webp" alt="">
+                        </div>
+                        <div class="storeSelects__icon">
+                            <img src="img/storeSelects/icon-2.webp" alt="">
+                        </div>
+                        <div class="storeSelects__icon">
+                            <img src="img/storeSelects/icon-3.webp" alt="">
+                        </div>
+                        <div class="storeSelects__icon">
+                            <img src="img/storeSelects/icon-4.webp" alt="">
+                        </div>
+                        <div class="storeSelects__icon">
+                            <img src="img/storeSelects/icon-5.webp" alt="">
+                        </div>
+                        <div class="storeSelects__icon">
+                            <img src="img/storeSelects/icon-6.webp" alt="">
+                        </div>
+                        <div class="storeSelects__bg">
+                            <img src="img/storeSelects/bg.webp" alt="">
+                        </div>
+                        <div class="storeSelects__select">
+                            <button class="storeSelects__btn active">Marketplace</button>
+                            <div class="storeSelects__select-icon">
+                                <img src="img/storeSelects/icon.webp" alt="">
+                            </div>
+                            <button class="storeSelects__btn">Auction</button>
+                        </div>
+                        <div class="storeSelects__content">
+                            <button class="storeSelects__slider-prev btn-slide-prev"></button>
+                            <div class="storeSelects__slider">
+                                <div class="swiper-wrapper">
+                                    <div class="storeSelects__slide swiper-slide product__item">
+                                        <div class="product__item-inner">
+                                            <div class="product__item-start">
+                                                <p class="product__item-details">Details</p>
+                                                <button class="product__item-liked"></button>
+                                            </div>
+                                            <div class="product__item-image">
+                                                <img src="img/product/1.webp" alt="">
+                                            </div>
+                                            <div class="product__item-content">
+                                                <h3 class="product__item-title">magic item</h3>
+                                                <div class="product__item-bottom">
+                                                    <p class="product__item-price">102$</p>
+                                                    <a class="product__item-btn btn" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                            <path d="M5.37028 13.2539C4.49021 13.2539 3.77028 13.985 3.77028 14.8789C3.77028 15.7727 4.49021 16.5039 5.37028 16.5039C6.25036 16.5039 6.97032 15.7727 6.97032 14.8789C6.97028 13.985 6.25032 13.2539 5.37028 13.2539ZM0.693359 0.503906V2.1289H2.29336L5.17347 8.05397L3.96932 10.0444C3.8494 10.2475 3.76932 10.5319 3.76932 10.8164C3.76932 11.9043 4.50105 12.4414 5.49336 12.4414H14.8472V10.8789H5.68924C5.56932 10.8789 5.48924 10.7976 5.48924 10.6758C5.48924 10.6353 5.57413 10.4727 5.57413 10.4727L6.37344 9.19143H12.3332C12.9332 9.19143 13.4535 8.86654 13.7332 8.33846L16.6133 3.30722C16.6609 3.21109 16.6934 3.06324 16.6934 2.90101C16.6934 2.4539 16.3332 2.12894 15.8934 2.12894H4.05351L3.29336 0.503906H0.693359ZM13.2472 13.2539C12.3671 13.2539 11.6472 13.985 11.6472 14.8789C11.6472 15.7727 12.3671 16.5039 13.2472 16.5039C14.1272 16.5039 14.8472 15.7727 14.8472 14.8789C14.8472 13.985 14.1272 13.2539 13.2472 13.2539Z" fill="#F7DC9A"/>
+                                                        </svg>    
+                                                        Buy
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="storeSelects__slide swiper-slide product__item product__item-gold">
+                                        <div class="product__item-inner">
+                                            <div class="product__item-start">
+                                                <p class="product__item-details">Details</p>
+                                                <button class="product__item-liked"></button>
+                                            </div>
+                                            <div class="product__item-image">
+                                                <img src="img/product/2.webp" alt="">
+                                            </div>
+                                            <div class="product__item-content">
+                                                <h3 class="product__item-title">magic item</h3>
+                                                <div class="product__item-bottom">
+                                                    <p class="product__item-price">102$</p>
+                                                    <a class="product__item-btn btn" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                            <path d="M5.37028 13.2539C4.49021 13.2539 3.77028 13.985 3.77028 14.8789C3.77028 15.7727 4.49021 16.5039 5.37028 16.5039C6.25036 16.5039 6.97032 15.7727 6.97032 14.8789C6.97028 13.985 6.25032 13.2539 5.37028 13.2539ZM0.693359 0.503906V2.1289H2.29336L5.17347 8.05397L3.96932 10.0444C3.8494 10.2475 3.76932 10.5319 3.76932 10.8164C3.76932 11.9043 4.50105 12.4414 5.49336 12.4414H14.8472V10.8789H5.68924C5.56932 10.8789 5.48924 10.7976 5.48924 10.6758C5.48924 10.6353 5.57413 10.4727 5.57413 10.4727L6.37344 9.19143H12.3332C12.9332 9.19143 13.4535 8.86654 13.7332 8.33846L16.6133 3.30722C16.6609 3.21109 16.6934 3.06324 16.6934 2.90101C16.6934 2.4539 16.3332 2.12894 15.8934 2.12894H4.05351L3.29336 0.503906H0.693359ZM13.2472 13.2539C12.3671 13.2539 11.6472 13.985 11.6472 14.8789C11.6472 15.7727 12.3671 16.5039 13.2472 16.5039C14.1272 16.5039 14.8472 15.7727 14.8472 14.8789C14.8472 13.985 14.1272 13.2539 13.2472 13.2539Z" fill="#F7DC9A"/>
+                                                        </svg>    
+                                                        Buy
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="storeSelects__slide swiper-slide product__item">
+                                        <div class="product__item-inner">
+                                            <div class="product__item-start">
+                                                <p class="product__item-details">Details</p>
+                                                <button class="product__item-liked"></button>
+                                            </div>
+                                            <div class="product__item-image">
+                                                <img src="img/product/3.webp" alt="">
+                                            </div>
+                                            <div class="product__item-content">
+                                                <h3 class="product__item-title">magic item</h3>
+                                                <div class="product__item-bottom">
+                                                    <p class="product__item-price">102$</p>
+                                                    <a class="product__item-btn btn" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                            <path d="M5.37028 13.2539C4.49021 13.2539 3.77028 13.985 3.77028 14.8789C3.77028 15.7727 4.49021 16.5039 5.37028 16.5039C6.25036 16.5039 6.97032 15.7727 6.97032 14.8789C6.97028 13.985 6.25032 13.2539 5.37028 13.2539ZM0.693359 0.503906V2.1289H2.29336L5.17347 8.05397L3.96932 10.0444C3.8494 10.2475 3.76932 10.5319 3.76932 10.8164C3.76932 11.9043 4.50105 12.4414 5.49336 12.4414H14.8472V10.8789H5.68924C5.56932 10.8789 5.48924 10.7976 5.48924 10.6758C5.48924 10.6353 5.57413 10.4727 5.57413 10.4727L6.37344 9.19143H12.3332C12.9332 9.19143 13.4535 8.86654 13.7332 8.33846L16.6133 3.30722C16.6609 3.21109 16.6934 3.06324 16.6934 2.90101C16.6934 2.4539 16.3332 2.12894 15.8934 2.12894H4.05351L3.29336 0.503906H0.693359ZM13.2472 13.2539C12.3671 13.2539 11.6472 13.985 11.6472 14.8789C11.6472 15.7727 12.3671 16.5039 13.2472 16.5039C14.1272 16.5039 14.8472 15.7727 14.8472 14.8789C14.8472 13.985 14.1272 13.2539 13.2472 13.2539Z" fill="#F7DC9A"/>
+                                                        </svg>    
+                                                        Buy
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="storeSelects__slide swiper-slide product__item">
+                                        <div class="product__item-inner">
+                                            <div class="product__item-start">
+                                                <p class="product__item-details">Details</p>
+                                                <button class="product__item-liked"></button>
+                                            </div>
+                                            <div class="product__item-image">
+                                                <img src="img/product/1.webp" alt="">
+                                            </div>
+                                            <div class="product__item-content">
+                                                <h3 class="product__item-title">magic item</h3>
+                                                <div class="product__item-bottom">
+                                                    <p class="product__item-price">102$</p>
+                                                    <a class="product__item-btn btn" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                            <path d="M5.37028 13.2539C4.49021 13.2539 3.77028 13.985 3.77028 14.8789C3.77028 15.7727 4.49021 16.5039 5.37028 16.5039C6.25036 16.5039 6.97032 15.7727 6.97032 14.8789C6.97028 13.985 6.25032 13.2539 5.37028 13.2539ZM0.693359 0.503906V2.1289H2.29336L5.17347 8.05397L3.96932 10.0444C3.8494 10.2475 3.76932 10.5319 3.76932 10.8164C3.76932 11.9043 4.50105 12.4414 5.49336 12.4414H14.8472V10.8789H5.68924C5.56932 10.8789 5.48924 10.7976 5.48924 10.6758C5.48924 10.6353 5.57413 10.4727 5.57413 10.4727L6.37344 9.19143H12.3332C12.9332 9.19143 13.4535 8.86654 13.7332 8.33846L16.6133 3.30722C16.6609 3.21109 16.6934 3.06324 16.6934 2.90101C16.6934 2.4539 16.3332 2.12894 15.8934 2.12894H4.05351L3.29336 0.503906H0.693359ZM13.2472 13.2539C12.3671 13.2539 11.6472 13.985 11.6472 14.8789C11.6472 15.7727 12.3671 16.5039 13.2472 16.5039C14.1272 16.5039 14.8472 15.7727 14.8472 14.8789C14.8472 13.985 14.1272 13.2539 13.2472 13.2539Z" fill="#F7DC9A"/>
+                                                        </svg>    
+                                                        Buy
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="storeSelects__slide swiper-slide product__item product__item-gold">
+                                        <div class="product__item-inner">
+                                            <div class="product__item-start">
+                                                <p class="product__item-details">Details</p>
+                                                <button class="product__item-liked"></button>
+                                            </div>
+                                            <div class="product__item-image">
+                                                <img src="img/product/2.webp" alt="">
+                                            </div>
+                                            <div class="product__item-content">
+                                                <h3 class="product__item-title">magic item</h3>
+                                                <div class="product__item-bottom">
+                                                    <p class="product__item-price">102$</p>
+                                                    <a class="product__item-btn btn" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                            <path d="M5.37028 13.2539C4.49021 13.2539 3.77028 13.985 3.77028 14.8789C3.77028 15.7727 4.49021 16.5039 5.37028 16.5039C6.25036 16.5039 6.97032 15.7727 6.97032 14.8789C6.97028 13.985 6.25032 13.2539 5.37028 13.2539ZM0.693359 0.503906V2.1289H2.29336L5.17347 8.05397L3.96932 10.0444C3.8494 10.2475 3.76932 10.5319 3.76932 10.8164C3.76932 11.9043 4.50105 12.4414 5.49336 12.4414H14.8472V10.8789H5.68924C5.56932 10.8789 5.48924 10.7976 5.48924 10.6758C5.48924 10.6353 5.57413 10.4727 5.57413 10.4727L6.37344 9.19143H12.3332C12.9332 9.19143 13.4535 8.86654 13.7332 8.33846L16.6133 3.30722C16.6609 3.21109 16.6934 3.06324 16.6934 2.90101C16.6934 2.4539 16.3332 2.12894 15.8934 2.12894H4.05351L3.29336 0.503906H0.693359ZM13.2472 13.2539C12.3671 13.2539 11.6472 13.985 11.6472 14.8789C11.6472 15.7727 12.3671 16.5039 13.2472 16.5039C14.1272 16.5039 14.8472 15.7727 14.8472 14.8789C14.8472 13.985 14.1272 13.2539 13.2472 13.2539Z" fill="#F7DC9A"/>
+                                                        </svg>    
+                                                        Buy
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="storeSelects__slide swiper-slide product__item">
+                                        <div class="product__item-inner">
+                                            <div class="product__item-start">
+                                                <p class="product__item-details">Details</p>
+                                                <button class="product__item-liked"></button>
+                                            </div>
+                                            <div class="product__item-image">
+                                                <img src="img/product/3.webp" alt="">
+                                            </div>
+                                            <div class="product__item-content">
+                                                <h3 class="product__item-title">magic item</h3>
+                                                <div class="product__item-bottom">
+                                                    <p class="product__item-price">102$</p>
+                                                    <a class="product__item-btn btn" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                            <path d="M5.37028 13.2539C4.49021 13.2539 3.77028 13.985 3.77028 14.8789C3.77028 15.7727 4.49021 16.5039 5.37028 16.5039C6.25036 16.5039 6.97032 15.7727 6.97032 14.8789C6.97028 13.985 6.25032 13.2539 5.37028 13.2539ZM0.693359 0.503906V2.1289H2.29336L5.17347 8.05397L3.96932 10.0444C3.8494 10.2475 3.76932 10.5319 3.76932 10.8164C3.76932 11.9043 4.50105 12.4414 5.49336 12.4414H14.8472V10.8789H5.68924C5.56932 10.8789 5.48924 10.7976 5.48924 10.6758C5.48924 10.6353 5.57413 10.4727 5.57413 10.4727L6.37344 9.19143H12.3332C12.9332 9.19143 13.4535 8.86654 13.7332 8.33846L16.6133 3.30722C16.6609 3.21109 16.6934 3.06324 16.6934 2.90101C16.6934 2.4539 16.3332 2.12894 15.8934 2.12894H4.05351L3.29336 0.503906H0.693359ZM13.2472 13.2539C12.3671 13.2539 11.6472 13.985 11.6472 14.8789C11.6472 15.7727 12.3671 16.5039 13.2472 16.5039C14.1272 16.5039 14.8472 15.7727 14.8472 14.8789C14.8472 13.985 14.1272 13.2539 13.2472 13.2539Z" fill="#F7DC9A"/>
+                                                        </svg>    
+                                                        Buy
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="storeSelects__slide swiper-slide product__item">
+                                        <div class="product__item-inner">
+                                            <div class="product__item-start">
+                                                <p class="product__item-details">Details</p>
+                                                <button class="product__item-liked"></button>
+                                            </div>
+                                            <div class="product__item-image">
+                                                <img src="img/product/1.webp" alt="">
+                                            </div>
+                                            <div class="product__item-content">
+                                                <h3 class="product__item-title">magic item</h3>
+                                                <div class="product__item-bottom">
+                                                    <p class="product__item-price">102$</p>
+                                                    <a class="product__item-btn btn" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                            <path d="M5.37028 13.2539C4.49021 13.2539 3.77028 13.985 3.77028 14.8789C3.77028 15.7727 4.49021 16.5039 5.37028 16.5039C6.25036 16.5039 6.97032 15.7727 6.97032 14.8789C6.97028 13.985 6.25032 13.2539 5.37028 13.2539ZM0.693359 0.503906V2.1289H2.29336L5.17347 8.05397L3.96932 10.0444C3.8494 10.2475 3.76932 10.5319 3.76932 10.8164C3.76932 11.9043 4.50105 12.4414 5.49336 12.4414H14.8472V10.8789H5.68924C5.56932 10.8789 5.48924 10.7976 5.48924 10.6758C5.48924 10.6353 5.57413 10.4727 5.57413 10.4727L6.37344 9.19143H12.3332C12.9332 9.19143 13.4535 8.86654 13.7332 8.33846L16.6133 3.30722C16.6609 3.21109 16.6934 3.06324 16.6934 2.90101C16.6934 2.4539 16.3332 2.12894 15.8934 2.12894H4.05351L3.29336 0.503906H0.693359ZM13.2472 13.2539C12.3671 13.2539 11.6472 13.985 11.6472 14.8789C11.6472 15.7727 12.3671 16.5039 13.2472 16.5039C14.1272 16.5039 14.8472 15.7727 14.8472 14.8789C14.8472 13.985 14.1272 13.2539 13.2472 13.2539Z" fill="#F7DC9A"/>
+                                                        </svg>    
+                                                        Buy
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="storeSelects__slide swiper-slide product__item product__item-gold">
+                                        <div class="product__item-inner">
+                                            <div class="product__item-start">
+                                                <p class="product__item-details">Details</p>
+                                                <button class="product__item-liked"></button>
+                                            </div>
+                                            <div class="product__item-image">
+                                                <img src="img/product/2.webp" alt="">
+                                            </div>
+                                            <div class="product__item-content">
+                                                <h3 class="product__item-title">magic item</h3>
+                                                <div class="product__item-bottom">
+                                                    <p class="product__item-price">102$</p>
+                                                    <a class="product__item-btn btn" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                            <path d="M5.37028 13.2539C4.49021 13.2539 3.77028 13.985 3.77028 14.8789C3.77028 15.7727 4.49021 16.5039 5.37028 16.5039C6.25036 16.5039 6.97032 15.7727 6.97032 14.8789C6.97028 13.985 6.25032 13.2539 5.37028 13.2539ZM0.693359 0.503906V2.1289H2.29336L5.17347 8.05397L3.96932 10.0444C3.8494 10.2475 3.76932 10.5319 3.76932 10.8164C3.76932 11.9043 4.50105 12.4414 5.49336 12.4414H14.8472V10.8789H5.68924C5.56932 10.8789 5.48924 10.7976 5.48924 10.6758C5.48924 10.6353 5.57413 10.4727 5.57413 10.4727L6.37344 9.19143H12.3332C12.9332 9.19143 13.4535 8.86654 13.7332 8.33846L16.6133 3.30722C16.6609 3.21109 16.6934 3.06324 16.6934 2.90101C16.6934 2.4539 16.3332 2.12894 15.8934 2.12894H4.05351L3.29336 0.503906H0.693359ZM13.2472 13.2539C12.3671 13.2539 11.6472 13.985 11.6472 14.8789C11.6472 15.7727 12.3671 16.5039 13.2472 16.5039C14.1272 16.5039 14.8472 15.7727 14.8472 14.8789C14.8472 13.985 14.1272 13.2539 13.2472 13.2539Z" fill="#F7DC9A"/>
+                                                        </svg>    
+                                                        Buy
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="storeSelects__slide swiper-slide product__item">
+                                        <div class="product__item-inner">
+                                            <div class="product__item-start">
+                                                <p class="product__item-details">Details</p>
+                                                <button class="product__item-liked"></button>
+                                            </div>
+                                            <div class="product__item-image">
+                                                <img src="img/product/3.webp" alt="">
+                                            </div>
+                                            <div class="product__item-content">
+                                                <h3 class="product__item-title">magic item</h3>
+                                                <div class="product__item-bottom">
+                                                    <p class="product__item-price">102$</p>
+                                                    <a class="product__item-btn btn" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                            <path d="M5.37028 13.2539C4.49021 13.2539 3.77028 13.985 3.77028 14.8789C3.77028 15.7727 4.49021 16.5039 5.37028 16.5039C6.25036 16.5039 6.97032 15.7727 6.97032 14.8789C6.97028 13.985 6.25032 13.2539 5.37028 13.2539ZM0.693359 0.503906V2.1289H2.29336L5.17347 8.05397L3.96932 10.0444C3.8494 10.2475 3.76932 10.5319 3.76932 10.8164C3.76932 11.9043 4.50105 12.4414 5.49336 12.4414H14.8472V10.8789H5.68924C5.56932 10.8789 5.48924 10.7976 5.48924 10.6758C5.48924 10.6353 5.57413 10.4727 5.57413 10.4727L6.37344 9.19143H12.3332C12.9332 9.19143 13.4535 8.86654 13.7332 8.33846L16.6133 3.30722C16.6609 3.21109 16.6934 3.06324 16.6934 2.90101C16.6934 2.4539 16.3332 2.12894 15.8934 2.12894H4.05351L3.29336 0.503906H0.693359ZM13.2472 13.2539C12.3671 13.2539 11.6472 13.985 11.6472 14.8789C11.6472 15.7727 12.3671 16.5039 13.2472 16.5039C14.1272 16.5039 14.8472 15.7727 14.8472 14.8789C14.8472 13.985 14.1272 13.2539 13.2472 13.2539Z" fill="#F7DC9A"/>
+                                                        </svg>    
+                                                        Buy
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="storeSelects__slide swiper-slide product__item">
+                                        <div class="product__item-inner">
+                                            <div class="product__item-start">
+                                                <p class="product__item-details">Details</p>
+                                                <button class="product__item-liked"></button>
+                                            </div>
+                                            <div class="product__item-image">
+                                                <img src="img/product/1.webp" alt="">
+                                            </div>
+                                            <div class="product__item-content">
+                                                <h3 class="product__item-title">magic item</h3>
+                                                <div class="product__item-bottom">
+                                                    <p class="product__item-price">102$</p>
+                                                    <a class="product__item-btn btn" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                            <path d="M5.37028 13.2539C4.49021 13.2539 3.77028 13.985 3.77028 14.8789C3.77028 15.7727 4.49021 16.5039 5.37028 16.5039C6.25036 16.5039 6.97032 15.7727 6.97032 14.8789C6.97028 13.985 6.25032 13.2539 5.37028 13.2539ZM0.693359 0.503906V2.1289H2.29336L5.17347 8.05397L3.96932 10.0444C3.8494 10.2475 3.76932 10.5319 3.76932 10.8164C3.76932 11.9043 4.50105 12.4414 5.49336 12.4414H14.8472V10.8789H5.68924C5.56932 10.8789 5.48924 10.7976 5.48924 10.6758C5.48924 10.6353 5.57413 10.4727 5.57413 10.4727L6.37344 9.19143H12.3332C12.9332 9.19143 13.4535 8.86654 13.7332 8.33846L16.6133 3.30722C16.6609 3.21109 16.6934 3.06324 16.6934 2.90101C16.6934 2.4539 16.3332 2.12894 15.8934 2.12894H4.05351L3.29336 0.503906H0.693359ZM13.2472 13.2539C12.3671 13.2539 11.6472 13.985 11.6472 14.8789C11.6472 15.7727 12.3671 16.5039 13.2472 16.5039C14.1272 16.5039 14.8472 15.7727 14.8472 14.8789C14.8472 13.985 14.1272 13.2539 13.2472 13.2539Z" fill="#F7DC9A"/>
+                                                        </svg>    
+                                                        Buy
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="storeSelects__slide swiper-slide product__item product__item-gold">
+                                        <div class="product__item-inner">
+                                            <div class="product__item-start">
+                                                <p class="product__item-details">Details</p>
+                                                <button class="product__item-liked"></button>
+                                            </div>
+                                            <div class="product__item-image">
+                                                <img src="img/product/2.webp" alt="">
+                                            </div>
+                                            <div class="product__item-content">
+                                                <h3 class="product__item-title">magic item</h3>
+                                                <div class="product__item-bottom">
+                                                    <p class="product__item-price">102$</p>
+                                                    <a class="product__item-btn btn" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                            <path d="M5.37028 13.2539C4.49021 13.2539 3.77028 13.985 3.77028 14.8789C3.77028 15.7727 4.49021 16.5039 5.37028 16.5039C6.25036 16.5039 6.97032 15.7727 6.97032 14.8789C6.97028 13.985 6.25032 13.2539 5.37028 13.2539ZM0.693359 0.503906V2.1289H2.29336L5.17347 8.05397L3.96932 10.0444C3.8494 10.2475 3.76932 10.5319 3.76932 10.8164C3.76932 11.9043 4.50105 12.4414 5.49336 12.4414H14.8472V10.8789H5.68924C5.56932 10.8789 5.48924 10.7976 5.48924 10.6758C5.48924 10.6353 5.57413 10.4727 5.57413 10.4727L6.37344 9.19143H12.3332C12.9332 9.19143 13.4535 8.86654 13.7332 8.33846L16.6133 3.30722C16.6609 3.21109 16.6934 3.06324 16.6934 2.90101C16.6934 2.4539 16.3332 2.12894 15.8934 2.12894H4.05351L3.29336 0.503906H0.693359ZM13.2472 13.2539C12.3671 13.2539 11.6472 13.985 11.6472 14.8789C11.6472 15.7727 12.3671 16.5039 13.2472 16.5039C14.1272 16.5039 14.8472 15.7727 14.8472 14.8789C14.8472 13.985 14.1272 13.2539 13.2472 13.2539Z" fill="#F7DC9A"/>
+                                                        </svg>    
+                                                        Buy
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="storeSelects__slide swiper-slide product__item">
+                                        <div class="product__item-inner">
+                                            <div class="product__item-start">
+                                                <p class="product__item-details">Details</p>
+                                                <button class="product__item-liked"></button>
+                                            </div>
+                                            <div class="product__item-image">
+                                                <img src="img/product/3.webp" alt="">
+                                            </div>
+                                            <div class="product__item-content">
+                                                <h3 class="product__item-title">magic item</h3>
+                                                <div class="product__item-bottom">
+                                                    <p class="product__item-price">102$</p>
+                                                    <a class="product__item-btn btn" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                            <path d="M5.37028 13.2539C4.49021 13.2539 3.77028 13.985 3.77028 14.8789C3.77028 15.7727 4.49021 16.5039 5.37028 16.5039C6.25036 16.5039 6.97032 15.7727 6.97032 14.8789C6.97028 13.985 6.25032 13.2539 5.37028 13.2539ZM0.693359 0.503906V2.1289H2.29336L5.17347 8.05397L3.96932 10.0444C3.8494 10.2475 3.76932 10.5319 3.76932 10.8164C3.76932 11.9043 4.50105 12.4414 5.49336 12.4414H14.8472V10.8789H5.68924C5.56932 10.8789 5.48924 10.7976 5.48924 10.6758C5.48924 10.6353 5.57413 10.4727 5.57413 10.4727L6.37344 9.19143H12.3332C12.9332 9.19143 13.4535 8.86654 13.7332 8.33846L16.6133 3.30722C16.6609 3.21109 16.6934 3.06324 16.6934 2.90101C16.6934 2.4539 16.3332 2.12894 15.8934 2.12894H4.05351L3.29336 0.503906H0.693359ZM13.2472 13.2539C12.3671 13.2539 11.6472 13.985 11.6472 14.8789C11.6472 15.7727 12.3671 16.5039 13.2472 16.5039C14.1272 16.5039 14.8472 15.7727 14.8472 14.8789C14.8472 13.985 14.1272 13.2539 13.2472 13.2539Z" fill="#F7DC9A"/>
+                                                        </svg>    
+                                                        Buy
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="storeSelects__slider-next btn-slide-next"></button>
+                        </div>
+                        <div class="storeSelects__more">
+                            <a class="btn-4" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="33" viewBox="0 0 41 33" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.3614 0.444646C25.9063 -0.0909238 26.7899 -0.0909238 27.3348 0.444646L34.3679 7.35726H39.3713C40.1419 7.35726 40.7666 7.97128 40.7666 8.72869C40.7666 9.4861 40.1419 10.1001 39.3713 10.1001H38.3586C37.9374 11.6655 37.3926 13.4702 36.759 15.5701L34.8518 21.8887C34.0942 24.3999 33.6299 25.9392 32.8159 27.191C31.4146 29.346 29.262 30.925 26.7616 31.6326C25.3091 32.0435 23.6754 32.0433 21.0107 32.0429H20.5225C17.8578 32.0433 16.2241 32.0435 14.7717 31.6326C12.2711 30.925 10.1186 29.346 8.71728 27.191C7.90331 25.9392 7.43892 24.3999 6.68141 21.8887L4.77462 15.5712C4.14069 13.4709 3.59587 11.6657 3.17462 10.1001H2.16195C1.39133 10.1001 0.766602 9.4861 0.766602 8.72869C0.766602 7.97128 1.39133 7.35726 2.16195 7.35726H7.6168L14.65 0.444683C15.1949 -0.0909054 16.0784 -0.0909054 16.6233 0.444683C17.1683 0.980253 17.1683 1.84859 16.6233 2.38417L11.5635 7.35726H30.4213L25.3614 2.38414C24.8165 1.84857 24.8165 0.980216 25.3614 0.444646ZM18.441 16.043C18.441 15.2856 17.8163 14.6715 17.0457 14.6715C16.275 14.6715 15.6503 15.2856 15.6503 16.043V23.3572C15.6503 24.1146 16.275 24.7287 17.0457 24.7287C17.8163 24.7287 18.441 24.1146 18.441 23.3572V16.043ZM25.8829 16.043C25.8829 15.2856 25.2581 14.6715 24.4875 14.6715C23.7169 14.6715 23.0922 15.2856 23.0922 16.043V23.3572C23.0922 24.1146 23.7169 24.7287 24.4875 24.7287C25.2581 24.7287 25.8829 24.1146 25.8829 23.3572V16.043Z" fill="#FEFCD8"/>
+                                </svg>
+                                Go to store
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="characters">
+            <div class="characters__inner">
+                <button class="characters__prev btn-slide-prev"></button>
+                <div class="characters__slider">
+                    <div class="swiper-wrapper">
+                        <div class="characters__slide swiper-slide characters__slide-one">
+                            <div class="characters__slide-inner">
+                                <div class="characters__slide-bg">
+                                    <img src="img/characters/bg-1.webp" alt="">
+                                </div>
+                                <div class="characters__slide-content">
+                                    <p class="characters__slide-step">step 01/</p>
+                                    <h3 class="characters__slide-title title">Join & get character for free</h3>
+                                    <p class="characters__slide-descr">Customize your profile with cute Free Character. Brand-Labeled and Custom Characters will provide exclusive perks & benefits.</p>
+                                    <a class="characters__slide-btn btn-4" href="#">PLAY On-line</a>
+                                </div>
+                                <div class="characters__slide-pers">
+                                    <div class="characters__slide-video">
+                                        <video autoplay playsinline webkit-playsinline muted loop>
+                                            <source src="img/characters/video-1.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="characters__slide-about">
+                                        <h4 class="characters__slide-name">Aligato Jollof-Master</h4>
+                                        <div class="characters__slide-info">
+                                            <div class="characters__slide-info--item">
+                                                <p class="characters__slide-info--name">Animal:</p>
+                                                <p class="characters__slide-info--descr">Alligator</p>
+                                            </div>
+                                            <div class="characters__slide-info--item">
+                                                <p class="characters__slide-info--name">Element:</p>
+                                                <p class="characters__slide-info--descr">Earth</p>
+                                            </div>
+                                            <div class="characters__slide-info--item">
+                                                <p class="characters__slide-info--name">Atack:</p>
+                                                <p class="characters__slide-info--descr">Melee combat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="characters__slide swiper-slide characters__slide-two">
+                            <div class="characters__slide-inner">
+                                <div class="characters__slide-bg">
+                                    <img src="img/characters/bg-2.webp" alt="">
+                                </div>
+                                <div class="characters__slide-content">
+                                    <p class="characters__slide-step">step 02/</p>
+                                    <h3 class="characters__slide-title title">Join & get character for free</h3>
+                                    <p class="characters__slide-descr">Customize your profile with cute Basic Free Characters. Brand-Labeled and Custom Characters will provide exclusive perks & benefits. </p>
+                                    <a class="characters__slide-btn btn-4" href="#">Download</a>
+                                </div>
+                                <div class="characters__slide-pers">
+                                    <div class="characters__slide-video">
+                                        <video autoplay playsinline webkit-playsinline muted loop>
+                                            <source src="img/characters/video-2.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="characters__slide-about">
+                                        <h4 class="characters__slide-name">Aligato Jollof-Master</h4>
+                                        <div class="characters__slide-info">
+                                            <div class="characters__slide-info--item">
+                                                <p class="characters__slide-info--name">Animal:</p>
+                                                <p class="characters__slide-info--descr">Eagle</p>
+                                            </div>
+                                            <div class="characters__slide-info--item">
+                                                <p class="characters__slide-info--name">Element:</p>
+                                                <p class="characters__slide-info--descr">Lightning</p>
+                                            </div>
+                                            <div class="characters__slide-info--item">
+                                                <p class="characters__slide-info--name">Atack:</p>
+                                                <p class="characters__slide-info--descr">Ranged combat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="characters__slide swiper-slide characters__slide-three">
+                            <div class="characters__slide-inner">
+                                <div class="characters__slide-bg">
+                                    <img src="img/characters/bg-3.webp" alt="">
+                                </div>
+                                <div class="characters__slide-content">
+                                    <p class="characters__slide-step">step 02/</p>
+                                    <h3 class="characters__slide-title title">Join & get character for free</h3>
+                                    <p class="characters__slide-descr">Customize your profile with cute Basic Free Characters. Brand-Labeled and Custom Characters will provide exclusive perks & benefits. </p>
+                                    <a class="characters__slide-btn btn-4" href="#">PLAY On-line</a>
+                                </div>
+                                <div class="characters__slide-pers">
+                                    <div class="characters__slide-video">
+                                        <video autoplay playsinline webkit-playsinline muted loop>
+                                            <source src="img/characters/video-3.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="characters__slide-about">
+                                        <h4 class="characters__slide-name">Jabba <br>Rasta-Rig</h4>
+                                        <div class="characters__slide-info">
+                                            <div class="characters__slide-info--item">
+                                                <p class="characters__slide-info--name">Animal:</p>
+                                                <p class="characters__slide-info--descr">Lion</p>
+                                            </div>
+                                            <div class="characters__slide-info--item">
+                                                <p class="characters__slide-info--name">Element:</p>
+                                                <p class="characters__slide-info--descr">Fire</p>
+                                            </div>
+                                            <div class="characters__slide-info--item">
+                                                <p class="characters__slide-info--name">Atack:</p>
+                                                <p class="characters__slide-info--descr">Melee combat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="characters__slide swiper-slide characters__slide-four">
+                            <div class="characters__slide-inner">
+                                <div class="characters__slide-bg">
+                                    <img src="img/characters/bg-4.webp" alt="">
+                                </div>
+                                <div class="characters__slide-content">
+                                    <p class="characters__slide-step">step 02/</p>
+                                    <h3 class="characters__slide-title title">Join & get character for free</h3>
+                                    <p class="characters__slide-descr">Customize your profile with cute Basic Free Characters. Brand-Labeled and Custom Characters will provide exclusive perks & benefits. </p>
+                                    <a class="characters__slide-btn btn-4" href="#">PLAY</a>
+                                </div>
+                                <div class="characters__slide-pers">
+                                    <div class="characters__slide-video">
+                                        <video autoplay playsinline webkit-playsinline muted loop>
+                                            <source src="img/characters/video-4.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="characters__slide-about">
+                                        <h4 class="characters__slide-name">Meha-<br>Reha Griz</h4>
+                                        <div class="characters__slide-info">
+                                            <div class="characters__slide-info--item">
+                                                <p class="characters__slide-info--name">Animal:</p>
+                                                <p class="characters__slide-info--descr">Hyena</p>
+                                            </div>
+                                            <div class="characters__slide-info--item">
+                                                <p class="characters__slide-info--name">Element:</p>
+                                                <p class="characters__slide-info--descr">Lightning</p>
+                                            </div>
+                                            <div class="characters__slide-info--item">
+                                                <p class="characters__slide-info--name">Atack:</p>
+                                                <p class="characters__slide-info--descr">Mid-range combat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="characters__next btn-slide-next"></button>
+            </div>
+        </section>
+
+        <section class="levelup">
+            <div class="container">
+                <div class="levelup__inner">
+                    <div class="levelup__bg">
+                        <img src="img/levelup/bg.webp" alt="">
+                    </div>
+                    <div class="levelup__info">
+                        <div class="levelup__info-block">
+                            <div class="levelup__info-item">
+                                <p class="levelup__info-name">HP</p>
+                                <p class="levelup__info-descr">1700</p>
+                            </div>
+                            <div class="levelup__info-item">
+                                <p class="levelup__info-name">manna</p>
+                                <p class="levelup__info-descr">800</p>
+                            </div>
+                            <div class="levelup__info-item">
+                                <p class="levelup__info-name">Endurance</p>
+                                <p class="levelup__info-descr">174</p>
+                            </div>
+                            <div class="levelup__info-item">
+                                <p class="levelup__info-name">strength</p>
+                                <p class="levelup__info-descr">60</p>
+                            </div>
+                        </div>
+                        <div class="levelup__info-image">
+                            <div class="levelup__info-video">
+                                <video autoplay playsinline webkit-playsinline muted loop>
+                                    <source src="img/levelup/video.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="levelup__info-top">
+                                <img src="img/levelup/gamep.webp" alt="">
+                            </div>
+                            <span class="levelup__info-level"><img src="img/levelup/level.svg" alt=""></span>
+                        </div>
+                        <div class="levelup__info-block">
+                            <div class="levelup__info-item">
+                                <p class="levelup__info-descr">35</p>
+                                <p class="levelup__info-name">agility</p>
+                            </div>
+                            <div class="levelup__info-item">
+                                <p class="levelup__info-descr">125</p>
+                                <p class="levelup__info-name">damage</p>
+                            </div>
+                            <div class="levelup__info-item">
+                                <p class="levelup__info-descr">49</p>
+                                <p class="levelup__info-name">Intelligence</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="levelup__content">
+                        <p class="levelup__step">step 02/</p>
+                        <h2 class="levelup__title title">LEVEL-UP your character</h2>
+                        <p class="levelup__descr">Level up and gain experience in battles, become stronger, upgrade your perks — all for free! <br>Face powerful enemies, unlock unique abilities, and shape your hero’s destiny without spending a single coin. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="equip">
+            <div class="container">
+                <div class="equip__inner">
+                    <div class="equip__bg">
+                        <img src="img/equip/bg.webp" alt="">
+                    </div>
+                    <div class="equip__icon">
+                        <img src="img/equip/icon-1.webp" alt="">
+                    </div>
+                    <div class="equip__top">
+                        <div class="equip__content">
+                            <p class="equip__name">step 03/</p>
+                            <h2 class="equip__title title">Equip & Dominate!</h2>
+                            <p class="equip__descr">Unlock legendary weapons, armor, and outfits that transform your hero into a true champion. Customize your style, boost your power, and crush your opponents. <br>Every item matters. Every choice sets you apart.</p>
+                            <p class="equip__balance">your balance <span>$74,384</span></p>
+                        </div>
+                        <div class="equip__block">
+                            <div class="equip__item product__item product__item-small">
+                                <div class="product__item-inner">
+                                    <div class="product__item-start">
+                                        <p class="product__item-fn">FN</p>
+                                        <button class="product__item-liked"></button>
+                                    </div>
+                                    <div class="product__item-image">
+                                        <img src="img/product/1.webp" alt="">
+                                    </div>
+                                    <div class="product__item-content">
+                                        <h3 class="product__item-title">magic item</h3>
+                                        <div class="product__item-bottom">
+                                            <p class="product__item-price">102$</p>
+                                            <a class="product__item-btn btn" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                    <path d="M5.37028 13.2539C4.49021 13.2539 3.77028 13.985 3.77028 14.8789C3.77028 15.7727 4.49021 16.5039 5.37028 16.5039C6.25036 16.5039 6.97032 15.7727 6.97032 14.8789C6.97028 13.985 6.25032 13.2539 5.37028 13.2539ZM0.693359 0.503906V2.1289H2.29336L5.17347 8.05397L3.96932 10.0444C3.8494 10.2475 3.76932 10.5319 3.76932 10.8164C3.76932 11.9043 4.50105 12.4414 5.49336 12.4414H14.8472V10.8789H5.68924C5.56932 10.8789 5.48924 10.7976 5.48924 10.6758C5.48924 10.6353 5.57413 10.4727 5.57413 10.4727L6.37344 9.19143H12.3332C12.9332 9.19143 13.4535 8.86654 13.7332 8.33846L16.6133 3.30722C16.6609 3.21109 16.6934 3.06324 16.6934 2.90101C16.6934 2.4539 16.3332 2.12894 15.8934 2.12894H4.05351L3.29336 0.503906H0.693359ZM13.2472 13.2539C12.3671 13.2539 11.6472 13.985 11.6472 14.8789C11.6472 15.7727 12.3671 16.5039 13.2472 16.5039C14.1272 16.5039 14.8472 15.7727 14.8472 14.8789C14.8472 13.985 14.1272 13.2539 13.2472 13.2539Z" fill="#F7DC9A"/>
+                                                </svg>    
+                                                Buy
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="equip__item product__item product__item-gold product__item-small">
+                                <div class="product__item-inner">
+                                    <div class="product__item-start">
+                                        <p class="product__item-fn">FN</p>
+                                        <button class="product__item-liked"></button>
+                                    </div>
+                                    <div class="product__item-image">
+                                        <img src="img/product/2.webp" alt="">
+                                    </div>
+                                    <div class="product__item-content">
+                                        <h3 class="product__item-title">Weapon</h3>
+                                        <p class="product__item-saller">Saller: <mark>Adam Mart</mark></p>
+                                        <p class="product__item-descr">Just Out of the Forge</p>
+                                        <div class="product__item-bottom">
+                                            <p class="product__item-price">102$</p>
+                                            <a class="product__item-btn btn" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                    <path d="M5.37028 13.2539C4.49021 13.2539 3.77028 13.985 3.77028 14.8789C3.77028 15.7727 4.49021 16.5039 5.37028 16.5039C6.25036 16.5039 6.97032 15.7727 6.97032 14.8789C6.97028 13.985 6.25032 13.2539 5.37028 13.2539ZM0.693359 0.503906V2.1289H2.29336L5.17347 8.05397L3.96932 10.0444C3.8494 10.2475 3.76932 10.5319 3.76932 10.8164C3.76932 11.9043 4.50105 12.4414 5.49336 12.4414H14.8472V10.8789H5.68924C5.56932 10.8789 5.48924 10.7976 5.48924 10.6758C5.48924 10.6353 5.57413 10.4727 5.57413 10.4727L6.37344 9.19143H12.3332C12.9332 9.19143 13.4535 8.86654 13.7332 8.33846L16.6133 3.30722C16.6609 3.21109 16.6934 3.06324 16.6934 2.90101C16.6934 2.4539 16.3332 2.12894 15.8934 2.12894H4.05351L3.29336 0.503906H0.693359ZM13.2472 13.2539C12.3671 13.2539 11.6472 13.985 11.6472 14.8789C11.6472 15.7727 12.3671 16.5039 13.2472 16.5039C14.1272 16.5039 14.8472 15.7727 14.8472 14.8789C14.8472 13.985 14.1272 13.2539 13.2472 13.2539Z" fill="#F7DC9A"/>
+                                                </svg>    
+                                                Buy
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="equip__item product__item product__item-small">
+                                <div class="product__item-inner">
+                                    <div class="product__item-start">
+                                        <p class="product__item-fn">FN</p>
+                                        <button class="product__item-liked"></button>
+                                    </div>
+                                    <div class="product__item-image">
+                                        <img src="img/product/3.webp" alt="">
+                                    </div>
+                                    <div class="product__item-content">
+                                        <h3 class="product__item-title">magic item</h3>
+                                        <p class="product__item-saller">Saller: <mark>Adam Mart</mark></p>
+                                        <p class="product__item-descr">Just Out of the Forge</p>
+                                        <div class="product__item-bottom">
+                                            <p class="product__item-price">102$</p>
+                                            <a class="product__item-btn btn" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                    <path d="M5.37028 13.2539C4.49021 13.2539 3.77028 13.985 3.77028 14.8789C3.77028 15.7727 4.49021 16.5039 5.37028 16.5039C6.25036 16.5039 6.97032 15.7727 6.97032 14.8789C6.97028 13.985 6.25032 13.2539 5.37028 13.2539ZM0.693359 0.503906V2.1289H2.29336L5.17347 8.05397L3.96932 10.0444C3.8494 10.2475 3.76932 10.5319 3.76932 10.8164C3.76932 11.9043 4.50105 12.4414 5.49336 12.4414H14.8472V10.8789H5.68924C5.56932 10.8789 5.48924 10.7976 5.48924 10.6758C5.48924 10.6353 5.57413 10.4727 5.57413 10.4727L6.37344 9.19143H12.3332C12.9332 9.19143 13.4535 8.86654 13.7332 8.33846L16.6133 3.30722C16.6609 3.21109 16.6934 3.06324 16.6934 2.90101C16.6934 2.4539 16.3332 2.12894 15.8934 2.12894H4.05351L3.29336 0.503906H0.693359ZM13.2472 13.2539C12.3671 13.2539 11.6472 13.985 11.6472 14.8789C11.6472 15.7727 12.3671 16.5039 13.2472 16.5039C14.1272 16.5039 14.8472 15.7727 14.8472 14.8789C14.8472 13.985 14.1272 13.2539 13.2472 13.2539Z" fill="#F7DC9A"/>
+                                                </svg>    
+                                                Buy
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="equip__btn">
+                        <a class="btn-4" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="33" viewBox="0 0 40 33" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.5948 0.901678C25.1397 0.366107 26.0233 0.366107 26.5682 0.901678L33.6013 7.8143H38.6047C39.3753 7.8143 40 8.42831 40 9.18572C40 9.94314 39.3753 10.5572 38.6047 10.5572H37.592C37.1708 12.1225 36.626 13.9272 35.9924 16.0271L34.0852 22.3457C33.3276 24.8569 32.8633 26.3962 32.0493 27.648C30.648 29.803 28.4954 31.382 25.995 32.0896C24.5425 32.5005 22.9088 32.5003 20.2441 32.5H19.7559C17.0912 32.5003 15.4575 32.5005 14.0051 32.0896C11.5045 31.382 9.352 29.803 7.95068 27.648C7.13671 26.3962 6.67232 24.8569 5.91481 22.3457L4.00802 16.0282C3.37408 13.9279 2.82927 12.1228 2.40802 10.5572H1.39535C0.624726 10.5572 0 9.94314 0 9.18572C0 8.42831 0.624726 7.8143 1.39535 7.8143H6.8502L13.8834 0.901714C14.4283 0.366126 15.3118 0.366126 15.8567 0.901714C16.4017 1.43728 16.4017 2.30562 15.8567 2.84121L10.7969 7.8143H29.6547L24.5948 2.84117C24.0499 2.3056 24.0499 1.43725 24.5948 0.901678ZM17.6744 16.5C17.6744 15.7426 17.0497 15.1286 16.2791 15.1286C15.5084 15.1286 14.8837 15.7426 14.8837 16.5V23.8143C14.8837 24.5717 15.5084 25.1857 16.2791 25.1857C17.0497 25.1857 17.6744 24.5717 17.6744 23.8143V16.5ZM25.1163 16.5C25.1163 15.7426 24.4915 15.1286 23.7209 15.1286C22.9503 15.1286 22.3256 15.7426 22.3256 16.5V23.8143C22.3256 24.5717 22.9503 25.1857 23.7209 25.1857C24.4915 25.1857 25.1163 24.5717 25.1163 23.8143V16.5Z" fill="#FEFCD8"/>
+                            </svg>
+                            Go to store
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="champion">
+            <div class="container">
+                <div class="champion__inner">
+                    <div class="champion__bg">
+                        <img src="img/champion/bg.webp" alt="">
+                    </div>
+                    <h2 class="champion__title">
+                        <span>BE THE</span>
+                        <span>CHMPION</span>
+                        <span>RIGHT NOW</span>
+                        <img src="img/champion/icon-1.webp" alt="">
+                        <img src="img/champion/icon-2.webp" alt="">
+                    </h2>
+                    <div class="champion__block">
+                        <div class="champion__item">
+                            <h3 class="champion__item-title">Challenges</h3>
+                            <div class="champion__item-image">
+                                <img src="img/champion/image-1.webp" alt="">
+                            </div>
+                            <p class="champion__item-try">Try to win, <span>bro!</span></p>
+                        </div>
+                        <div class="champion__item">
+                            <h3 class="champion__item-title">PVP</h3>
+                            <div class="champion__item-video">
+                                <video autoplay playsinline webkit-playsinline muted loop>
+                                    <source src="img/champion/video-1.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="champion__item">
+                            <h3 class="champion__item-title">Battles</h3>
+                            <div class="champion__item-video">
+                                <video autoplay playsinline webkit-playsinline muted loop>
+                                    <source src="img/champion/video-2.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="champion__item">
+                            <h3 class="champion__item-title">Quests</h3>
+                            <div class="champion__item-video">
+                                <video autoplay playsinline webkit-playsinline muted loop>
+                                    <source src="img/champion/video-3.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="activity">
+            <div class="container">
+                <div class="activity__inner">
+                    <div class="activity__bg">
+                        <img src="img/activity/bg.webp" alt="">
+                    </div>
+                    <div class="activity__select">
+                        <button class="activity__select-btn">Challenges</button>
+                        <button class="activity__select-btn">PVP</button>
+                        <button class="activity__select-btn active">Battles</button>
+                        <button class="activity__select-btn">Quests</button>
+                    </div>
+                    <div class="activity__content">
+                        <h3 class="activity__name show-mobile">Be the champion right now</h3>
+                        <div class="activity__box activity__box-first">
+                            <div class="activity__winner">
+                                <div class="activity__winner-image">
+                                    <img src="img/activity/vinner.svg" alt="">
+                                </div>
+                                <h4 class="activity__winner-name">Winner</h4>
+                            </div>
+                            <div class="activity__image">
+                                <img src="img/activity/1.webp" alt="">
+                            </div>
+                            <div class="activity__block">
+                                <div class="activity__block-top">
+                                    <h4 class="activity__block-name">Jabba <br>Rasta-Rig</h4>
+                                    <p class="activity__block-who">You</p>
+                                </div>
+                                <div class="activity__block-info">
+                                    <p class="activity__block-stats">Level</p>
+                                    <p class="activity__block-rating">39</p>
+                                </div>
+                                <div class="activity__block-info">
+                                    <p class="activity__block-stats">Points</p>
+                                    <p class="activity__block-rating">2 298 659</p>
+                                </div>
+                                <div class="activity__block-info">
+                                    <p class="activity__block-stats">Kills</p>
+                                    <p class="activity__block-rating"> 3 500</p>
+                                </div>
+                                <div class="activity__block-info">
+                                    <p class="activity__block-stats">Battles</p>
+                                    <p class="activity__block-rating">350</p>
+                                </div>
+                                <div class="activity__block-info">
+                                    <p class="activity__block-stats">Rate</p>
+                                    <p class="activity__block-rating">3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activity__middle">
+                            <h3 class="activity__name hide-mobile">Be the champion right now</h3>
+                            <div class="activity__vs"><img src="img/activity/vs.webp" alt=""></div>
+                            <div class="activity__btn hide-mobile">
+                                <a class="btn-4" href="#">jump in</a>
+                            </div>
+                        </div>
+                        <div class="activity__box activity__box-last">
+                            <div class="activity__image">
+                                <img src="img/activity/2.webp" alt="">
+                            </div>
+                            <div class="activity__block">
+                                <div class="activity__block-top">
+                                    <h4 class="activity__block-name">Aligato Jollof-Master</h4>
+                                </div>
+                                <div class="activity__block-info">
+                                    <p class="activity__block-stats">Level</p>
+                                    <p class="activity__block-rating">39</p>
+                                </div>
+                                <div class="activity__block-info">
+                                    <p class="activity__block-stats">Points</p>
+                                    <p class="activity__block-rating">2 298 659</p>
+                                </div>
+                                <div class="activity__block-info">
+                                    <p class="activity__block-stats">Kills</p>
+                                    <p class="activity__block-rating"> 3 500</p>
+                                </div>
+                                <div class="activity__block-info">
+                                    <p class="activity__block-stats">Battles</p>
+                                    <p class="activity__block-rating">350</p>
+                                </div>
+                                <div class="activity__block-info">
+                                    <p class="activity__block-stats">Rate</p>
+                                    <p class="activity__block-rating">3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activity__btn show-mobile">
+                            <a class="btn-4" href="#">jump in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="infoBlock">
+            <div class="container">
+                <div class="infoBlock__inner">
+                    <div class="infoBlock__select">
+                        <button class="infoBlock__btn">news</button>
+                        <button class="infoBlock__btn active">UPDATES</button>
+                    </div>
+                    <div class="infoBlock__content">
+                        <a class="infoBlock__item" href="#">
+                            <div class="infoBlock__item-image">
+                                <img src="img/infoBlock/1.webp" alt="">
+                            </div>
+                            <h3 class="infoBlock__item-title">High <br>Rating <br>News 1</h3>
+                        </a>
+                        <a class="infoBlock__item" href="#">
+                            <div class="infoBlock__item-image">
+                                <img src="img/infoBlock/1.webp" alt="">
+                            </div>
+                            <h3 class="infoBlock__item-title">High <br>Rating <br>News 1</h3>
+                        </a>
+                        <a class="infoBlock__item infoBlock__item-end" href="#">
+                            <div class="infoBlock__item-image">
+                                <img src="img/infoBlock/1.webp" alt="">
+                            </div>  
+                            <h3 class="infoBlock__item-title">High <br>Rating <br>News 3</h3>
+                        </a>
+                        <a class="infoBlock__item infoBlock__item-end" href="#">
+                            <div class="infoBlock__item-image">
+                                <img src="img/infoBlock/1.webp" alt="">
+                            </div>
+                            <h3 class="infoBlock__item-title">High <br>Rating <br>News 3</h3>
+                        </a>
+                    </div>
+                    <div class="infoBlock__pages">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews__inner">
+                    <div class="reviews__bg">
+                        <img src="img/reviews/bg.webp" alt="">
+                    </div>
+                    <h2 class="reviews__title">Player <span>r<img src="img/reviews/e.webp" alt="e">views</span></h2>
+                    <p class="reviews__descr">Be passionate to level-up Character through reward-type activities. </p>
+                    <div class="reviews__content">
+                        <button class="reviews__prev btn-slide-prev"></button>
+                        <div class="reviews__slider">
+                            <div class="swiper-wrapper">
+                                <div class="reviews__slide swiper-slide">
+                                    <p class="reviews__slide-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <div class="reviews__slide-about">
+                                        <h4 class="reviews__slide-name">Tomas</h4>
+                                        <p class="reviews__slide-date">01/08/2025</p>
+                                    </div>
+                                </div>
+                                <div class="reviews__slide swiper-slide">
+                                    <p class="reviews__slide-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <div class="reviews__slide-about">
+                                        <h4 class="reviews__slide-name">Tomas</h4>
+                                        <p class="reviews__slide-date">01/08/2025</p>
+                                    </div>
+                                </div>
+                                <div class="reviews__slide swiper-slide">
+                                    <p class="reviews__slide-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <div class="reviews__slide-about">
+                                        <h4 class="reviews__slide-name">Tomas</h4>
+                                        <p class="reviews__slide-date">01/08/2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="reviews__next btn-slide-next"></button>
+                    </div>
+                    <div class="reviews__btn">
+                        <a class="btn-6" href="#">ALL REVIEws </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="develop">
+            <div class="container">
+                <div class="develop__inner">
+                    <div class="develop__content">
+                        <p class="develop__name">In development</p>
+                        <h2 class="develop__title title">Unique items from AI — just for you!</h2>
+                        <p class="develop__descr">Forget cookie-cutter loot. With AI-powered generation, each piece of gear comes with its own style and stats. Mix, match, and build the perfect loadout to fit your playstyle.</p>
+                        <div class="develop__btn">
+                            <a class="btn-4" href="#">Visit market</a>
+                        </div>
+                    </div>
+                    <div class="develop__images">
+                        <div class="develop__image">
+                            <img src="img/develop/develop.webp" alt="">
+                        </div>
+                        <div class="develop__image">
+                            <img src="img/develop/develop.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mobileapp">
+            <div class="container">
+                <div class="mobileapp__inner">
+                    <div class="mobileapp__bg">
+                        <img src="img/storeSelects/bg.webp" alt="">
+                    </div>
+                    <div class="mobileapp__content">
+                        <p class="mobileapp__name">In development</p>
+                        <h2 class="mobileapp__title">iOS & Android mobile app</h2>
+                        <p class="mobileapp__descr">Thousands of bright levels, unexpected tasks and interesting combinations are waiting for you. Train your memory, logic and attentiveness anytime, anywhere. This is a game that will not let you get bored for a minute. </p>
+                        <div class="mobileapp__buttons">
+                            <a class="mobileapp__btn btn-6" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="27" viewBox="0 0 24 27" fill="none">
+                                    <path d="M1.53967 0.575195C1.76249 0.575364 1.98132 0.633273 2.17406 0.743074L22.4389 12.2658C22.6308 12.3751 22.7901 12.532 22.9008 12.7208C23.0115 12.9095 23.0698 13.1236 23.0698 13.3414C23.0698 13.5593 23.0115 13.7733 22.9008 13.9621C22.7901 14.1509 22.6308 14.3078 22.4389 14.4171L2.17406 25.9398C1.98163 26.0492 1.76326 26.1069 1.54091 26.1071C1.31857 26.1073 1.10008 26.05 0.907435 25.941C0.714788 25.832 0.55477 25.675 0.443476 25.486C0.332183 25.297 0.273537 25.0825 0.273438 24.8641V1.81874C0.273438 1.48893 0.406844 1.17263 0.64431 0.939421C0.881775 0.706211 1.20385 0.575195 1.53967 0.575195ZM12.0393 15.0998L6.34378 20.6933L13.5601 16.5908L12.0406 15.0986L12.0393 15.0998ZM2.80591 6.0269V20.651L10.2514 13.3389L2.80591 6.0269ZM15.8279 11.3766L13.8298 13.3414L15.8279 15.3025L19.2771 13.3414L15.8266 11.3779L15.8279 11.3766ZM6.34378 5.98462L12.0418 11.5806L13.5601 10.0883L6.34378 5.98462Z" fill="#F7DC9A"/>
+                                </svg>
+                                Google play
+                            </a>
+                            <a class="mobileapp__btn btn-5" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" viewBox="0 0 28 27" fill="none">
+                                    <path d="M0.649056 20.1314C0.649056 20.4823 0.788536 20.8188 1.03681 21.0669C1.28509 21.315 1.62183 21.4544 1.97295 21.4544H3.98527L2.14506 24.7752C1.97355 25.0806 1.93019 25.4414 2.02449 25.7787C2.1188 26.116 2.34306 26.4022 2.64814 26.5745C2.846 26.6865 3.06942 26.7458 3.29685 26.7465C3.53143 26.746 3.7617 26.6834 3.96408 26.5648C4.16646 26.4462 4.33369 26.2761 4.44864 26.0717L12.0081 12.4712C12.1836 12.166 12.2307 11.8035 12.1388 11.4636C12.0469 11.1237 11.8237 10.8341 11.5182 10.6587C11.2128 10.4833 10.8501 10.4363 10.5099 10.5281C10.1698 10.6199 9.88006 10.843 9.7045 11.1482L5.45479 18.8084H1.97295C1.62183 18.8084 1.28509 18.9478 1.03681 19.1959C0.788536 19.444 0.649056 19.7805 0.649056 20.1314ZM12.5641 18.8084H19.2895L10.0222 2.25762C9.84667 1.95235 9.79965 1.5899 9.89152 1.24998C9.98338 0.910069 10.2066 0.620547 10.5121 0.445105C10.8175 0.269664 11.1802 0.222675 11.5204 0.314477C11.8605 0.406278 12.1502 0.629349 12.3258 0.934617L13.888 3.64678L15.384 1.00077C15.4709 0.849614 15.5868 0.717051 15.725 0.610647C15.8632 0.504243 16.021 0.426082 16.1894 0.380627C16.3578 0.335171 16.5336 0.323312 16.7066 0.345725C16.8796 0.368138 17.0465 0.424386 17.1977 0.511255C17.349 0.598125 17.4816 0.713916 17.5881 0.852017C17.6946 0.990118 17.7728 1.14782 17.8183 1.31613C17.8638 1.48444 17.8757 1.66005 17.8532 1.83294C17.8308 2.00584 17.7745 2.17262 17.6876 2.32377L15.3972 6.37217L22.3212 18.8084H25.8031C26.1542 18.8084 26.4909 18.9478 26.7392 19.1959C26.9875 19.444 27.127 19.7805 27.127 20.1314C27.127 20.4823 26.9875 20.8188 26.7392 21.0669C26.4909 21.315 26.1542 21.4544 25.8031 21.4544H23.7907L25.631 24.7752C25.8025 25.0806 25.8458 25.4414 25.7515 25.7787C25.6572 26.116 25.4329 26.4022 25.1279 26.5745C24.93 26.6865 24.7066 26.7458 24.4792 26.7465C24.2446 26.746 24.0143 26.6834 23.8119 26.5648C23.6095 26.4462 23.4423 26.2761 23.3274 26.0717L20.759 21.4544H12.5641C12.213 21.4544 11.8763 21.315 11.628 21.0669C11.3797 20.8188 11.2402 20.4823 11.2402 20.1314C11.2402 19.7805 11.3797 19.444 11.628 19.1959C11.8763 18.9478 12.213 18.8084 12.5641 18.8084Z" fill="#F7DC9A"/>
+                                </svg>
+                                app store
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mobileapp__phone">
+                        <div class="mobileapp__phone-bg">
+                            <img src="img/mobileapp/image-bg.webp" alt="">
+                        </div>
+                        <div class="mobileapp__phone-girl">
+                            <img src="img/mobileapp/image-girl.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__top">
+                    <ul class="footer__menu">
+                        <li>
+                            <a class="active" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Profile</a>
+                        </li>
+                        <li>
+                            <a href="#">Inventory</a>
+                        </li>
+                        <li>
+                            <a href="#">Marketplace</a>
+                        </li>
+                        <li>
+                            <a href="#">Server Statistics</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="footer__socials">
+                        <a href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                                <path d="M19.0685 33.4734C28.2644 33.4734 33.2955 25.8529 33.2955 19.2464C33.2955 19.0322 33.2908 18.8132 33.2812 18.5989C34.26 17.8911 35.1046 17.0144 35.7754 16.01C34.8639 16.4156 33.8961 16.6804 32.9051 16.7956C33.9486 16.1701 34.7298 15.1876 35.1041 14.03C34.1225 14.6118 33.049 15.0221 31.9297 15.2436C31.1755 14.4422 30.1783 13.9116 29.0923 13.7338C28.0063 13.556 26.8919 13.7409 25.9215 14.2599C24.9512 14.7789 24.1788 15.6032 23.7238 16.6052C23.2689 17.6072 23.1567 18.7312 23.4046 19.8034C21.417 19.7036 19.4725 19.1873 17.6972 18.2879C15.922 17.3884 14.3555 16.126 13.0995 14.5823C12.4611 15.6829 12.2658 16.9854 12.5532 18.2249C12.8406 19.4644 13.5891 20.548 14.6467 21.2554C13.8527 21.2302 13.0761 21.0164 12.3811 20.6318V20.6936C12.3804 21.8487 12.7797 22.9684 13.5112 23.8623C14.2426 24.7562 15.2611 25.3693 16.3935 25.5972C15.6579 25.7985 14.886 25.8278 14.1373 25.6829C14.4569 26.6763 15.0786 27.5451 15.9156 28.1681C16.7527 28.7911 17.7634 29.1373 18.8067 29.1582C17.0355 30.5495 14.8476 31.3042 12.5953 31.3006C12.1959 31.3 11.7969 31.2755 11.4004 31.2273C13.6884 32.6952 16.3501 33.4748 19.0685 33.4734Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2052 22.3854C17.7644 19.5277 22.1382 17.6437 24.3267 16.7335C30.5752 14.1345 31.8735 13.683 32.7198 13.6681C32.9059 13.6648 33.3221 13.711 33.5917 13.9297C33.8193 14.1144 33.8819 14.3639 33.9119 14.539C33.9419 14.7142 33.9792 15.1131 33.9495 15.4248C33.6109 18.9826 32.1458 27.6164 31.4004 31.6011C31.085 33.2872 30.464 33.8526 29.8627 33.9079C28.5561 34.0281 27.5639 33.0444 26.2984 32.2148C24.3181 30.9167 23.1994 30.1087 21.2771 28.8419C19.0557 27.378 20.4958 26.5735 21.7618 25.2585C22.0931 24.9144 27.8501 19.678 27.9615 19.203C27.9754 19.1436 27.9884 18.9221 27.8568 18.8052C27.7252 18.6882 27.5311 18.7282 27.391 18.76C27.1923 18.8051 24.0288 20.8961 17.9003 25.033C17.0024 25.6496 16.189 25.95 15.4603 25.9343C14.6569 25.9169 13.1116 25.48 11.9628 25.1066C10.5537 24.6486 9.43379 24.4064 9.53131 23.6285C9.5821 23.2234 10.1401 22.809 11.2052 22.3854Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                                <path d="M31.5632 15.0271C29.9242 14.2751 28.1667 13.721 26.3291 13.4037C26.2956 13.3976 26.2622 13.4129 26.245 13.4435C26.0189 13.8455 25.7686 14.3699 25.5932 14.7822C23.6168 14.4863 21.6505 14.4863 19.7146 14.7822C19.5392 14.3608 19.2797 13.8455 19.0527 13.4435C19.0354 13.4139 19.002 13.3986 18.9685 13.4037C17.132 13.72 15.3745 14.274 13.7345 15.0271C13.7203 15.0332 13.7081 15.0434 13.7001 15.0567C10.3664 20.037 9.45319 24.895 9.90119 29.6928C9.90321 29.7162 9.91639 29.7387 9.93463 29.753C12.1341 31.3682 14.2646 32.3488 16.3556 32.9987C16.389 33.0089 16.4245 32.9967 16.4458 32.9691C16.9404 32.2937 17.3813 31.5815 17.7594 30.8325C17.7817 30.7886 17.7604 30.7366 17.7148 30.7192C17.0154 30.4539 16.3495 30.1305 15.7089 29.7632C15.6583 29.7336 15.6542 29.6611 15.7008 29.6264C15.8356 29.5254 15.9704 29.4203 16.0992 29.3142C16.1224 29.2948 16.1549 29.2907 16.1823 29.303C20.3906 31.2243 24.9466 31.2243 29.1052 29.303C29.1326 29.2897 29.1651 29.2938 29.1894 29.3132C29.3181 29.4193 29.4529 29.5254 29.5887 29.6264C29.6353 29.6611 29.6323 29.7336 29.5816 29.7632C28.9411 30.1376 28.2751 30.4539 27.5748 30.7182C27.5292 30.7356 27.5089 30.7886 27.5312 30.8325C27.9173 31.5804 28.3582 32.2926 28.8437 32.9681C28.864 32.9967 28.9005 33.0089 28.934 32.9987C31.0351 32.3488 33.1656 31.3682 35.365 29.753C35.3843 29.7387 35.3965 29.7173 35.3985 29.6938C35.9347 24.1471 34.5004 19.3289 31.5966 15.0577C31.5895 15.0434 31.5773 15.0332 31.5632 15.0271ZM18.3878 26.7714C17.1208 26.7714 16.0768 25.6083 16.0768 24.1797C16.0768 22.7512 17.1006 21.588 18.3878 21.588C19.6851 21.588 20.719 22.7614 20.6987 24.1797C20.6987 25.6083 19.675 26.7714 18.3878 26.7714ZM26.9322 26.7714C25.6652 26.7714 24.6212 25.6083 24.6212 24.1797C24.6212 22.7512 25.6449 21.588 26.9322 21.588C28.2295 21.588 29.2634 22.7614 29.2431 24.1797C29.2431 25.6083 28.2295 26.7714 26.9322 26.7714Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                                <path d="M14.0723 18.6602C14.0723 18.3789 13.9316 18.0977 13.791 17.957L11.6816 15.4258V15.0039H18.1504L23.2129 26.1133L27.7129 15.0039H33.9004V15.4258L32.0723 17.1133C31.9316 17.2539 31.791 17.3945 31.9316 17.6758V30.332C31.9316 30.4727 31.9316 30.7539 32.0723 30.8945L33.7598 32.582V33.0039H24.9004V32.582L26.7285 30.7539C26.8691 30.6133 26.8691 30.4727 26.8691 30.1914V19.9258L21.8066 32.7227H21.2441L15.3379 19.9258V28.5039C15.3379 28.9258 15.4785 29.207 15.6191 29.4883L18.0098 32.3008V32.7227H11.4004V32.3008L13.791 29.4883C14.0723 29.207 14.2129 28.9258 14.0723 28.5039V18.6602Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <a class="footer__logo" href="index.html">
+                        <img src="img/footer-logo.svg" alt="">
+                    </a>
+                    <div class="footer__start">
+                        <p class="footer__copy">
+                            © 2025 KRAFTON, lnc. AII rights reserved. <br>
+                            © 2019-2025 Proxima Beta Pte. Limited. <br>
+                            AII rights reserved.
+                        </p>
+                        <div class="footer__end">
+                            <div class="footer__end-pay">
+                                <img src="img/logos_mastercard.svg" alt="">
+                                <img src="img/logos_visaelectron.svg" alt="">
+                            </div>
+                            <div class="footer__end-links">
+                                <a href="#">Privacy policy</a>     
+                                <span>|</span>
+                                <a href="#">Cooky Policy</a>
+                                <span>|</span>
+                                <a href="#">User Agreement</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
