@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Register</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="main">
+        <section class="userPopup">
+            <div class="container">
+                <div class="userPopup__inner">
+                    <form class="userPopup__form active" data-userPopupType="register">
+                        <div class="userPopup__top">
+                            <div class="userPopup__icon">
+                                <img src="img/title-icon.svg" alt="">
+                            </div>
+                            <h2 class="userPopup__title">Registration</h2>
+                        </div>
+                        <div class="userPopup__form-block">
+                            <label for="email"><mark>*</mark>Email</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="userPopup__form-block">
+                            <label for="username"><mark>*</mark>User name</label>
+                            <input type="text" name="username" id="username" required>
+                        </div>
+                        <div class="userPopup__form-block">
+                            <label for="phone"><mark>*</mark>Mobile phone</label>
+                            <input type="tel" name="phone" id="phone" required>
+                        </div>
+                        <div class="userPopup__form-block">
+                            <label for="password"><mark>*</mark>Password</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="userPopup__form-block">
+                            <label for="confirmPassword"><mark>*</mark>Confirmation Password</label>
+                            <input type="password" name="confirmPassword" id="confirmPassword" required>
+                        </div>
+                        <button class="userPopup__btn btn-4" type="submit">Register</button>
+                    </form>
+
+                    <form class="userPopup__form" data-userPopupType="login">
+                        <div class="userPopup__top">
+                            <div class="userPopup__icon">
+                                <img src="img/title-icon.svg" alt="">
+                            </div>
+                            <h2 class="userPopup__title">Authorization</h2>
+                        </div>
+                        <div class="userPopup__form-block">
+                            <label for="login-email"><mark>*</mark>Email</label>
+                            <input type="email" name="email" id="login-email" required>
+                        </div>
+                        <div class="userPopup__form-block">
+                            <label for="login-username"><mark>*</mark>User name</label>
+                            <input type="text" name="username" id="login-username" required>
+                        </div>
+                        <div class="userPopup__form-block">
+                            <label for="login-phone"><mark>*</mark>Mobile phone</label>
+                            <input type="tel" name="phone" id="login-phone" required>
+                        </div>
+                        <div class="userPopup__form-block">
+                            <label for="login-password"><mark>*</mark>Password</label>
+                            <input type="password" name="password" id="login-password" required>
+                        </div>
+                        <button class="userPopup__btn btn-4" type="submit">Login</button>
+                    </form>
+
+                    <form class="userPopup__form" data-userPopupType="recover">
+                        <div class="userPopup__top">
+                            <div class="userPopup__icon">
+                                <img src="img/title-icon.svg" alt="">
+                            </div>
+                            <h2 class="userPopup__title">Password recovery</h2>
+                        </div>
+                        <p class="userPopup__form-descr" style="display: none;">We sent an email with a confirmation code to the specified address.</p>
+                        <div class="userPopup__form-block">
+                            <label for="email-or-tel"><mark>*</mark>Email or mobile phone</label>
+                            <input type="text" name="email-or-tel" id="email-or-tel" required>
+                        </div>
+                        <div class="userPopup__form-block" style="display: none;">
+                            <label for="code"><mark>*</mark>Code</label>
+                            <div class="userPopup__form-code">
+                                <input id="code" type="tel">
+                                <input type="tel">
+                                <input type="tel">
+                                <input type="tel">
+                                <input type="tel">
+                                <input type="tel">
+                            </div>
+                        </div>
+                        <button class="userPopup__btn btn-4" type="button">Login</button>
+                        <button class="userPopup__btn userPopup__btn-code btn-4" type="button" style="display: none;">Sent code</button>
+                        <div class="userPopup__form-block" style="display: none;">
+                            <label for="new-password"><mark>*</mark>New password</label>
+                            <input type="password" name="new-password" id="new-password" required>
+                        </div>
+                        <div class="userPopup__form-block" style="display: none;">
+                            <label for="confirm-new-password"><mark>*</mark>CONFIRMATION NEW PASSWORD</label>
+                            <input type="password" name="confirm-new-password" id="confirm-new-password" required>
+                        </div>
+                        <button class="userPopup__btn btn-4" type="submit" style="display: none;">confirm</button>
+                    </form>
+
+                    <button class="userPopup__forgot">Forgot your password?</button>
+                    <div class="userPopup__bottom">
+                        <button class="userPopup__link">Authorization</button>
+                        <button class="userPopup__link">Registration</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/register.js"></script>
+</body>
+</html>
