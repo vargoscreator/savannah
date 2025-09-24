@@ -102,7 +102,7 @@ html,body{
 }
 .body-profile{
     min-height: calc(var(--vh, 1vh) * 100);
-    background-image: url('../img/body-profile.png');
+    background-image: url('../img/body-profile.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -149,7 +149,7 @@ button{
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('../img/btn-13.png');
+    background-image: url('../img/btn-13.webp');
     gap: 0.365vw;
     color: #FFF;
     font-size: 0.938vw;
@@ -312,7 +312,7 @@ button{
 .btn-8::before{
     position: absolute;
     content: '';
-    background-image: url('../img/btn-8.png');
+    background-image: url('../img/btn-8.webp');
     z-index: -1;
     inset: 0;
     overflow: hidden;
@@ -329,7 +329,7 @@ button{
 .btn-9::before{
     position: absolute;
     content: '';
-    background-image: url('../img/btn-9.png');
+    background-image: url('../img/btn-9.webp');
     z-index: -1;
     inset: 0;
     overflow: hidden;
@@ -1153,7 +1153,7 @@ label mark{
     min-width: 1.51vw;
 }
 .product__item-liked.liked{
-    background-image: url('../img/liked.png');
+    background-image: url('../img/liked.webp');
 }
 .product__item-title{
     text-align: left;
@@ -1244,7 +1244,7 @@ label mark{
     color: #F7BE72;
 }
 .profile__content[data-profile-select="on-sale"] .product__item .product__item-btn{
-    background-image: url('../img/btn-10.png');
+    background-image: url('../img/btn-10.webp');
     width: 100%;
 }
 .characters__item{
@@ -1651,7 +1651,7 @@ label mark{
 .cart__inner{
     overflow: auto;
     padding: 4.01vw 2.865vw;
-    background-image: url('../img/cart-bg.png');
+    background-image: url('../img/cart-bg.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2549,7 +2549,7 @@ label mark{
     height: 2.604vw;
 }
 .editProfile__btn:last-of-type{
-    background-image: url('../img/btn-12.png');
+    background-image: url('../img/btn-12.webp');
     max-width: 9.375vw;
     height: 1.719vw;
 }
@@ -3544,7 +3544,7 @@ input[type="range"]::-moz-range-track {
     position: fixed;
     inset: 0;
     z-index: 222;
-    background-image: url('../img/userPopup-bg.png');
+    background-image: url('../img/userPopup-bg.webp');
     overflow: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -3621,7 +3621,7 @@ input[type="range"]::-moz-range-track {
     margin: 0 auto;
 }
 .userPopup__btn::before{
-    background-image: url('../img/btn-14.png');
+    background-image: url('../img/btn-14.webp');
 }
 .userPopup__forgot{
     margin: 0 auto;

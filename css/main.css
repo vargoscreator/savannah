@@ -3696,7 +3696,7 @@ button{
     min-width: 1.51vw;
 }
 .product__item-liked.active{
-    background-image: url('../img/liked.png');
+    background-image: url('../img/liked.webp');
 }
 .product__item-title{
     text-align: center;
