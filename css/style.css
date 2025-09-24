@@ -715,8 +715,8 @@ label mark{
     }
     .header__menu-close {
         position: absolute;
-        top: 33px;
-        right: 19px;
+        top: 24px;
+        right: 20px;
     }
 }
 /* profile */
