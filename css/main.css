@@ -175,6 +175,11 @@ mark {
     overflow: hidden;
 }
 
+main {
+    position: relative;
+    z-index: 2;
+}
+
 .container {
     max-width: 93.438vw;
     padding: 0 0.833vw;
@@ -429,6 +434,20 @@ button {
     background-size: contain;
 }
 
+.btn-5 svg path {
+    transition: all .2s ease;
+}
+
+.btn-5:hover {
+    filter: drop-shadow(0px 7px 15.2px rgba(40, 250, 36, 0.8));
+    text-shadow: 0px 1px 3.3px #E5FFE4;
+    color: #fff;
+}
+
+.btn-5:hover svg path {
+    fill: #fff;
+}
+
 .btn-6::before {
     position: absolute;
     content: '';
@@ -439,6 +458,20 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.btn-5 svg path {
+    transition: all .2s ease;
+}
+
+.btn-6:hover {
+    filter: drop-shadow(0px 7px 15.2px rgba(247, 220, 154, 1));
+    text-shadow: 0px 1px 3.3px #E5FFE4;
+    color: #fff;
+}
+
+.btn-6:hover svg path {
+    fill: #fff;
 }
 
 .btn-slide-prev {
@@ -1140,12 +1173,14 @@ button {
         bottom: initial;
         left: -25.008px;
         top: 120px;
+        display: none;
     }
 
     .hero__animate.animated .hero__icon:nth-of-type(2) {
         bottom: initial;
         right: -25.008px;
         top: 120px;
+        display: none;
     }
 
     .hero {
@@ -1626,7 +1661,7 @@ button {
         width: 86.595px;
         height: 79.101px;
         filter: blur(0.998px);
-        bottom: -31px;
+        bottom: 30px;
         left: 171px;
     }
 
@@ -1663,6 +1698,9 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
 }
 
 .footer__top {
@@ -2145,10 +2183,14 @@ button {
 
     .characters__prev {
         left: 20px;
+        bottom: 23%;
+        top: unset;
     }
 
     .characters__next {
         right: 20px;
+        bottom: 23%;
+        top: unset;
     }
 
     .characters__slider--mob {
@@ -2161,7 +2203,7 @@ button {
 
     .characters__slide-inner {
         max-width: 480px;
-        padding: 150px 16px 150px;
+        padding: 150px 16px 0;
         gap: 40px;
         flex-direction: column;
     }
@@ -2201,6 +2243,7 @@ button {
         max-width: 200px;
         height: 400px;
         justify-content: center;
+        margin: 50px auto 20px;
     }
 
     .characters__slide-video video {
@@ -2210,21 +2253,33 @@ button {
         max-height: 100%;
     }
 
+    .characters__slide-about {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+
     .characters__slide-name {
         font-size: 22px;
-        line-height: normal;
+        line-height: 115%;
         max-width: 100%;
         position: initial;
     }
 
     .characters__slide-info {
-        gap: 10px;
+        gap: 6px;
         position: initial;
         margin-top: 40px;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
     }
 
     .characters__slide-info--item {
-        gap: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
     }
 
     .characters__slide-info--name {
@@ -2299,7 +2354,7 @@ button {
     .characters__next {
         top: initial;
         transform: none;
-        bottom: 50px;
+        bottom: 23%;
     }
 
     .characters__slide-pers {
@@ -2308,15 +2363,21 @@ button {
     }
 }
 
+.sticky {
+    position: relative;
+}
+
 /* equip */
 .equip {
     padding: 8.333vw 0 4.948vw;
-    border-radius: 0 0 2.928vw 2.928vw;
+    /* border-radius: 0 0 2.928vw 2.928vw; */
     background: #000;
     box-shadow: -0.313vw 0.938vw 0.443vw 0 rgba(0, 0, 0, 0.25);
     overflow: hidden;
-    position: relative;
-    z-index: 3;
+    position: sticky;
+    /* margin-bottom: 100px; */
+    top: 0;
+    z-index: 2;
 }
 
 .equip::before {
@@ -2419,6 +2480,7 @@ button {
     justify-content: start;
     gap: 0.521vw;
     padding: 0.781vw;
+    transition: color .2s ease, text-shadow .2s ease, filter .2s ease;
 }
 
 .equip__balance::before {
@@ -2432,6 +2494,13 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.equip__balance:hover {
+    filter: drop-shadow(0px 7px 15.2px rgba(247, 220, 154, 1));
+    text-shadow: 0px 1px 3.3px #E5FFE4;
+    color: #fff;
+}
+
 
 .equip__block {
     margin-top: 5.208vw;
@@ -2461,6 +2530,8 @@ button {
 
 @media (max-width: 768px) {
     .equip {
+        position: relative;
+        top: unset;
         padding: 60px 0;
         border-radius: 0 0 20px 20px;
         box-shadow: -6.01px 12.01px 8.506px 0 rgba(0, 0, 0, 0.25);
@@ -2544,10 +2615,11 @@ button {
     margin-bottom: -1.042vw;
     overflow: hidden;
     position: relative;
-    z-index: 2;
-    margin-top: -5.208vw;
-    padding-top: 14.417vw;
-    padding-bottom: 11.563vw;
+    z-index: 3;
+    /* margin-top: -5.208vw; */
+    padding-top: 5.417vw;
+    padding-bottom: 8.563vw;
+    border-radius: 2.928vw 2.928vw 0 0;
 }
 
 .champion__bg {
@@ -2721,8 +2793,8 @@ button {
 
 @media (max-width: 768px) {
     .champion {
-        margin-bottom: -30px;
-        margin-top: -30px;
+        margin-bottom: 0;
+        /* margin-top: -30px; */
         padding-top: 100px;
         padding-bottom: 60px;
     }
@@ -2825,7 +2897,14 @@ button {
     }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .champion__title img:nth-of-type(2) {
+        width: 51.832px;
+        height: auto;
+        left: -6px;
+        bottom: 81.002px;
+    }
+}
 
 /* activity */
 .activity {
@@ -3030,8 +3109,15 @@ button {
     width: 1.172vw;
     height: 1.172vw;
     min-width: 1.172vw;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s ease;
 }
 
+.activity__block-rating.with-arrow::before {
+    transform: translateY(0);
+    opacity: 1;
+}
 .activity__middle {
     width: 100%;
     max-width: 33.073vw;
@@ -3219,8 +3305,7 @@ button {
     padding: 10.417vw 0 3.646vw;
     background: #000;
     box-shadow: 0 0.208vw 0.208vw 0 rgba(0, 0, 0, 0.25);
-    position: relative;
-    z-index: 1;
+    z-index: 2;
     overflow: hidden;
     margin-top: -7.208vw;
 }
@@ -4045,6 +4130,14 @@ button {
     width: 1.171vw;
     min-width: 1.171vw;
     height: 1.171vw;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.levelup__info-descr.with-arrow::before {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .levelup__info-block:first-of-type {
@@ -4541,16 +4634,39 @@ button {
 }
 
 .storeSelects__btn {
+    position: relative;
     color: rgba(202, 178, 120, 0.40);
     font-family: 'Oswald', sans-serif;
     font-size: 1.464vw;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    overflow: hidden;
 }
 
 .storeSelects__btn.active {
     color: #fff;
+}
+
+.storeSelects__btn span.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    font-size: 1vw;
+    line-height: 115%;
+    z-index: 2;
+}
+
+.storeSelects__btn:hover span.hover {
+    background: #191B1F;
+    display: block;
+}
+
+.storeSelects__btn span:not(.hover) {
+    z-index: 1;
 }
 
 .storeSelects__content {
@@ -5057,11 +5173,15 @@ button {
     width: 14.866vw;
     height: 14.866vw;
 }
+
 .product__item-2-inner:hover::after {
     animation: opacity 2.5s linear infinite;
 }
+
 @keyframes opacity {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
     }
 
@@ -5111,6 +5231,7 @@ button {
     line-height: 120%;
     text-transform: uppercase;
 }
+
 .product__item-2-subtitle {
     text-align: left;
     color: #F7DC9A;
@@ -5158,6 +5279,7 @@ button {
 .product__item-2-gold .product__item-2-inner::after {
     background: radial-gradient(59.9% 59.9% at 50% 50%, rgba(168, 207, 40, 0.66) 0%, rgba(48, 38, 28, 0.13) 100%);
 }
+
 .product__item-2-gold .product__item-2-inner {
     background-image: url('../img/product-item-gold.png');
 }
@@ -5291,6 +5413,10 @@ button {
 
     .storeSelects__btn {
         font-size: 20px;
+    }
+
+    .storeSelects__btn span.hover {
+        font-size: 14px;
     }
 
     .storeSelects__content {
@@ -5471,7 +5597,7 @@ button {
     .pruduct__item {
         border-radius: 12px;
     }
-    
+
     .product__item-2::after {
         top: 2.995px;
         left: 2.995px;
@@ -5479,18 +5605,18 @@ button {
         right: 2.995px;
         border-radius: 12px;
     }
-    
+
     .product__item-2::before {
         border-radius: 12px;
     }
-    
+
     .product__item-2-btn {
         width: 132.998px;
         height: 49.997px;
         font-size: 13.997px;
         gap: 4.992px;
     }
-    
+
     .product__item-2-inner {
         margin: 2.995px;
         box-shadow: 0 0 94.906px 40.992px #113943 inset;
@@ -5498,57 +5624,57 @@ button {
         padding: 11.002px 19.008px 24.998px;
         min-height: 399.994px;
     }
-    
+
     .product__item-2-inner::after {
         top: 4.992px;
         filter: blur(15.994px);
         width: 285.427px;
         height: 285.427px;
     }
-    
+
     .product__item-2-start {
         top: 11.002px;
         left: 19.008px;
         right: 19.008px;
         gap: 10.003px;
     }
-    
+
     .product__item-2-details {
         font-size: 12px;
         line-height: 20.006px;
     }
-    
+
     .product__item-2-liked {
         width: 28.992px;
         height: 24.998px;
         min-width: 28.992px;
     }
-    
+
     .product__item-2-title {
         font-size: 20.006px;
         line-height: 24px;
     }
-    
+
     .product__item-2-bottom {
         gap: 10.003px;
     }
-    
+
     .product__item-2-price {
         font-size: 27.994px;
         line-height: 24px;
         /* 85.714% */
         letter-spacing: 0.998px;
     }
-    
+
     .product__item-2-image {
         height: 279.994px;
         margin: -11.002px -19.008px 10.003px;
     }
-    
+
     .product__item-2-gold .product__item-2-inner {
         box-shadow: 0 0 94.906px 40.992px #614F35 inset;
     }
-    
+
     .product__item-2-fn {
         width: 24.998px;
         height: 24.998px;
@@ -5557,27 +5683,27 @@ button {
         line-height: 20.006px;
         /* 166.667% */
     }
-    
+
     .product__item-2-small .product__item-2-image {
         height: 229.997px;
     }
-    
+
     .product__item-2-saller {
         margin-top: 1.997px;
         font-size: 13.997px;
     }
-    
+
     .product__item-2-descr {
         margin-top: 1.997px;
         font-size: 13.997px;
         line-height: 20.006px;
     }
-    
+
     .product__item-2-small .product__item-2-inner::after {
         width: 237.005px;
         height: 237.005px;
     }
-    
+
 
     .storeSelects__line-second .storeSelects__line-inner {
         animation: moveRight 10s linear infinite;
