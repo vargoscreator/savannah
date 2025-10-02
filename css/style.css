@@ -4359,7 +4359,7 @@ button.favourites__select-btn:not(:hover){
     }
     .marketplace__inner{
         gap: 40px;
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin-top: 20px;
     }
     .marketplace__left{
