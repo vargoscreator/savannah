@@ -159,7 +159,7 @@
                         <a class="breadcrump-main" href="#"></a>
                     </li>
                     <li>
-                        <a href="#">Inventory</a>
+                        <a href="details.html">Transaction History</a>
                     </li>
                 </ul>
                 <div class="profile__inner">
@@ -230,614 +230,177 @@
                         </div>
                     </div>
                     <div class="profile__right">
-                        <div class="profile__content active characters" data-profile-content="characters">
-                            <div class="characters__slider">
-                                <button class="characters__slider-prev btn-slide-prev"></button>
-                                <div class="characters__slider-profile">
-                                    <div class="swiper-wrapper">
-                                        <div class="profile__slide swiper-slide" data-characters-slide="1">
-                                            <div class="profile__slide-image">
-                                                <img src="img/characters/1.png" alt="">
-                                            </div>
-                                            <div class="profile__slide-content">
-                                                <p class="profile__slide-level">21 Lvl</p>
-                                                <h4 class="profile__slide-name">Aligato Jollof-Master</h4>
-                                                <p class="profile__slide-descr">Details about Just Out of the Forge ...</p>
-                                            </div>
-                                        </div>
-                                        <div class="profile__slide swiper-slide" data-characters-slide="2">
-                                            <div class="profile__slide-image">
-                                                <img src="img/characters/1.png" alt="">
-                                            </div>
-                                            <div class="profile__slide-content">
-                                                <p class="profile__slide-level">21 Lvl</p>
-                                                <h4 class="profile__slide-name">Aligato Jollof-Master</h4>
-                                                <p class="profile__slide-descr">Details about Just Out of the Forge ...</p>
-                                            </div>
-                                        </div>
-                                        <div class="profile__slide swiper-slide" data-characters-slide="3">
-                                            <div class="profile__slide-image">
-                                                <img src="img/characters/1.png" alt="">
-                                            </div>
-                                            <div class="profile__slide-content">
-                                                <p class="profile__slide-level">21 Lvl</p>
-                                                <h4 class="profile__slide-name">Aligato Jollof-Master</h4>
-                                                <p class="profile__slide-descr">Details about Just Out of the Forge ...</p>
-                                            </div>
-                                        </div>
-                                        <div class="profile__slide swiper-slide" data-characters-slide="4">
-                                            <div class="profile__slide-image">
-                                                <img src="img/characters/1.png" alt="">
-                                            </div>
-                                            <div class="profile__slide-content">
-                                                <p class="profile__slide-level">21 Lvl</p>
-                                                <h4 class="profile__slide-name">Aligato Jollof-Master</h4>
-                                                <p class="profile__slide-descr">Details about Just Out of the Forge ...</p>
-                                            </div>
-                                        </div>
-                                        <div class="profile__slide swiper-slide" data-characters-slide="5">
-                                            <div class="profile__slide-image">
-                                                <img src="img/characters/1.png" alt="">
-                                            </div>
-                                            <div class="profile__slide-content">
-                                                <p class="profile__slide-level">21 Lvl</p>
-                                                <h4 class="profile__slide-name">Aligato Jollof-Master</h4>
-                                                <p class="profile__slide-descr">Details about Just Out of the Forge ...</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="profile__content history active" data-profile-content="history">
+                            <div class="history__top">
+                                <div class="history__price">
+                                    <p class="history__price-descr">1 Magnet = 1$</p>
+                                    <p class="history__price-descr">1 Сap  = 1 с</p>
                                 </div>
-                                <button class="characters__slider-next btn-slide-next"></button>
+                                <div class="history__select">
+                                    <button class="history__select-btn active">All</button>
+                                    <button class="history__select-btn">TopUp</button>
+                                    <button class="history__select-btn">withdraw</button>
+                                    <button class="history__select-btn">Buy Item </button>
+                                    <button class="history__select-btn">Sell Item </button>
+                                </div>
                             </div>
-                            <div class="characters__content">
-                                <div class="characters__top">
-                                    <div class="characters__select">
-                                        <button class="characters__select-btn active" data-characters="my-characters">My characters (12)</button>
-                                        <button class="characters__select-btn" data-characters="inventory">Inventory (67)</button>
-                                        <button class="characters__select-btn" data-characters="on-sale">On sale (3)</button>
+                            <div class="history__content">
+                                <div class="history__table">
+                                    <div class="history__table-top">
+                                        <h4 class="history__table-title">ID</h4>
+                                        <h4 class="history__table-title">Date</h4>
+                                        <h4 class="history__table-title">Transaction</h4>
+                                        <h4 class="history__table-title">Amount, USD</h4>
+                                        <h4 class="history__table-title">Balance, USD</h4>
                                     </div>
-                                    <a class="characters__top-btn btn-4" href="#">Go to store</a>
-                                </div>
-                                <div class="characters__result active" data-profile-result="my-characters">
-                                    <div class="product__item" data-product-type="1">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/characters/1.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-details">Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="2">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/characters/2.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-details">Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="3">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/characters/3.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-details">Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="1">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/characters/1.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-details">Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="1">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/characters/1.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-details">Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="2">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/characters/2.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-details">Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="3">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/characters/3.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-details">Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="1">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/characters/1.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-details">Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="1">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/characters/1.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-details">Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="2">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/characters/2.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-details">Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="3">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/characters/3.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-details">Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="1">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/characters/1.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-details">Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="4">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/characters/4.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-details">Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="5">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/characters/5.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-details">Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="characters__result" data-profile-result="inventory">
-                                    <div class="product__item" data-product-type="grey">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/products/1.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="grey">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/products/2.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="grey">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/products/3.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="yellow">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/products/4.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="green">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/products/5.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="yellow">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/products/6.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="red">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/products/7.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="green">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/products/8.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="red">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/products/9.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="blue-grey">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/products/10.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="pink">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/products/11.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="grey">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/products/12.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="red">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/products/13.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="grey">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/products/14.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="pink">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/products/15.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="grey">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/products/16.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="pink">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/products/17.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="characters__result" data-profile-result="on-sale">
-                                    <div class="product__item" data-product-type="4">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/characters/4.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <p class="product__item-price">3050$</p>
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="5">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/characters/5.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <p class="product__item-price">3050$</p>
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
+                                    <div class="history__table-content">
+                                        <div class="history__table-item">
+                                            <p class="history__table-name">24.09.2025_35</p>
+                                            <p class="history__table-name">24.09.2025 20:23</p>
+                                            <p class="history__table-name">TopUp</p>
+                                            <p class="history__table-name">345,75</p>
+                                            <p class="history__table-name">1333.65</p>
+                                        </div>
+                                        <div class="history__table-item" data-history-transaction="buy">
+                                            <p class="history__table-name">24.09.2025_35</p>
+                                            <p class="history__table-name">24.09.2025 20:23</p>
+                                            <p class="history__table-name">buy item</p>
+                                            <p class="history__table-name">345,75</p>
+                                            <p class="history__table-name">1333.65</p>
+                                        </div>
+                                        <div class="history__table-item">
+                                            <p class="history__table-name">24.09.2025_35</p>
+                                            <p class="history__table-name">24.09.2025 20:23</p>
+                                            <p class="history__table-name">TopUp</p>
+                                            <p class="history__table-name">345,75</p>
+                                            <p class="history__table-name">1333.65</p>
+                                        </div>
+                                        <div class="history__table-item" data-history-transaction="buy">
+                                            <p class="history__table-name">24.09.2025_35</p>
+                                            <p class="history__table-name">24.09.2025 20:23</p>
+                                            <p class="history__table-name">Withdraw</p>
+                                            <p class="history__table-name">345,75</p>
+                                            <p class="history__table-name">1333.65</p>
+                                        </div>
+                                        <div class="history__table-item">
+                                            <p class="history__table-name">24.09.2025_35</p>
+                                            <p class="history__table-name">24.09.2025 20:23</p>
+                                            <p class="history__table-name">TopUp</p>
+                                            <p class="history__table-name">345,75</p>
+                                            <p class="history__table-name">1333.65</p>
+                                        </div>
+                                        <div class="history__table-item">
+                                            <p class="history__table-name">24.09.2025_35</p>
+                                            <p class="history__table-name">24.09.2025 20:23</p>
+                                            <p class="history__table-name">TopUp</p>
+                                            <p class="history__table-name">345,75</p>
+                                            <p class="history__table-name">1333.65</p>
+                                        </div>
+                                        <div class="history__table-item">
+                                            <p class="history__table-name">24.09.2025_35</p>
+                                            <p class="history__table-name">24.09.2025 20:23</p>
+                                            <p class="history__table-name">TopUp</p>
+                                            <p class="history__table-name">345,75</p>
+                                            <p class="history__table-name">1333.65</p>
+                                        </div>
+                                        <div class="history__table-item">
+                                            <p class="history__table-name">24.09.2025_35</p>
+                                            <p class="history__table-name">24.09.2025 20:23</p>
+                                            <p class="history__table-name">TopUp</p>
+                                            <p class="history__table-name">345,75</p>
+                                            <p class="history__table-name">1333.65</p>
+                                        </div>
+                                        <div class="history__table-item">
+                                            <p class="history__table-name">24.09.2025_35</p>
+                                            <p class="history__table-name">24.09.2025 20:23</p>
+                                            <p class="history__table-name">TopUp</p>
+                                            <p class="history__table-name">345,75</p>
+                                            <p class="history__table-name">1333.65</p>
+                                        </div>
+                                        <div class="history__table-item">
+                                            <p class="history__table-name">24.09.2025_35</p>
+                                            <p class="history__table-name">24.09.2025 20:23</p>
+                                            <p class="history__table-name">TopUp</p>
+                                            <p class="history__table-name">345,75</p>
+                                            <p class="history__table-name">1333.65</p>
+                                        </div>
+                                        <div class="history__table-item">
+                                            <p class="history__table-name">24.09.2025_35</p>
+                                            <p class="history__table-name">24.09.2025 20:23</p>
+                                            <p class="history__table-name">TopUp</p>
+                                            <p class="history__table-name">345,75</p>
+                                            <p class="history__table-name">1333.65</p>
+                                        </div>
+                                        <div class="history__table-item">
+                                            <p class="history__table-name">24.09.2025_35</p>
+                                            <p class="history__table-name">24.09.2025 20:23</p>
+                                            <p class="history__table-name">TopUp</p>
+                                            <p class="history__table-name">345,75</p>
+                                            <p class="history__table-name">1333.65</p>
+                                        </div>
+                                        <div class="history__table-item">
+                                            <p class="history__table-name">24.09.2025_35</p>
+                                            <p class="history__table-name">24.09.2025 20:23</p>
+                                            <p class="history__table-name">TopUp</p>
+                                            <p class="history__table-name">345,75</p>
+                                            <p class="history__table-name">1333.65</p>
+                                        </div>
+                                        <div class="history__table-item">
+                                            <p class="history__table-name">24.09.2025_35</p>
+                                            <p class="history__table-name">24.09.2025 20:23</p>
+                                            <p class="history__table-name">TopUp</p>
+                                            <p class="history__table-name">345,75</p>
+                                            <p class="history__table-name">1333.65</p>
+                                        </div>
+                                        <div class="history__table-item">
+                                            <p class="history__table-name">24.09.2025_35</p>
+                                            <p class="history__table-name">24.09.2025 20:23</p>
+                                            <p class="history__table-name">TopUp</p>
+                                            <p class="history__table-name">345,75</p>
+                                            <p class="history__table-name">1333.65</p>
+                                        </div>
+                                        <div class="history__table-item">
+                                            <p class="history__table-name">24.09.2025_35</p>
+                                            <p class="history__table-name">24.09.2025 20:23</p>
+                                            <p class="history__table-name">TopUp</p>
+                                            <p class="history__table-name">345,75</p>
+                                            <p class="history__table-name">1333.65</p>
+                                        </div>
+                                        <div class="history__table-item">
+                                            <p class="history__table-name">24.09.2025_35</p>
+                                            <p class="history__table-name">24.09.2025 20:23</p>
+                                            <p class="history__table-name">TopUp</p>
+                                            <p class="history__table-name">345,75</p>
+                                            <p class="history__table-name">1333.65</p>
+                                        </div>
+                                        <div class="history__table-item">
+                                            <p class="history__table-name">24.09.2025_35</p>
+                                            <p class="history__table-name">24.09.2025 20:23</p>
+                                            <p class="history__table-name">TopUp</p>
+                                            <p class="history__table-name">345,75</p>
+                                            <p class="history__table-name">1333.65</p>
+                                        </div>
+                                        <div class="history__table-item">
+                                            <p class="history__table-name">24.09.2025_35</p>
+                                            <p class="history__table-name">24.09.2025 20:23</p>
+                                            <p class="history__table-name">TopUp</p>
+                                            <p class="history__table-name">345,75</p>
+                                            <p class="history__table-name">1333.65</p>
+                                        </div>
+                                        <div class="history__table-item">
+                                            <p class="history__table-name">24.09.2025_35</p>
+                                            <p class="history__table-name">24.09.2025 20:23</p>
+                                            <p class="history__table-name">TopUp</p>
+                                            <p class="history__table-name">345,75</p>
+                                            <p class="history__table-name">1333.65</p>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
+                            <button class="history__more">load more</button>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -849,8 +412,8 @@
                 <div class="popupProudct__inner">
                     <button class="popupProudct__close"></button>
                     <h2 class="popupProudct__title">Sale Item</h2>
-                    <div class="popupProudct__content">
-                        <div class="product__item product__item-reverse" data-product-type="grey">
+                    <div class="popupProudct__content popupProudct-sale">
+                        <div class="product__item" data-product-type="grey">
                             <div class="product__item-top">
                                 <p class="product__item-level">21 Lvl</p>
                                 <button class="product__item-fav"></button>
@@ -888,20 +451,21 @@
                 <div class="popupProudct__inner">
                     <button class="popupProudct__close"></button>
                     <h2 class="popupProudct__title">Return Item</h2>
-                    <div class="popupProudct__content">
-                        <div class="product__item" data-product-type="red">
+                    <div class="popupProudct__content popupProudct-sale">
+                        <div class="product__item" data-product-type="grey">
                             <div class="product__item-top">
                                 <p class="product__item-level">21 Lvl</p>
                                 <button class="product__item-fav"></button>
                             </div>
                             <div class="product__item-image">
-                                <img src="img/products/13.png" alt="">
+                                <img src="img/products/2.png" alt="">
                             </div>
                             <div class="product__item-content">
                                 <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
                                 <p class="product__item-descr">Just Out of the Forge ...</p>
+                                <p class="product__item-price">102$</p>
                                 <div class="product__item-bottom">
-                                    <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
+                                    <button class="product__item-detail">Detail</button>
                                 </div>
                             </div>
                         </div>
@@ -919,7 +483,7 @@
                 <div class="popupProudct__inner">
                     <button class="popupProudct__close"></button>
                     <h2 class="popupProudct__title">Buy Item</h2>
-                    <div class="popupProudct__content">
+                    <div class="popupProudct__content popupProudct-sale">
                         <div class="product__item" data-product-type="grey">
                             <div class="product__item-top">
                                 <p class="product__item-level">21 Lvl</p>
@@ -1204,7 +768,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/profile.js"></script>
-
 </body>
 
 </html>

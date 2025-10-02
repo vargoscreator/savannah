@@ -1,46 +1,49 @@
-const profileSelectButtons = document.querySelectorAll('.profile__left-select');
-const profileContent = document.querySelectorAll('.profile__content');
-profileSelectButtons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const target = btn.dataset.profileSelect;
-    profileContent.forEach(c => c.classList.remove('active'));
-    const targetContent = document.querySelector(`.profile__content[data-profile-select="${target}"]`);
-    if (targetContent) {
-      targetContent.classList.add('active');
-    }
+let charactersSlider = new Swiper(".characters__slider-profile", {
+        loop: true,
+        spaceBetween: 20,
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        speed: 800,
+        allowTouchMove: true,
+        navigation: {
+            nextEl: ".characters__slider-next",
+            prevEl: ".characters__slider-prev",
+        },
+    });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".characters__select-btn");
+  const results = document.querySelectorAll(".characters__result");
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      buttons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      const target = btn.getAttribute("data-characters");
+      results.forEach(res => {
+        res.classList.remove("active");
+        if (res.getAttribute("data-profile-result") === target) {
+          res.classList.add("active");
+        }
+      });
+    });
   });
 });
 
-const editProfile = document.querySelector(".editProfile");
-const editProfileInner = document.querySelector(".editProfile__inner");
-const editProfileOpen = document.querySelector(".editProfile-open");
-const editProfileClose = document.querySelector(".editProfile__close");
-editProfileOpen.addEventListener("click", () => {
-  editProfile.classList.add("active");
-});
-editProfileClose.addEventListener("click", () => {
-  editProfile.classList.remove("active");
-});
-document.addEventListener("click", (e) => {
-  if (
-    editProfile.classList.contains("active") &&
-    !editProfileInner.contains(e.target) &&
-    !editProfileOpen.contains(e.target)
-  ) {
-    editProfile.classList.remove("active");
-  }
-});
 
-const photoInput = document.querySelector('.editProfile__photo-input[type="file"]');
-const profileImage = document.getElementById('profileImage');
-
-photoInput.addEventListener('change', (e) => {
-  const file = e.target.files[0];
-  if (file && file.type.startsWith('image/')) {
-    const reader = new FileReader();
-    reader.onload = (ev) => {
-      profileImage.src = ev.target.result;
-    };
-    reader.readAsDataURL(file);
-  }
+const favButtons = document.querySelectorAll('button.favourites__select-btn');
+favButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const target = button.dataset.favourites;
+        favButtons.forEach(btn => btn.classList.remove('active'));
+        if (button.tagName.toLowerCase() === 'button') {
+            button.classList.add('active');
+        }
+        document.querySelectorAll('.characters__result').forEach(block => {
+            block.classList.remove('active');
+        })
+        const resultBlock = document.querySelector(`.characters__result[data-favourites-result="${target}"]`);
+        if (resultBlock) {
+            resultBlock.classList.add('active');
+        }
+    });
 });

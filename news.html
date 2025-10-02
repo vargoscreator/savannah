@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAVANNAH</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.11.2/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body body-profile">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__top">
+                        <a class="header__logo" href="profile.html">
+                            <img src="img/logo-profile.svg" alt="">
+                        </a>
+                        <div class="header__top-content">
+                            <div class="header__top-start">
+                                <a class="header__support" href="#">
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.3296 6.53906C13.0192 6.62637 14.3629 8.0235 14.3647 9.73438V9.73535C14.3646 11.3712 13.4372 12.2088 12.8101 12.7832C12.2406 13.3047 12.1147 13.4759 12.1147 13.7852C12.1147 14.3097 11.689 14.7352 11.1646 14.7354C10.64 14.7354 10.2144 14.3097 10.2144 13.7852C10.2144 12.5592 11.0015 11.8631 11.5269 11.3818C12.0927 10.8635 12.4643 10.5061 12.4644 9.73535C12.4644 9.01756 11.8823 8.43564 11.1646 8.43555C10.4465 8.43555 9.86475 9.01753 9.86475 9.73535C9.86458 10.2598 9.43904 10.6855 8.91455 10.6855C8.38994 10.6855 7.96452 10.2599 7.96436 9.73535V9.73438L7.96826 9.57031C8.05546 7.88058 9.45258 6.53705 11.1636 6.53516H11.1646L11.3296 6.53906Z" fill="white"/>
+                                        <path d="M11.165 16.2344C11.4074 16.2346 11.6035 16.4314 11.6035 16.6738C11.6033 16.9159 11.4073 17.1121 11.165 17.1123C10.9226 17.1123 10.7258 16.916 10.7256 16.6738C10.7256 16.4313 10.9226 16.2344 11.165 16.2344Z" fill="white" stroke="white"/>
+                                        <path d="M20.1284 11.707C20.1284 6.75804 16.1165 2.74609 11.1675 2.74609C6.21849 2.74609 2.20654 6.75804 2.20654 11.707C2.20654 16.656 6.21849 20.668 11.1675 20.668C16.1165 20.668 20.1284 16.656 20.1284 11.707ZM22.1284 11.707C22.1284 17.7606 17.221 22.668 11.1675 22.668C5.11392 22.668 0.206543 17.7606 0.206543 11.707C0.206543 5.65347 5.11392 0.746094 11.1675 0.746094C17.221 0.746094 22.1284 5.65347 22.1284 11.707Z" fill="white"/>
+                                    </svg>
+                                    Support
+                                </a>
+                                <a class="header__download" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                        <path d="M14.1284 18.125H4.12841C3.06004 18.125 2.05556 17.7089 1.30001 16.9534C0.544496 16.1979 0.128418 15.1934 0.128418 14.125V13.1249C0.128418 12.5726 0.57611 12.1249 1.12842 12.1249C1.68074 12.1249 2.12843 12.5726 2.12843 13.1249V14.125C2.12843 14.6592 2.33649 15.1614 2.71417 15.5391C3.09197 15.9169 3.59419 16.125 4.12841 16.125H14.1284C14.6626 16.125 15.1648 15.9169 15.5426 15.5391C15.9203 15.1613 16.1284 14.6591 16.1284 14.125V13.1249C16.1284 12.5726 16.5761 12.1249 17.1284 12.1249C17.6807 12.1249 18.1284 12.5726 18.1284 13.1249V14.125C18.1284 15.1933 17.7123 16.1978 16.9568 16.9534C16.2012 17.7089 15.1968 18.125 14.1284 18.125ZM9.1284 14.1249C8.99007 14.1249 8.85837 14.0969 8.73856 14.0461C8.62677 13.9989 8.52173 13.9303 8.42983 13.8405C8.42979 13.8405 8.42979 13.8405 8.42976 13.8405C8.42909 13.8398 8.42843 13.8392 8.42776 13.8385C8.42759 13.8384 8.42738 13.8381 8.4272 13.8379C8.42665 13.8374 8.42616 13.8369 8.42563 13.8364C8.42528 13.8361 8.42497 13.8358 8.42462 13.8354C8.42427 13.835 8.42382 13.8346 8.4235 13.8343C8.4228 13.8336 8.42203 13.8328 8.42134 13.8321L4.42131 9.83208C4.03081 9.44157 4.03081 8.80839 4.42131 8.41785C4.81182 8.02734 5.44504 8.02731 5.83555 8.41785L8.12843 10.7107V1.12501C8.12839 0.572692 8.57609 0.125 9.1284 0.125C9.68071 0.125 10.1284 0.572692 10.1284 1.12501V10.7107L12.4213 8.41785C12.8118 8.02734 13.445 8.02734 13.8355 8.41785C14.226 8.80836 14.226 9.44157 13.8355 9.83208L9.8355 13.8321C9.8348 13.8328 9.83403 13.8335 9.83333 13.8342C9.83295 13.8346 9.83253 13.835 9.83222 13.8353C9.83187 13.8357 9.83155 13.836 9.8312 13.8363C9.83071 13.8369 9.83015 13.8374 9.82967 13.8379C9.82949 13.838 9.82925 13.8383 9.82907 13.8384C9.82844 13.8391 9.82778 13.8398 9.82712 13.8404C9.82708 13.8404 9.82708 13.8404 9.82705 13.8405C9.81604 13.8512 9.8049 13.8616 9.79351 13.8717C9.70978 13.9464 9.61651 14.0046 9.51789 14.0462C9.51755 14.0463 9.51727 14.0465 9.51692 14.0466C9.51653 14.0468 9.51622 14.047 9.51583 14.0471C9.39664 14.0973 9.26579 14.1249 9.1284 14.1249Z" fill="white"/>
+                                    </svg>
+                                    Download Savannah
+                                </a>
+                                <div class="header__buttons">
+                                    <a class="header__favourite" href="favourites.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                            <path d="M4.44644 6.44302C2.68908 8.20038 2.68908 11.0496 4.44644 12.807L12.1285 20.489L19.8104 12.807C21.5677 11.0496 21.5677 8.20038 19.8104 6.44302C18.053 4.68566 15.2038 4.68566 13.4464 6.44302L12.1285 7.76109L10.8104 6.44302C9.05304 4.68566 6.2038 4.68566 4.44644 6.44302Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+
+                                    <!-- Скрываем когда не залогинен -->
+                                    <a class="header__cart" href="cart.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                            <path d="M7.39795 15.1602C8.02072 15.1603 8.55455 15.5394 8.78271 16.0791C8.85872 16.2589 8.90086 16.4566 8.90088 16.6641L8.89404 16.8174C8.88401 16.9163 8.86277 17.0122 8.83447 17.1045C8.83175 17.1134 8.82856 17.1221 8.82568 17.1309C8.79939 17.2113 8.76688 17.2885 8.72803 17.3623C8.71755 17.3822 8.70616 17.4015 8.69482 17.4209C8.68082 17.4448 8.66614 17.4682 8.65088 17.4912C8.64374 17.502 8.6368 17.5128 8.62939 17.5234C8.60908 17.5525 8.58818 17.5809 8.56592 17.6084C8.55865 17.6174 8.55093 17.626 8.54346 17.6348C8.52164 17.6605 8.49955 17.6858 8.47607 17.71C8.46244 17.724 8.44826 17.7375 8.43408 17.751C8.41703 17.7672 8.39914 17.7824 8.38135 17.7979C8.36459 17.8124 8.34797 17.827 8.33057 17.8408C8.31107 17.8563 8.29126 17.8712 8.271 17.8857C8.25102 17.9 8.23114 17.9144 8.21045 17.9277C8.19374 17.9385 8.17682 17.9489 8.15967 17.959C8.13659 17.9726 8.11321 17.9857 8.08936 17.998C8.07334 18.0064 8.05688 18.0137 8.04053 18.0215C8.01318 18.0345 7.98575 18.0473 7.95752 18.0586C7.94243 18.0647 7.92695 18.0696 7.91162 18.0752C7.88487 18.0849 7.858 18.0943 7.83057 18.1025C7.80198 18.1111 7.77293 18.1181 7.74365 18.125C7.7267 18.129 7.71004 18.1343 7.69287 18.1377C7.67 18.1422 7.64677 18.1449 7.62354 18.1484C7.54985 18.1596 7.47474 18.168 7.39795 18.168C7.34598 18.168 7.29427 18.1653 7.24365 18.1602C7.14327 18.1499 7.04619 18.1286 6.95264 18.0996C6.94801 18.0982 6.94357 18.0962 6.93896 18.0947C6.89923 18.082 6.85999 18.0686 6.82178 18.0527C6.80087 18.0441 6.78067 18.034 6.76025 18.0244C6.74057 18.0152 6.72087 18.0062 6.70166 17.9961C6.67771 17.9836 6.65452 17.9698 6.63135 17.9561C6.61399 17.9457 6.59648 17.9358 6.57959 17.9248C6.55957 17.9118 6.54034 17.8977 6.521 17.8838C6.50078 17.8692 6.48087 17.8544 6.46143 17.8389C6.44495 17.8257 6.42849 17.8126 6.4126 17.7988C6.39397 17.7826 6.37572 17.7661 6.35791 17.749C6.34144 17.7332 6.32579 17.7167 6.31006 17.7002C6.29002 17.6792 6.27027 17.6579 6.25146 17.6357C6.24383 17.6267 6.23643 17.6176 6.229 17.6084C6.20796 17.5824 6.18776 17.5557 6.16846 17.5283C6.15696 17.512 6.14611 17.4953 6.13525 17.4785C6.12241 17.4586 6.11007 17.4385 6.09814 17.418C6.08796 17.4005 6.07736 17.3832 6.06787 17.3652C6.05307 17.3372 6.03991 17.3083 6.02686 17.2793C6.01855 17.2608 6.01001 17.2425 6.00244 17.2236C5.99394 17.2024 5.98656 17.1808 5.979 17.1592C5.97132 17.1372 5.96322 17.1152 5.95654 17.0928C5.95042 17.0722 5.9452 17.0513 5.93994 17.0303C5.92228 16.9598 5.90819 16.8875 5.90088 16.8135C5.89604 16.7644 5.89405 16.7144 5.89404 16.6641C5.89405 16.6123 5.89674 16.5612 5.90186 16.5107C5.9121 16.4095 5.93209 16.3111 5.96143 16.2168C6.0201 16.0283 6.11502 15.8557 6.23779 15.707C6.51358 15.3731 6.93107 15.1602 7.39795 15.1602ZM14.1655 15.1602C14.7884 15.1603 15.3222 15.5393 15.5503 16.0791C15.6073 16.2141 15.6453 16.359 15.6606 16.5107C15.6657 16.5611 15.6685 16.6124 15.6685 16.6641L15.6616 16.8174C15.6516 16.9164 15.6304 17.0121 15.6021 17.1045C15.5993 17.1134 15.5961 17.1221 15.5933 17.1309C15.5686 17.2062 15.5391 17.2791 15.5034 17.3486C15.4908 17.3732 15.4773 17.3971 15.4634 17.4209C15.4496 17.4444 15.4354 17.4676 15.4204 17.4902C15.4119 17.5031 15.4029 17.5157 15.394 17.5283C15.3769 17.5527 15.3589 17.5763 15.3403 17.5996C15.3307 17.6117 15.3211 17.6239 15.311 17.6357C15.2894 17.6612 15.267 17.686 15.2437 17.71C15.2321 17.7219 15.2195 17.7326 15.2075 17.7441C15.1874 17.7635 15.1671 17.7825 15.146 17.8008C15.1309 17.8138 15.1157 17.8265 15.1001 17.8389C15.0801 17.8548 15.0603 17.8709 15.0396 17.8857C15.0191 17.9004 14.9982 17.9141 14.9771 17.9277C14.9633 17.9366 14.9491 17.9447 14.9351 17.9531C14.9097 17.9683 14.8842 17.9834 14.8579 17.9971C14.8352 18.0089 14.812 18.0196 14.7886 18.0303C14.7711 18.0383 14.7537 18.0464 14.7358 18.0537C14.7112 18.0638 14.6859 18.0722 14.6606 18.0811C14.6399 18.0883 14.6193 18.0962 14.5981 18.1025C14.5779 18.1086 14.5572 18.1129 14.5366 18.1182C14.5082 18.1254 14.4798 18.1331 14.4507 18.1387C14.4368 18.1413 14.4227 18.1432 14.4087 18.1455C14.3777 18.1506 14.3466 18.1561 14.3149 18.1592C14.2658 18.164 14.216 18.167 14.1655 18.167C14.1136 18.167 14.0618 18.1653 14.0112 18.1602C13.9619 18.1551 13.9135 18.1464 13.8657 18.1367C13.8535 18.1343 13.8417 18.1307 13.8296 18.1279C13.7929 18.1196 13.7568 18.1106 13.7212 18.0996C13.7133 18.0972 13.7056 18.0944 13.6978 18.0918C13.6607 18.0797 13.6241 18.0666 13.5884 18.0518C13.5715 18.0447 13.5551 18.0369 13.5386 18.0293C13.5146 18.0183 13.4906 18.0074 13.4673 17.9951C13.4457 17.9838 13.4248 17.9713 13.4038 17.959C13.3812 17.9456 13.3592 17.9315 13.3374 17.917C13.3256 17.9092 13.3138 17.9017 13.3022 17.8936C13.2773 17.876 13.2528 17.8579 13.229 17.8389C13.2104 17.824 13.1922 17.8087 13.1743 17.793C13.1577 17.7784 13.1415 17.7634 13.1255 17.748C13.1092 17.7324 13.0932 17.7165 13.0776 17.7002C13.0694 17.6915 13.0603 17.6837 13.0522 17.6748L13.0054 17.6201C13.0023 17.6164 12.9997 17.6122 12.9966 17.6084C12.9755 17.5824 12.9553 17.5557 12.936 17.5283C12.9245 17.512 12.9137 17.4953 12.9028 17.4785C12.89 17.4586 12.8776 17.4385 12.8657 17.418C12.855 17.3996 12.8444 17.3812 12.8345 17.3623C12.8202 17.3351 12.8071 17.3074 12.7944 17.2793C12.7861 17.2608 12.7776 17.2425 12.77 17.2236C12.7615 17.2024 12.7541 17.1808 12.7466 17.1592C12.7389 17.1372 12.7308 17.1152 12.7241 17.0928C12.718 17.0722 12.7137 17.0512 12.7085 17.0303C12.6908 16.9597 12.6758 16.8876 12.6685 16.8135C12.6636 16.7643 12.6616 16.7145 12.6616 16.6641C12.6616 16.5605 12.6719 16.459 12.6919 16.3613C12.782 15.9207 13.0651 15.5503 13.4487 15.3418C13.6618 15.2261 13.9061 15.1602 14.1655 15.1602ZM1.65967 0.125C2.98269 0.125 4.11208 1.0817 4.32959 2.38672L4.4292 2.98145H16.2144C17.9751 2.98145 19.2673 4.6366 18.8403 6.34473L18.0884 9.35156C17.787 10.5562 16.7042 11.4014 15.4624 11.4014H5.83252L5.93213 12.001C6.00462 12.4359 6.38086 12.7548 6.82178 12.7549H17.1714C17.6696 12.7549 18.0737 13.159 18.0737 13.6572C18.0737 14.1555 17.6696 14.5596 17.1714 14.5596H6.82178C5.49885 14.5595 4.36935 13.6028 4.15186 12.2979L2.54932 2.68359C2.47681 2.24859 2.10068 1.92969 1.65967 1.92969H1.38428C0.886094 1.92969 0.482035 1.5255 0.481934 1.02734C0.481934 0.529097 0.886031 0.125 1.38428 0.125H1.65967ZM5.53174 9.59668H15.4624C15.8762 9.59667 16.2369 9.31548 16.3374 8.91406L17.0903 5.90625C17.2323 5.33705 16.8011 4.78613 16.2144 4.78613H4.72998L5.53174 9.59668Z" fill="white"/>
+                                        </svg>    
+                                        <span></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header__user">
+                                <div class="header__user-content">
+                                    <div class="header__user-balance">
+                                        <p class="header__user-balance--name">Balance:</p>
+                                        <p class="header__user-balance--total">567$</p>
+                                    </div>
+                                    <div class="header__about">
+                                        <div class="header__about-image">
+                                            <img src="img/user.webp" alt="">
+                                        </div>
+                                        <div class="header__about-content">
+                                            <h4 class="header__about-name">Adam</h4>
+                                        </div>
+                                        <div class="header__about-more">
+                                            <button class="header__about-logout">Log out</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- <div class="header__user-auth">
+                                    <button class="header__user-link header-login-btn">Login</button>
+                                    <span class="header__user-link">/</span>
+                                    <button class="header__user-link header-register-btn">Registration</button>
+                                </div> -->
+                            </div>
+                        </div>
+                        <button class="header__burger">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="22" viewBox="0 0 34 22" fill="none">
+                                <path
+                                    d="M0 2C0 0.895431 0.895431 0 2 0H32C33.1046 0 34 0.895431 34 2C34 3.10457 33.1046 4 32 4H2C0.89543 4 0 3.10457 0 2Z"
+                                    fill="white" />
+                                <path
+                                    d="M0 20C0 18.8954 0.895431 18 2 18H32C33.1046 18 34 18.8954 34 20C34 21.1046 33.1046 22 32 22H2C0.89543 22 0 21.1046 0 20Z"
+                                    fill="white" />
+                                <path
+                                    d="M0 11C0 9.89543 0.895431 9 2 9H32C33.1046 9 34 9.89543 34 11C34 12.1046 33.1046 13 32 13H2C0.89543 13 0 12.1046 0 11Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                </div>
+                <div class="header__bottom">
+                    <div class="header__bottom-inner">
+                        <button class="header__bottom-close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                <path
+                                    d="M0.979161 0.979158C1.76021 0.198109 3.02654 0.198109 3.80759 0.979158L25.0208 22.1924C25.8018 22.9734 25.8018 24.2397 25.0208 25.0208C24.2397 25.8018 22.9734 25.8018 22.1924 25.0208L0.979161 3.80759C0.198112 3.02654 0.198113 1.76021 0.979161 0.979158Z"
+                                    fill="white" />
+                                <path
+                                    d="M0.979097 25.0208C0.198048 24.2398 0.198048 22.9735 0.979097 22.1924L22.1923 0.979215C22.9733 0.198166 24.2397 0.198166 25.0207 0.979215C25.8018 1.76026 25.8018 3.02659 25.0207 3.80764L3.80752 25.0208C3.02648 25.8019 1.76015 25.8019 0.979097 25.0208Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                        <div class="header__bottom-content">
+                            <nav class="header__menu">
+                                <ul>
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="profile.html">Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="marketplace.html">Marketplace</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Server Statistics</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <form class="header__search">
+                                <input class="header__search-input" type="text" placeholder="Search on Marketplace" name="search" required>
+                            </form>
+                        </div>
+                        <a class="header__support" href="#">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.3296 6.53906C13.0192 6.62637 14.3629 8.0235 14.3647 9.73438V9.73535C14.3646 11.3712 13.4372 12.2088 12.8101 12.7832C12.2406 13.3047 12.1147 13.4759 12.1147 13.7852C12.1147 14.3097 11.689 14.7352 11.1646 14.7354C10.64 14.7354 10.2144 14.3097 10.2144 13.7852C10.2144 12.5592 11.0015 11.8631 11.5269 11.3818C12.0927 10.8635 12.4643 10.5061 12.4644 9.73535C12.4644 9.01756 11.8823 8.43564 11.1646 8.43555C10.4465 8.43555 9.86475 9.01753 9.86475 9.73535C9.86458 10.2598 9.43904 10.6855 8.91455 10.6855C8.38994 10.6855 7.96452 10.2599 7.96436 9.73535V9.73438L7.96826 9.57031C8.05546 7.88058 9.45258 6.53705 11.1636 6.53516H11.1646L11.3296 6.53906Z" fill="white"/>
+                                <path d="M11.165 16.2344C11.4074 16.2346 11.6035 16.4314 11.6035 16.6738C11.6033 16.9159 11.4073 17.1121 11.165 17.1123C10.9226 17.1123 10.7258 16.916 10.7256 16.6738C10.7256 16.4313 10.9226 16.2344 11.165 16.2344Z" fill="white" stroke="white"/>
+                                <path d="M20.1284 11.707C20.1284 6.75804 16.1165 2.74609 11.1675 2.74609C6.21849 2.74609 2.20654 6.75804 2.20654 11.707C2.20654 16.656 6.21849 20.668 11.1675 20.668C16.1165 20.668 20.1284 16.656 20.1284 11.707ZM22.1284 11.707C22.1284 17.7606 17.221 22.668 11.1675 22.668C5.11392 22.668 0.206543 17.7606 0.206543 11.707C0.206543 5.65347 5.11392 0.746094 11.1675 0.746094C17.221 0.746094 22.1284 5.65347 22.1284 11.707Z" fill="white"/>
+                            </svg>
+                            Support
+                        </a>
+                        <a class="header__download" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                <path d="M14.1284 18.125H4.12841C3.06004 18.125 2.05556 17.7089 1.30001 16.9534C0.544496 16.1979 0.128418 15.1934 0.128418 14.125V13.1249C0.128418 12.5726 0.57611 12.1249 1.12842 12.1249C1.68074 12.1249 2.12843 12.5726 2.12843 13.1249V14.125C2.12843 14.6592 2.33649 15.1614 2.71417 15.5391C3.09197 15.9169 3.59419 16.125 4.12841 16.125H14.1284C14.6626 16.125 15.1648 15.9169 15.5426 15.5391C15.9203 15.1613 16.1284 14.6591 16.1284 14.125V13.1249C16.1284 12.5726 16.5761 12.1249 17.1284 12.1249C17.6807 12.1249 18.1284 12.5726 18.1284 13.1249V14.125C18.1284 15.1933 17.7123 16.1978 16.9568 16.9534C16.2012 17.7089 15.1968 18.125 14.1284 18.125ZM9.1284 14.1249C8.99007 14.1249 8.85837 14.0969 8.73856 14.0461C8.62677 13.9989 8.52173 13.9303 8.42983 13.8405C8.42979 13.8405 8.42979 13.8405 8.42976 13.8405C8.42909 13.8398 8.42843 13.8392 8.42776 13.8385C8.42759 13.8384 8.42738 13.8381 8.4272 13.8379C8.42665 13.8374 8.42616 13.8369 8.42563 13.8364C8.42528 13.8361 8.42497 13.8358 8.42462 13.8354C8.42427 13.835 8.42382 13.8346 8.4235 13.8343C8.4228 13.8336 8.42203 13.8328 8.42134 13.8321L4.42131 9.83208C4.03081 9.44157 4.03081 8.80839 4.42131 8.41785C4.81182 8.02734 5.44504 8.02731 5.83555 8.41785L8.12843 10.7107V1.12501C8.12839 0.572692 8.57609 0.125 9.1284 0.125C9.68071 0.125 10.1284 0.572692 10.1284 1.12501V10.7107L12.4213 8.41785C12.8118 8.02734 13.445 8.02734 13.8355 8.41785C14.226 8.80836 14.226 9.44157 13.8355 9.83208L9.8355 13.8321C9.8348 13.8328 9.83403 13.8335 9.83333 13.8342C9.83295 13.8346 9.83253 13.835 9.83222 13.8353C9.83187 13.8357 9.83155 13.836 9.8312 13.8363C9.83071 13.8369 9.83015 13.8374 9.82967 13.8379C9.82949 13.838 9.82925 13.8383 9.82907 13.8384C9.82844 13.8391 9.82778 13.8398 9.82712 13.8404C9.82708 13.8404 9.82708 13.8404 9.82705 13.8405C9.81604 13.8512 9.8049 13.8616 9.79351 13.8717C9.70978 13.9464 9.61651 14.0046 9.51789 14.0462C9.51755 14.0463 9.51727 14.0465 9.51692 14.0466C9.51653 14.0468 9.51622 14.047 9.51583 14.0471C9.39664 14.0973 9.26579 14.1249 9.1284 14.1249Z" fill="white"/>
+                            </svg>
+                            Download Savannah
+                        </a>
+                        <a class="header__bottom-btn btn-3" href="#">PLAY ONLINE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="news">
+            <div class="container">
+                <ul class="breadcrump">
+                    <li>
+                        <a class="breadcrump-main" href="#"></a>
+                    </li>
+                    <li>
+                        <a href="#">News & Updates</a>
+                    </li>
+                    <li>
+                        <a href="#">History of Aligato Jollof-Master </a>
+                    </li>
+                </ul>
+                <div class="news__inner">
+                    <div class="news__select">
+                        <button class="news__select-btn" data-news-select="news">News</button>
+                        <button class="news__select-btn active" data-news-select="updates">Updates</button>
+                    </div>
+                    <div class="news__bottom">
+                        <div class="news__results">
+                            <div class="news__block" data-news-results="news">
+                                <div class="news__item">
+                                    <p class="news__item-date">24.09.2025 12:34</p>
+                                    <div class="news__item-content">
+                                        <h3 class="news__item-title">History of Aligato Jollof-Master </h3>
+                                        <div class="news__item-image">
+                                            <img src="img/news.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__item">
+                                    <p class="news__item-date">24.09.2025 12:34</p>
+                                    <div class="news__item-content">
+                                        <h3 class="news__item-title">History of Aligato Jollof-Master </h3>
+                                        <div class="news__item-image">
+                                            <img src="img/news.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__item">
+                                    <p class="news__item-date">24.09.2025 12:34</p>
+                                    <div class="news__item-content">
+                                        <h3 class="news__item-title">History of Aligato Jollof-Master </h3>
+                                        <div class="news__item-image">
+                                            <img src="img/news.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__item">
+                                    <p class="news__item-date">24.09.2025 12:34</p>
+                                    <div class="news__item-content">
+                                        <h3 class="news__item-title">History of Aligato Jollof-Master </h3>
+                                        <div class="news__item-image">
+                                            <img src="img/news.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="news__item-more">load more</button>
+                            </div>
+                            <div class="news__block active" data-news-results="updates">
+                                <div class="news__item active">
+                                    <p class="news__item-date">24.09.2025 12:34</p>
+                                    <div class="news__item-content">
+                                        <h3 class="news__item-title">History of Aligato Jollof-Master </h3>
+                                        <div class="news__item-image">
+                                            <img src="img/news.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__item">
+                                    <p class="news__item-date">24.09.2025 12:34</p>
+                                    <div class="news__item-content">
+                                        <h3 class="news__item-title">History of Aligato Jollof-Master </h3>
+                                        <div class="news__item-image">
+                                            <img src="img/news.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__item">
+                                    <p class="news__item-date">24.09.2025 12:34</p>
+                                    <div class="news__item-content">
+                                        <h3 class="news__item-title">History of Aligato Jollof-Master </h3>
+                                        <div class="news__item-image">
+                                            <img src="img/news.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__item">
+                                    <p class="news__item-date">24.09.2025 12:34</p>
+                                    <div class="news__item-content">
+                                        <h3 class="news__item-title">History of Aligato Jollof-Master </h3>
+                                        <div class="news__item-image">
+                                            <img src="img/news.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__item">
+                                    <p class="news__item-date">24.09.2025 12:34</p>
+                                    <div class="news__item-content">
+                                        <h3 class="news__item-title">History of Aligato Jollof-Master </h3>
+                                        <div class="news__item-image">
+                                            <img src="img/news.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__item">
+                                    <p class="news__item-date">24.09.2025 12:34</p>
+                                    <div class="news__item-content">
+                                        <h3 class="news__item-title">History of Aligato Jollof-Master </h3>
+                                        <div class="news__item-image">
+                                            <img src="img/news.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__item">
+                                    <p class="news__item-date">24.09.2025 12:34</p>
+                                    <div class="news__item-content">
+                                        <h3 class="news__item-title">History of Aligato Jollof-Master </h3>
+                                        <div class="news__item-image">
+                                            <img src="img/news.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="news__item-more">load more</button>
+                            </div>
+                        </div>
+                        <div class="news__article">
+                            <div class="news__article-inner">
+                                <div class="news__article-top">
+                                    <div class="news__article-image">
+                                        <img src="img/article.png" alt="">
+                                    </div>
+                                    <h2 class="news__article-title">History of <br>Aligato Jollof-Master </h2>
+                                </div>
+                                <div class="news__article-bottom">
+                                    <div class="news__article-content">
+                                        <p>24.09.2025 12:34</p>
+                                        <p>An ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so</p>
+                                        <p>An ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so</p>
+                                        <p>An ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so onAn ancient macaque sword with a grenade, passed through a thousand and a thousand of these battles" and so</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="authPopup">
+            <div class="container">
+                <div class="authPopup__inner">
+                    <button class="authPopup__close"></button>
+                    <div class="authPopup__content" data-authPopup="register">
+                        <h2 class="authPopup__title">Register</h2>
+                        <form class="authPopup__form" action="#">
+                            <div class="authPopup__form-box">
+                                <div class="authPopup__form-block">
+                                    <label class="form-label" for="register-name">Your name*</label>
+                                    <input class="authPopup__form-input form-input" type="text" id="register-name" name="name">
+                                    <p class="form-error">* Required field</p>
+                                </div>
+                                <div class="authPopup__form-block">
+                                    <label class="form-label" for="register-tel">Mobile phone* </label>
+                                    <input class="authPopup__form-input form-input" type="tel" id="register-tel" name="tel">
+                                    <p class="form-error">* Required field</p>
+                                </div>
+                                <div class="authPopup__form-block">
+                                    <label class="form-label" for="register-email">E-mail* </label>
+                                    <input class="authPopup__form-input form-input" type="email" id="register-email" name="email">
+                                    <p class="form-error">* Required field</p>
+                                </div>
+                                <div class="authPopup__form-block">
+                                    <label class="form-label" for="register-password">New Password </label>
+                                    <div class="authPopup__form-password password-content">
+                                        <input class="form-input" type="password" id="register-password" name="password">
+                                        <button class="password-show" type="button"></button>
+                                    </div>
+                                    <p class="form-error">* Required field</p>
+                                </div>
+                                <div class="authPopup__form-block">
+                                    <label class="form-label" for="register-repeat-password">Confirm New Password* </label>
+                                    <div class="authPopup__form-password password-content">
+                                        <input class="form-input" type="password" id="register-repeat-password" name="repeat-password">
+                                        <button class="password-show" type="button"></button>
+                                    </div>
+                                    <p class="form-error">* Required field</p>
+                                </div>
+                            </div>
+                            <div class="authPopup__form-agreed">
+                                <label class="authPopup__form-checkbox">
+                                    <input type="checkbox" required>
+                                    <span></span>
+                                </label>
+                                <p class="authPopup__form-agreed--descr">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
+                            </div>
+                            <button class="authPopup__form-btn btn-2" type="submit">Register</button>
+                            <p class="authPopup__form-or">or</p>
+                            <button class="authPopup__form-link login-btn" type="button">Login</button>
+                        </form>
+                    </div>
+
+                    <div class="authPopup__content" data-authPopup="login">
+                        <h2 class="authPopup__title">Login</h2>
+                        <form class="authPopup__form" action="#">
+                            <div class="authPopup__form-box">
+                                <div class="authPopup__form-block">
+                                    <label class="form-label" for="login-email">E-mail* </label>
+                                    <input class="authPopup__form-input form-input" type="email" id="login-email" name="email">
+                                    <p class="form-error">* Required field</p>
+                                </div>
+                                <div class="authPopup__form-block">
+                                    <label class="form-label" for="login-password">Password </label>
+                                    <div class="authPopup__form-password password-content">
+                                        <input class="form-input" type="password" id="login-password" name="password">
+                                        <button class="password-show" type="button"></button>
+                                    </div>
+                                    <p class="form-error">* Required field</p>
+                                </div>
+                            </div>
+                            <button class="authPopup__form-btn btn-2" type="submit">Login</button>
+                            <button class="authPopup__form-link forgot-btn" type="button">Forgot your password?</button>
+                            <p class="authPopup__form-or">or</p>
+                            <button class="authPopup__form-link register-btn" type="button">Login</button>
+                        </form>
+                    </div>
+
+                    <div class="authPopup__content" data-authPopup="password-recovery">
+                        <h2 class="authPopup__title">Password recovery</h2>
+                        <p class="authPopup__descr">We sent an email with a confirmation code to the specified address.</p>
+                        <form class="authPopup__form" action="#">
+                            <div class="authPopup__form-box">
+                                <div class="authPopup__form-block">
+                                    <label class="form-label" for="recovery-email">E-mail* </label>
+                                    <input class="authPopup__form-input form-input" type="email" id="recovery-email" name="email">
+                                    <p class="form-error">* Required field</p>
+                                </div>
+                            </div>
+                            <button class="authPopup__form-btn btn-2" type="submit">Send</button>
+                        </form>
+                    </div>
+
+                    <div class="authPopup__content" data-authPopup="password-recovery-code">
+                        <h2 class="authPopup__title">Password recovery</h2>
+                        <p class="authPopup__descr">Enter the 6-digit code from your email <strong>AdamOrea@gmail.com</strong></p>
+                        <form class="authPopup__form" action="#">
+                            <div class="authPopup__code">
+                                <div class="authPopup__code-input form-inputs">
+                                    <input id="code" type="tel">
+                                    <input type="tel">
+                                    <input type="tel">
+                                    <input type="tel">
+                                    <input type="tel">
+                                    <input type="tel">
+                                </div>
+                                <div class="authPopup__code-content">
+                                    <button class="authPopup__code-resend" type="button">Resend code in 58 s</button>
+                                    <button class="authPopup__code-paste" type="button">Paste</button>
+                                </div>
+                            </div>
+                            <button class="authPopup__form-btn btn-2" type="submit">Next</button>
+                        </form>
+                    </div>
+
+                    <div class="authPopup__content" data-authPopup="password-recovery-last">
+                        <h2 class="authPopup__title">Password recovery</h2>
+                        <form class="authPopup__form" action="#">
+                            <div class="authPopup__form-box">
+                                <div class="authPopup__form-block">
+                                    <label class="form-label" for="recovery-password">New Password </label>
+                                    <div class="authPopup__form-password password-content">
+                                        <input class="form-input" type="password" id="recovery-password" name="password">
+                                        <button class="password-show" type="button"></button>
+                                    </div>
+                                    <p class="form-error">* Required field</p>
+                                </div>
+                                <div class="authPopup__form-block">
+                                    <label class="form-label" for="recovery-repeat-password">Confirm New Password* </label>
+                                    <div class="authPopup__form-password password-content">
+                                        <input class="form-input" type="password" id="recovery-repeat-password" name="repeat-password">
+                                        <button class="password-show" type="button"></button>
+                                    </div>
+                                    <p class="form-error">* Required field</p>
+                                </div>
+                            </div>
+                            <button class="authPopup__form-btn btn-2" type="submit">Save</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.11.2/build/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/style.js"></script>
+</body>
+
+</html>

@@ -366,38 +366,27 @@ button {
     opacity: 1;
     animation: btn-hover-anim 3s linear infinite;
 }
-
 .btn-4 {
     border-radius: 0.521vw;
-    width: 21.719vw;
-    height: 4.678vw;
+    width: 20.719vw;
+    height: 5.278vw;
     gap: 2.083vw;
     position: relative;
     z-index: 1;
     color: #FEFCD8;
     font-size: 1.458vw;
     text-transform: uppercase;
-}
-
-.btn-4::before {
-    position: absolute;
-    content: '';
     background-image: url('../img/btn-4.png');
-    z-index: -1;
-    inset: 0;
-    overflow: hidden;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
-
 .btn-4 svg path {
     transition: all .2s ease;
 }
 
 .btn-4:hover {
     color: #fff;
-    box-shadow: -7.87402px 0.984252px 9.74409px rgba(26, 255, 228, 0.27);
     filter: drop-shadow(1.9685px 2.95276px 10.1378px #00FFFF);
 }
 

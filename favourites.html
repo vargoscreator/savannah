@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -151,313 +152,160 @@
     </header>
 
     <main class="main">
-        <section class="marketplace">
+        <section class="profile">
             <div class="container">
                 <ul class="breadcrump">
                     <li>
-                        <a class="breadcrump-main" href="#"></a>
+                        <a class="breadcrump-main" href="profile.html"></a>
                     </li>
                     <li>
-                        <a href="marketplace.html">Marketplace</a>
+                        <a href="favourites.html">Favorites</a>
                     </li>
                 </ul>
-                <div class="marketplace__inner">
-                    <div class="marketplace__left">
-                        <div class="marketplace__balance">
-                            <p class="marketplace__balance-total">Balance: <span>567.56 $</span></p>
-                            <button class="marketplace__balance-btn btn-4">top up  balance</button>
-                            <p class="marketplace__balance-details">Balance Details</p>
+                <div class="profile__inner">
+                    <div class="profile__left">
+                        <div class="profile__user"> 
+                            <div class="profile__user-photo">
+                                <div class="profile__user-image">
+                                    <img src="img/user.webp" alt="">
+                                </div>
+                                <button class="profile__user-photo-edit open-edit"></button>
+                            </div>
+                            <div class="profile__user-info">
+                                <h4 class="profile__user-username">Adam Orea</h4>
+                                <button class="profile__user-edit oen-edit"></button>
+                            </div>
+                            <div class="profile__user-info">
+                                <h4 class="profile__user-name">UID: 12345666</h4>
+                                <button class="profile__user-uid copy-uid"></button>
+                            </div>
+                            <p class="profile__user-balance">567.56 $</p>
+                            <a class="profile__user-btn btn-4" href="#">top up  balance</a>
+                            <a class="profile__user-btn btn-6" href="#">Withdraw funds </a>
+                            <button class="profile__user-transaction transaction-more">Balance Details</button>
                         </div>
-                        <div class="marketplace__filters filters">
-                            <h2 class="filters__title">Filters</h2>
-                            <div class="filters__price">
-                                <h3 class="filters__price-title">Price</h3>
-                                <div class="filters__price-cost">
-                                    <div class="filters__price-slider">
-                                        <div class="filters__price-progress"></div>
+                        <div class="profile__friends">
+                            <form class="profile__friends-search" action="#">
+                                <input type="text" placeholder="Search Friends | UID" required>
+                            </form>
+                            <div class="profile__friends-top">
+                                <h3 class="profile__friends-title"><u>Friends</u> <span>(341)</span> online <span>(3)</span></h3>
+                                <button class="profile__friends-add"></button>
+                            </div>
+                            <div class="profile__friends-block">
+                               <div class="profile__friends-item">
+                                    <div class="profile__friends-photo">
+                                        <div class="profile__friends-image">
+                                            <img src="img/user.webp" alt="">
+                                        </div>
+                                        <span></span>
                                     </div>
-                                    <div class="range-input">
-                                    <input type="range" class="range-min" min="100" max="1000" value="100" step="10">
-                                    <input type="range" class="range-max" min="100" max="10000" value="1000000" step="10">
+                                    <h4 class="profile__friends-name">Michael Daruby</h4>
+                                </div>
+                                <div class="profile__friends-item">
+                                    <div class="profile__friends-photo">
+                                        <div class="profile__friends-image">
+                                            <img src="img/user.webp" alt="">
+                                        </div>
+                                        <span></span>
                                     </div>
+                                    <h4 class="profile__friends-name">Michael Daruby</h4>
                                 </div>
-                                <div class="filters__price-selected">
-                                    <p class="filters__price-from">$100</p>
-                                    <p class="filters__price-to">$1000</p>
-                                </div>
-                            </div>
-
-                            <div class="filters__box">
-                                <div class="filters__box-top">
-                                    <h3 class="filters__name">Characters <span>(2344)</span></h3>
-                                </div>
-                                <div class="filters__block">
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox" hidden value="High Rating" name="rating">
-                                        <span>High Rating</span>
-                                    </label>
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox" hidden value="High Rating" name="rating">
-                                        <span>High Rating</span>
-                                    </label>
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox" hidden value="High Rating" name="rating">
-                                        <span>High Rating</span>
-                                    </label>
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox" hidden value="High Rating" name="rating">
-                                        <span>High Rating</span>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="filters__box">
-                                <div class="filters__box-top">
-                                    <h3 class="filters__name">Inventory <span>(67)</span></h3>
-                                </div>
-                                <div class="filters__block">
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox" hidden value="High Rating" name="rating">
-                                        <span>High Rating</span>
-                                    </label>
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox" hidden value="High Rating" name="rating">
-                                        <span>High Rating</span>
-                                    </label>
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox" hidden value="High Rating" name="rating">
-                                        <span>High Rating</span>
-                                    </label>
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox" hidden value="High Rating" name="rating">
-                                        <span>High Rating</span>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="filters__box">
-                                <div class="filters__box-top">
-                                    <h3 class="filters__name">Inventory <span>(67)</span></h3>
-                                </div>
-                                <div class="filters__block">
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox" hidden value="High Rating" name="rating">
-                                        <span>High Rating</span>
-                                    </label>
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox" hidden value="High Rating" name="rating">
-                                        <span>High Rating</span>
-                                    </label>
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox" hidden value="High Rating" name="rating">
-                                        <span>High Rating</span>
-                                    </label>
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox" hidden value="High Rating" name="rating">
-                                        <span>High Rating</span>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="filters__box">
-                                <div class="filters__box-top">
-                                    <h3 class="filters__name">Inventory <span>(67)</span></h3>
-                                </div>
-                                <div class="filters__block">
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox" hidden value="High Rating" name="rating">
-                                        <span>High Rating</span>
-                                    </label>
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox" hidden value="High Rating" name="rating">
-                                        <span>High Rating</span>
-                                    </label>
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox" hidden value="High Rating" name="rating">
-                                        <span>High Rating</span>
-                                    </label>
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox" hidden value="High Rating" name="rating">
-                                        <span>High Rating</span>
-                                    </label>
+                                <div class="profile__friends-item">
+                                    <div class="profile__friends-photo">
+                                        <div class="profile__friends-image">
+                                            <img src="img/user.webp" alt="">
+                                        </div>
+                                        <span></span>
+                                    </div>
+                                    <h4 class="profile__friends-name">Michael Daruby</h4>
                                 </div>
                             </div>
                         </div>
+
                         <div class="profile__left-end">
                             <a href="#" class="profile__left-link">Privacy Policy </a>
                             <a href="#" class="profile__left-link">User Agreement </a>
                             <p class="profile__left-copy">© 2025 SAVANAH. AII rights reserved.</p>
                         </div>
                     </div>
-                    <div class="marketplace__right">
-                        <div class="marketplace__slider">
-                            <button class="marketplace__slider-prev btn-slide-prev"></button>
-                            <div class="marketplace__slider-content">
-                                <div class="swiper-wrapper">
-                                    <div class="marketplace__slide swiper-slide">
-                                        <div class="marketplace__slide-image">
-                                            <img src="img/filters/1.png" alt="">
+                    <div class="profile__right">
+                        <div class="profile__content characters active" data-profile-content="favourites">
+                            <div class="characters__slider">
+                                <button class="characters__slider-prev btn-slide-prev"></button>
+                                <div class="characters__slider-profile">
+                                    <div class="swiper-wrapper">
+                                        <div class="profile__slide swiper-slide" data-characters-slide="1">
+                                            <div class="profile__slide-image">
+                                                <img src="img/characters/1.png" alt="">
+                                            </div>
+                                            <div class="profile__slide-content">
+                                                <p class="profile__slide-level">21 Lvl</p>
+                                                <h4 class="profile__slide-name">Aligato Jollof-Master</h4>
+                                                <p class="profile__slide-descr">Details about Just Out of the Forge ...</p>
+                                            </div>
                                         </div>
-                                        <h3 class="marketplace__slide-name">Hat</h3>
-                                    </div>
-                                    <div class="marketplace__slide swiper-slide">
-                                        <div class="marketplace__slide-image">
-                                            <img src="img/filters/2.png" alt="">
+                                        <div class="profile__slide swiper-slide" data-characters-slide="2">
+                                            <div class="profile__slide-image">
+                                                <img src="img/characters/1.png" alt="">
+                                            </div>
+                                            <div class="profile__slide-content">
+                                                <p class="profile__slide-level">21 Lvl</p>
+                                                <h4 class="profile__slide-name">Aligato Jollof-Master</h4>
+                                                <p class="profile__slide-descr">Details about Just Out of the Forge ...</p>
+                                            </div>
                                         </div>
-                                        <h3 class="marketplace__slide-name">Amulet</h3>
-                                    </div>
-                                    <div class="marketplace__slide swiper-slide">
-                                        <div class="marketplace__slide-image">
-                                            <img src="img/filters/3.png" alt="">
+                                        <div class="profile__slide swiper-slide" data-characters-slide="3">
+                                            <div class="profile__slide-image">
+                                                <img src="img/characters/1.png" alt="">
+                                            </div>
+                                            <div class="profile__slide-content">
+                                                <p class="profile__slide-level">21 Lvl</p>
+                                                <h4 class="profile__slide-name">Aligato Jollof-Master</h4>
+                                                <p class="profile__slide-descr">Details about Just Out of the Forge ...</p>
+                                            </div>
                                         </div>
-                                        <h3 class="marketplace__slide-name">Pants</h3>
-                                    </div>
-                                    <div class="marketplace__slide swiper-slide">
-                                        <div class="marketplace__slide-image">
-                                            <img src="img/filters/4.png" alt="">
+                                        <div class="profile__slide swiper-slide" data-characters-slide="4">
+                                            <div class="profile__slide-image">
+                                                <img src="img/characters/1.png" alt="">
+                                            </div>
+                                            <div class="profile__slide-content">
+                                                <p class="profile__slide-level">21 Lvl</p>
+                                                <h4 class="profile__slide-name">Aligato Jollof-Master</h4>
+                                                <p class="profile__slide-descr">Details about Just Out of the Forge ...</p>
+                                            </div>
                                         </div>
-                                        <h3 class="marketplace__slide-name">Vambrace</h3>
-                                    </div>
-                                    <div class="marketplace__slide swiper-slide">
-                                        <div class="marketplace__slide-image">
-                                            <img src="img/filters/5.png" alt="">
+                                        <div class="profile__slide swiper-slide" data-characters-slide="5">
+                                            <div class="profile__slide-image">
+                                                <img src="img/characters/1.png" alt="">
+                                            </div>
+                                            <div class="profile__slide-content">
+                                                <p class="profile__slide-level">21 Lvl</p>
+                                                <h4 class="profile__slide-name">Aligato Jollof-Master</h4>
+                                                <p class="profile__slide-descr">Details about Just Out of the Forge ...</p>
+                                            </div>
                                         </div>
-                                        <h3 class="marketplace__slide-name">Ring</h3>
-                                    </div>
-                                    <div class="marketplace__slide swiper-slide">
-                                        <div class="marketplace__slide-image">
-                                            <img src="img/filters/6.png" alt="">
-                                        </div>
-                                        <h3 class="marketplace__slide-name">Gloves</h3>
-                                    </div>
-                                    <div class="marketplace__slide swiper-slide">
-                                        <div class="marketplace__slide-image">
-                                            <img src="img/filters/7.png" alt="">
-                                        </div>
-                                        <h3 class="marketplace__slide-name">Gardbrace</h3>
-                                    </div>
-                                    <div class="marketplace__slide swiper-slide">
-                                        <div class="marketplace__slide-image">
-                                            <img src="img/filters/8.png" alt="">
-                                        </div>
-                                        <h3 class="marketplace__slide-name">Boots</h3>
-                                    </div>
-                                    <div class="marketplace__slide swiper-slide">
-                                        <div class="marketplace__slide-image">
-                                            <img src="img/filters/9.png" alt="">
-                                        </div>
-                                        <h3 class="marketplace__slide-name">Breastplate</h3>
-                                    </div>
-                                    <div class="marketplace__slide swiper-slide">
-                                        <div class="marketplace__slide-image">
-                                            <img src="img/filters/10.png" alt="">
-                                        </div>
-                                        <h3 class="marketplace__slide-name">Ring</h3>
-                                    </div>
-                                    <div class="marketplace__slide swiper-slide">
-                                        <div class="marketplace__slide-image">
-                                            <img src="img/filters/11.png" alt="">
-                                        </div>
-                                        <h3 class="marketplace__slide-name">Pauldron</h3>
-                                    </div>
-
-
-
-                                    <div class="marketplace__slide swiper-slide">
-                                        <div class="marketplace__slide-image">
-                                            <img src="img/filters/1.png" alt="">
-                                        </div>
-                                        <h3 class="marketplace__slide-name">Hat</h3>
-                                    </div>
-                                    <div class="marketplace__slide swiper-slide">
-                                        <div class="marketplace__slide-image">
-                                            <img src="img/filters/2.png" alt="">
-                                        </div>
-                                        <h3 class="marketplace__slide-name">Amulet</h3>
-                                    </div>
-                                    <div class="marketplace__slide swiper-slide">
-                                        <div class="marketplace__slide-image">
-                                            <img src="img/filters/3.png" alt="">
-                                        </div>
-                                        <h3 class="marketplace__slide-name">Pants</h3>
-                                    </div>
-                                    <div class="marketplace__slide swiper-slide">
-                                        <div class="marketplace__slide-image">
-                                            <img src="img/filters/4.png" alt="">
-                                        </div>
-                                        <h3 class="marketplace__slide-name">Vambrace</h3>
-                                    </div>
-                                    <div class="marketplace__slide swiper-slide">
-                                        <div class="marketplace__slide-image">
-                                            <img src="img/filters/5.png" alt="">
-                                        </div>
-                                        <h3 class="marketplace__slide-name">Ring</h3>
-                                    </div>
-                                    <div class="marketplace__slide swiper-slide">
-                                        <div class="marketplace__slide-image">
-                                            <img src="img/filters/6.png" alt="">
-                                        </div>
-                                        <h3 class="marketplace__slide-name">Gloves</h3>
-                                    </div>
-                                    <div class="marketplace__slide swiper-slide">
-                                        <div class="marketplace__slide-image">
-                                            <img src="img/filters/7.png" alt="">
-                                        </div>
-                                        <h3 class="marketplace__slide-name">Gardbrace</h3>
-                                    </div>
-                                    <div class="marketplace__slide swiper-slide">
-                                        <div class="marketplace__slide-image">
-                                            <img src="img/filters/8.png" alt="">
-                                        </div>
-                                        <h3 class="marketplace__slide-name">Boots</h3>
-                                    </div>
-                                    <div class="marketplace__slide swiper-slide">
-                                        <div class="marketplace__slide-image">
-                                            <img src="img/filters/9.png" alt="">
-                                        </div>
-                                        <h3 class="marketplace__slide-name">Breastplate</h3>
-                                    </div>
-                                    <div class="marketplace__slide swiper-slide">
-                                        <div class="marketplace__slide-image">
-                                            <img src="img/filters/10.png" alt="">
-                                        </div>
-                                        <h3 class="marketplace__slide-name">Ring</h3>
-                                    </div>
-                                    <div class="marketplace__slide swiper-slide">
-                                        <div class="marketplace__slide-image">
-                                            <img src="img/filters/11.png" alt="">
-                                        </div>
-                                        <h3 class="marketplace__slide-name">Pauldron</h3>
                                     </div>
                                 </div>
+                                <button class="characters__slider-next btn-slide-next"></button>
                             </div>
-                            <button class="marketplace__slider-next btn-slide-next"></button>
-                        </div>
-                        <div class="marketplace__sort">
-                            <div class="marketplace__sort-start">
-                                <p class="marketplace__sort-found">16 products found</p>
-                                <div class="marketplace__sort-filters">
-                                    <button>Clear all</button>
-                                    <button>High Rating</button>
-                                    <button>High Rating</button>
-                                    <button>High Rating</button>
+                            <div class="characters__content">
+                                <div class="characters__top">
+                                    <div class="favourites__select">
+                                        <h3 class="favourites__select-title">My Favorites:</h3>
+                                        <div class="favourites__select-select">
+                                            <button class="favourites__select-btn active" data-favourites="my-characters">characters (9)</button>
+                                            <span class="favourites__select-btn">/</span>
+                                            <button class="favourites__select-btn" data-favourites="inventory">Inventory (9)</button>
+                                        </div>
+                                    </div>
+                                    <a class="characters__top-btn btn-4" href="#">Go to store</a>
                                 </div>
-                            </div>
-                            <div class="marketplace__sort-select custom-select">
-                                <p class="custom-select-name">Best Price</p>
-                                <div class="custom-select-content">
-                                    <span class="custom-select-btn">Best Price</span>
-                                    <span class="custom-select-btn">Best Price 1</span>
-                                    <span class="custom-select-btn">Best Price 2</span>
-                                </div>
-                                <input type="text" hidden value="Best Price">
-                            </div>
-                        </div>
-                        <div class="marketplace__content">
-                            <div class="product__item" data-product-type="1">
+                                <div class="characters__result active" data-favourites-result="my-characters">
+                                    <div class="product__item" data-product-type="1">
                                         <div class="product__item-top">
                                             <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
+                                            <button class="product__item-fav active"></button>
                                         </div>
                                         <div class="product__item-image">
                                             <img src="img/characters/1.png" alt="">
@@ -466,46 +314,15 @@
                                             <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
                                             <p class="product__item-descr">Just Out of the Forge ...</p>
                                             <div class="product__item-bottom">
-                                                <button class="product__item-details">Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="2">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/characters/2.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-details">Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="3">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/characters/3.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-details">Details</button>
+                                                <p class="product__item-price">3050$</p>
+                                                <button class="product__item-buy btn">Buy <span class="cart-icon"></span></button>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="product__item" data-product-type="1">
                                         <div class="product__item-top">
                                             <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
+                                            <button class="product__item-fav active"></button>
                                         </div>
                                         <div class="product__item-image">
                                             <img src="img/characters/1.png" alt="">
@@ -514,14 +331,15 @@
                                             <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
                                             <p class="product__item-descr">Just Out of the Forge ...</p>
                                             <div class="product__item-bottom">
-                                                <button class="product__item-details">Details</button>
+                                                <p class="product__item-price">3050$</p>
+                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="product__item" data-product-type="4">
                                         <div class="product__item-top">
                                             <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
+                                            <button class="product__item-fav active"></button>
                                         </div>
                                         <div class="product__item-image">
                                             <img src="img/characters/4.png" alt="">
@@ -530,14 +348,15 @@
                                             <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
                                             <p class="product__item-descr">Just Out of the Forge ...</p>
                                             <div class="product__item-bottom">
-                                                <button class="product__item-details">Details</button>
+                                                <p class="product__item-price">3050$</p>
+                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="product__item" data-product-type="5">
                                         <div class="product__item-top">
                                             <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
+                                            <button class="product__item-fav active"></button>
                                         </div>
                                         <div class="product__item-image">
                                             <img src="img/characters/5.png" alt="">
@@ -546,14 +365,18 @@
                                             <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
                                             <p class="product__item-descr">Just Out of the Forge ...</p>
                                             <div class="product__item-bottom">
-                                                <button class="product__item-details">Details</button>
+                                                <p class="product__item-price">3050$</p>
+                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+
+                                <div class="characters__result" data-favourites-result="inventory">
                                     <div class="product__item" data-product-type="yellow">
                                         <div class="product__item-top">
                                             <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
+                                            <button class="product__item-fav active"></button>
                                         </div>
                                         <div class="product__item-image">
                                             <img src="img/products/4.png" alt="">
@@ -569,7 +392,7 @@
                                     <div class="product__item" data-product-type="green">
                                         <div class="product__item-top">
                                             <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
+                                            <button class="product__item-fav active"></button>
                                         </div>
                                         <div class="product__item-image">
                                             <img src="img/products/5.png" alt="">
@@ -585,7 +408,7 @@
                                     <div class="product__item" data-product-type="yellow">
                                         <div class="product__item-top">
                                             <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
+                                            <button class="product__item-fav active"></button>
                                         </div>
                                         <div class="product__item-image">
                                             <img src="img/products/6.png" alt="">
@@ -601,7 +424,7 @@
                                     <div class="product__item" data-product-type="red">
                                         <div class="product__item-top">
                                             <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
+                                            <button class="product__item-fav active"></button>
                                         </div>
                                         <div class="product__item-image">
                                             <img src="img/products/7.png" alt="">
@@ -617,7 +440,7 @@
                                     <div class="product__item" data-product-type="green">
                                         <div class="product__item-top">
                                             <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
+                                            <button class="product__item-fav active"></button>
                                         </div>
                                         <div class="product__item-image">
                                             <img src="img/products/8.png" alt="">
@@ -630,13 +453,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="product__item" data-product-type="red">
+                                    <div class="product__item" data-product-type="grey">
                                         <div class="product__item-top">
                                             <p class="product__item-level">21 Lvl</p>
                                             <button class="product__item-fav"></button>
                                         </div>
                                         <div class="product__item-image">
-                                            <img src="img/products/9.png" alt="">
+                                            <img src="img/products/1.png" alt="">
                                         </div>
                                         <div class="product__item-content">
                                             <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
@@ -646,13 +469,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="product__item" data-product-type="yellow">
+                                    <div class="product__item" data-product-type="grey">
                                         <div class="product__item-top">
                                             <p class="product__item-level">21 Lvl</p>
                                             <button class="product__item-fav"></button>
                                         </div>
                                         <div class="product__item-image">
-                                            <img src="img/products/4.png" alt="">
+                                            <img src="img/products/2.png" alt="">
                                         </div>
                                         <div class="product__item-content">
                                             <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
@@ -662,13 +485,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="product__item" data-product-type="green">
+                                    <div class="product__item" data-product-type="grey">
                                         <div class="product__item-top">
                                             <p class="product__item-level">21 Lvl</p>
                                             <button class="product__item-fav"></button>
                                         </div>
                                         <div class="product__item-image">
-                                            <img src="img/products/5.png" alt="">
+                                            <img src="img/products/3.png" alt="">
                                         </div>
                                         <div class="product__item-content">
                                             <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
@@ -678,72 +501,260 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="product__item" data-product-type="yellow">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/products/6.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="red">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/products/7.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="green">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/products/8.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product__item" data-product-type="red">
-                                        <div class="product__item-top">
-                                            <p class="product__item-level">21 Lvl</p>
-                                            <button class="product__item-fav"></button>
-                                        </div>
-                                        <div class="product__item-image">
-                                            <img src="img/products/9.png" alt="">
-                                        </div>
-                                        <div class="product__item-content">
-                                            <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
-                                            <p class="product__item-descr">Just Out of the Forge ...</p>
-                                            <div class="product__item-bottom">
-                                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="popupProudct">
+            <div class="container">
+                <div class="popupProudct__inner">
+                    <button class="popupProudct__close"></button>
+                    <h2 class="popupProudct__title">Sale Item</h2>
+                    <div class="popupProudct__item product__item" data-product-type="1">
+                        <div class="product__item-top">
+                            <p class="product__item-level">21 Lvl</p>
+                            <button class="product__item-fav active"></button>
+                        </div>
+                        <div class="product__item-image">
+                            <img src="img/characters/1.png" alt="">
+                        </div>
+                        <div class="product__item-content">
+                            <h4 class="product__item-title">Heroes <br>Aligato Jollof-Master</h4>
+                            <p class="product__item-descr">Just Out of the Forge ...</p>
+                            <div class="product__item-bottom">
+                                <p class="product__item-price">3050$</p>
+                                <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popupProudct__end">
+                        <form class="popupProudct__form" action="#">
+                            <label class="popupProudct__label" for="price">Enter you price* </label>
+                            <input class="popupProudct__input" type="text" id="price" name="price">
+                            <p class="popupProudct__error form-error">* Required field</p>
+                        </form>
+                        <button class="popupProudct__btn btn-2">Sell <span class="cart-icon"></span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="editProfile">
+            <div class="container">
+                <div class="editProfile__inner">
+                    <button class="editProfile__close"></button>
+                    <h2 class="editProfile__title">Edit profile</h2>
+                    <form class="editProfile__form" action="#">
+                        <div class="editProfile__form-top">
+                            <label class="editProfile__form-image">
+                                <span class="editProfile__form-user">
+                                    <img src="img/user.webp" alt="">
+                                </span>
+                                <input type="file" name="user-image">
+                                <span class="editProfile__form-file"></span>
+                            </label>
+                            <div class="editProfile__form-about">
+                                <div class="editProfile__form-info">
+                                    <input class="editProfile__form-username" type="text" name="username" value="Adam Orea_1235" readonly required>
+                                    <button class="editProfile__form-edit" type="button"></button>
+                                </div>
+                                <div class="editProfile__form-info">
+                                    <p class="editProfile__form-uid">UID: 12345666</p>
+                                    <button class="editProfile__form-copy" type="button" data-copy="12345666"></button>
+                                </div>
+                                <div class="editProfile__form-info">
+                                    <p class="editProfile__form-uid">Personal link: <br>https://www.figma.com/design/XlsRHWhPtf</p>
+                                    <button class="editProfile__form-copy" type="button" data-copy="https://www.figma.com/design/XlsRHWhPtf"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="editProfile__form-box form-box">
+                            <div class="editProfile__form-block form-block">
+                                <label class="editProfile__form-label form-label" for="name">Your name*</label>
+                                <input class="editProfile__form-input form-input" type="text" id="name" name="name">
+                                <p class="editProfile__form-error form-error">* Required field</p>
+                            </div>
+                            <div class="editProfile__form-block form-block">
+                                <label class="editProfile__form-label form-label" for="tel">Mobile phone* </label>
+                                <input class="editProfile__form-input form-input" type="tel" id="tel" name="tel">
+                                <p class="editProfile__form-error form-error">* Required field</p>
+                            </div>
+                            <div class="editProfile__form-block form-block">
+                                <label class="editProfile__form-label form-label" for="email">E-mail* </label>
+                                <input class="editProfile__form-input form-input" type="email" id="email" name="email">
+                                <p class="editProfile__form-error form-error">* Required field</p>
+                            </div>
+                            <div class="editProfile__form-block form-block">
+                                <label class="editProfile__form-label form-label" for="password">New Password </label>
+                                <div class="editProfile__form-password password-content">
+                                    <input class="form-input" type="password" id="password" name="password">
+                                    <button class="password-show" type="button"></button>
+                                </div>
+                                <p class="editProfile__form-error form-error">* Required field</p>
+                            </div>
+                            <div class="editProfile__form-block form-block">
+                                <label class="editProfile__form-label form-label" for="repeat-password">Confirm New Password* </label>
+                                <div class="editProfile__form-password password-content">
+                                    <input class="form-input" type="password" id="repeat-password" name="repeat-password">
+                                    <button class="password-show" type="button"></button>
+                                </div>
+                                <p class="editProfile__form-error form-error">* Required field</p>
+                            </div>
+                        </div>
+                        <div class="editProfile__form-end">
+                            <button class="editProfile__form-delete" type="button">Delete account</button>
+                            <button class="editProfile__form-btn btn" type="submit">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="authPopup">
+            <div class="container">
+                <div class="authPopup__inner">
+                    <button class="authPopup__close"></button>
+                    <div class="authPopup__content" data-authPopup="register">
+                        <h2 class="authPopup__title">Register</h2>
+                        <form class="authPopup__form" action="#">
+                            <div class="authPopup__form-box form-box">
+                                <div class="authPopup__form-block form-block">
+                                    <label class="form-label" for="register-name">Your name*</label>
+                                    <input class="authPopup__form-input form-input" type="text" id="register-name" name="name">
+                                    <p class="form-error">* Required field</p>
+                                </div>
+                                <div class="authPopup__form-block form-block">
+                                    <label class="form-label" for="register-tel">Mobile phone* </label>
+                                    <input class="authPopup__form-input form-input" type="tel" id="register-tel" name="tel">
+                                    <p class="form-error">* Required field</p>
+                                </div>
+                                <div class="authPopup__form-block form-block">
+                                    <label class="form-label" for="register-email">E-mail* </label>
+                                    <input class="authPopup__form-input form-input" type="email" id="register-email" name="email">
+                                    <p class="form-error">* Required field</p>
+                                </div>
+                                <div class="authPopup__form-block form-block">
+                                    <label class="form-label" for="register-password">New Password </label>
+                                    <div class="authPopup__form-password password-content">
+                                        <input class="form-input" type="password" id="register-password" name="password">
+                                        <button class="password-show" type="button"></button>
+                                    </div>
+                                    <p class="form-error">* Required field</p>
+                                </div>
+                                <div class="authPopup__form-block form-block">
+                                    <label class="form-label" for="register-repeat-password">Confirm New Password* </label>
+                                    <div class="authPopup__form-password password-content">
+                                        <input class="form-input" type="password" id="register-repeat-password" name="repeat-password">
+                                        <button class="password-show" type="button"></button>
+                                    </div>
+                                    <p class="form-error">* Required field</p>
+                                </div>
+                            </div>
+                            <div class="authPopup__form-agreed">
+                                <label class="authPopup__form-checkbox">
+                                    <input type="checkbox" required>
+                                    <span></span>
+                                </label>
+                                <p class="authPopup__form-agreed--descr">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
+                            </div>
+                            <button class="authPopup__form-btn btn-2" type="submit">Register</button>
+                            <p class="authPopup__form-or">or</p>
+                            <button class="authPopup__form-link login-btn" type="button">Login</button>
+                        </form>
+                    </div>
+
+                    <div class="authPopup__content" data-authPopup="login">
+                        <h2 class="authPopup__title">Login</h2>
+                        <form class="authPopup__form" action="#">
+                            <div class="authPopup__form-box form-box">
+                                <div class="authPopup__form-block form-block">
+                                    <label class="form-label" for="login-email">E-mail* </label>
+                                    <input class="authPopup__form-input form-input" type="email" id="login-email" name="email">
+                                    <p class="form-error">* Required field</p>
+                                </div>
+                                <div class="authPopup__form-block form-block">
+                                    <label class="form-label" for="login-password">Password </label>
+                                    <div class="authPopup__form-password password-content">
+                                        <input class="form-input" type="password" id="login-password" name="password">
+                                        <button class="password-show" type="button"></button>
+                                    </div>
+                                    <p class="form-error">* Required field</p>
+                                </div>
+                            </div>
+                            <button class="authPopup__form-btn btn-2" type="submit">Login</button>
+                            <button class="authPopup__form-link forgot-btn" type="button">Forgot your password?</button>
+                            <p class="authPopup__form-or">or</p>
+                            <button class="authPopup__form-link register-btn" type="button">Login</button>
+                        </form>
+                    </div>
+
+                    <div class="authPopup__content" data-authPopup="password-recovery">
+                        <h2 class="authPopup__title">Password recovery</h2>
+                        <p class="authPopup__descr">We sent an email with a confirmation code to the specified address.</p>
+                        <form class="authPopup__form" action="#">
+                            <div class="authPopup__form-box form-box">
+                                <div class="authPopup__form-block form-block">
+                                    <label class="form-label" for="recovery-email">E-mail* </label>
+                                    <input class="authPopup__form-input form-input" type="email" id="recovery-email" name="email">
+                                    <p class="form-error">* Required field</p>
+                                </div>
+                            </div>
+                            <button class="authPopup__form-btn btn-2" type="submit">Send</button>
+                        </form>
+                    </div>
+
+                    <div class="authPopup__content" data-authPopup="password-recovery-code">
+                        <h2 class="authPopup__title">Password recovery</h2>
+                        <p class="authPopup__descr">Enter the 6-digit code from your email <strong>AdamOrea@gmail.com</strong></p>
+                        <form class="authPopup__form" action="#">
+                            <div class="authPopup__code">
+                                <div class="authPopup__code-input form-inputs">
+                                    <input id="code" type="tel">
+                                    <input type="tel">
+                                    <input type="tel">
+                                    <input type="tel">
+                                    <input type="tel">
+                                    <input type="tel">
+                                </div>
+                                <div class="authPopup__code-content">
+                                    <button class="authPopup__code-resend" type="button">Resend code in 58 s</button>
+                                    <button class="authPopup__code-paste" type="button">Paste</button>
+                                </div>
+                            </div>
+                            <button class="authPopup__form-btn btn-2" type="submit">Next</button>
+                        </form>
+                    </div>
+
+                    <div class="authPopup__content" data-authPopup="password-recovery-last">
+                        <h2 class="authPopup__title">Password recovery</h2>
+                        <form class="authPopup__form" action="#">
+                            <div class="authPopup__form-box form-box">
+                                <div class="authPopup__form-block form-block">
+                                    <label class="form-label" for="recovery-password">New Password </label>
+                                    <div class="authPopup__form-password password-content">
+                                        <input class="form-input" type="password" id="recovery-password" name="password">
+                                        <button class="password-show" type="button"></button>
+                                    </div>
+                                    <p class="form-error">* Required field</p>
+                                </div>
+                                <div class="authPopup__form-block form-block">
+                                    <label class="form-label" for="recovery-repeat-password">Confirm New Password* </label>
+                                    <div class="authPopup__form-password password-content">
+                                        <input class="form-input" type="password" id="recovery-repeat-password" name="repeat-password">
+                                        <button class="password-show" type="button"></button>
+                                    </div>
+                                    <p class="form-error">* Required field</p>
+                                </div>
+                            </div>
+                            <button class="authPopup__form-btn btn-2" type="submit">Save</button>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -758,8 +769,7 @@
     <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/marketplace.js"></script>
-
+    <script src="js/profile.js"></script>
 </body>
 
 </html>
