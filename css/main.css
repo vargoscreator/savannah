@@ -4791,17 +4791,14 @@ button {
 .product__item:hover:after {
     opacity: 1;
 }
-
 .product__item:hover:after {
     animation: spin 2.5s linear infinite;
 }
-
 @property --rotate {
     syntax: "<angle>";
     initial-value: 132deg;
     inherits: false;
 }
-
 .product__item::before {
     content: "";
     width: 102%;
@@ -4813,15 +4810,12 @@ button {
     top: -0.5%;
     left: -1%;
     opacity: 0;
-
     animation: spin 2.5s linear infinite;
     transition: opacity .5s;
 }
-
 .product__item.product__item-gold::before {
     background-image: linear-gradient(var(--rotate), rgba(240, 197, 92, 0.66) 46%, rgba(48, 38, 28, 0.66));
 }
-
 .product__item::after {
     position: absolute;
     content: "";
@@ -4838,11 +4832,9 @@ button {
     opacity: 1;
     transition: opacity .5s;
 }
-
 .product__item.product__item-gold::after {
     background-image: linear-gradient(var(--rotate), rgba(240, 197, 92, 0.66) 46%, rgba(48, 38, 28, 0.66));
 }
-
 @keyframes spin {
     0% {
         --rotate: 0deg;
@@ -4852,8 +4844,6 @@ button {
         --rotate: 360deg;
     }
 }
-
-
 .product__item-btn {
     width: 6.927vw;
     height: 2.604vw;
