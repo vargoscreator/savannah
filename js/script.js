@@ -242,58 +242,34 @@ document.addEventListener('DOMContentLoaded', () => {
     
         // PHOTO
         const fileButton = document.querySelector('.editProfile__form-file');
-    // Контейнер, который мы будем сдвигать
-    const userContainer = document.querySelector('.editProfile__form-user'); 
-    // Все обертки картинок (слайды)
-    const imageWrappers = document.querySelectorAll('.editProfile__form-user--image');
-    // Скрытое поле ввода
-    const inputField = document.getElementById('selectedImageFile'); 
-    
-    if (imageWrappers.length === 0 || !inputField) {
-        console.error('Не найдены картинки или поле ввода.');
-        return;
-    }
-
-    let currentIndex = 0; 
-    
-    // Инициализация: Устанавливаем начальное значение в input
-    // Получаем img из первой обертки
-    const firstImage = imageWrappers[0].querySelector('img');
-    if (firstImage) {
-        inputField.value = firstImage.getAttribute('src').split('/').pop();
-    }
-
-
-    // Функция переключения
-    function cycleImage() {
-        // 1. Рассчитываем новый индекс
-        currentIndex = (currentIndex + 1) % imageWrappers.length;
-        
-        // 2. Рассчитываем сдвиг (для "справа налево")
-        const offset = -currentIndex * 100;
-
-        // 3. Применяем горизонтальный сдвиг
-        userContainer.style.transform = `translateX(${offset}%)`;
-
-        // 4. Обновление значения скрытого поля ввода
-        // Находим IMG внутри активной (текущей) обертки
-        const activeWrapper = imageWrappers[currentIndex];
-        const nextImage = activeWrapper.querySelector('img');
-        
-        if (nextImage) {
-            const fullPath = nextImage.getAttribute('src');
-            // Извлекаем только имя файла (например, "2.png")
-            const fileName = fullPath.split('/').pop(); 
-            inputField.value = fileName; 
-            
-            console.log(`Сдвиг: ${offset}%. Выбрана картинка: ${fileName}`);
+        const userContainer = document.querySelector('.editProfile__form-user'); 
+        const imageWrappers = document.querySelectorAll('.editProfile__form-user--image');
+        const inputField = document.getElementById('selectedImageFile'); 
+        if (imageWrappers.length === 0 || !inputField) {
+            return;
         }
+        let currentIndex = 0; 
+        const firstImage = imageWrappers[0].querySelector('img');
+        if (firstImage) {
+            inputField.value = firstImage.getAttribute('src').split('/').pop();
+        }
+        function cycleImage() {
+            currentIndex = (currentIndex + 1) % imageWrappers.length;
+            const offset = -currentIndex * 100;
+            userContainer.style.transform = `translateX(${offset}%)`;
+            const activeWrapper = imageWrappers[currentIndex];
+            const nextImage = activeWrapper.querySelector('img');
+            
+            if (nextImage) {
+                const fullPath = nextImage.getAttribute('src');
+                const fileName = fullPath.split('/').pop(); 
+                inputField.value = fileName; 
+                
+                console.log(`Сдвиг: ${offset}%. Выбрана картинка: ${fileName}`);
+            }
+        }
+        fileButton.addEventListener('click', cycleImage);
     }
-
-    // Вешаем обработчик клика
-    fileButton.addEventListener('click', cycleImage);
-    }
-
 });
 
 
