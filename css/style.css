@@ -1417,7 +1417,7 @@ a.profile__left-link:hover{
     .profile__inner{
         gap: 60px;
         height: auto;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .profile__left{
         margin-top: 0;

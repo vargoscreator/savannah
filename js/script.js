@@ -1,3 +1,24 @@
+function moveUserContent() {
+    const userContent = document.querySelector('.header__user-balance');
+    const userBlock = document.querySelector('.header__user-content');
+    const bottomBlockInner = document.querySelector('.header__bottom-inner');
+    if (!userContent || !userBlock || !bottomBlockInner) {
+        return;
+    }
+    const breakpoint = 480;
+    if (window.innerWidth < breakpoint) {
+        if (userContent.parentElement !== bottomBlockInner) {
+            bottomBlockInner.appendChild(userContent);
+        }
+    } else {
+        if (userContent.parentElement !== userBlock) {
+            userBlock.appendChild(userContent);
+        }
+    }
+}
+moveUserContent();
+window.addEventListener('resize', moveUserContent);
+
 document.addEventListener("DOMContentLoaded", () => {
     const about = document.querySelector(".header__about");
     const content = document.querySelector(".header__about-content");
@@ -206,19 +227,18 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-
-    const passwordBtns = editForm.querySelectorAll('.password-show');
-    passwordBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const input = btn.closest('.password-content')?.querySelector('input');
-            if (!input) return;
-            input.type = input.type === 'password' ? 'text' : 'password';
-            btn.classList.toggle('active');
+    if (editForm) {
+        const passwordBtns = editForm.querySelectorAll('.password-show');
+        passwordBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const input = btn.closest('.password-content')?.querySelector('input');
+                if (!input) return;
+                input.type = input.type === 'password' ? 'text' : 'password';
+                btn.classList.toggle('active');
+            });
         });
-    });
-
-    const imageLabel = editForm.querySelector('.editProfile__form-image');
-    if (imageLabel) {
+    
+        const imageLabel = editForm.querySelector('.editProfile__form-image');
         const img = imageLabel.querySelector('img');
         const fileInput = imageLabel.querySelector('input[type="file"]');
 
@@ -353,26 +373,3 @@ document.addEventListener("click", (e) => {
     headerBottom.classList.remove("active");
   }
 });
-
-
-
-function moveUserContent() {
-    const userContent = document.querySelector('.header__user-balance');
-    const userBlock = document.querySelector('.header__user-content');
-    const bottomBlockInner = document.querySelector('.header__bottom-inner');
-    if (!userContent || !userBlock || !bottomBlockInner) {
-        return;
-    }
-    const breakpoint = 480;
-    if (window.innerWidth < breakpoint) {
-        if (userContent.parentElement !== bottomBlockInner) {
-            bottomBlockInner.appendChild(userContent);
-        }
-    } else {
-        if (userContent.parentElement !== userBlock) {
-            userBlock.appendChild(userContent);
-        }
-    }
-}
-window.addEventListener('load', moveUserContent);
-window.addEventListener('resize', moveUserContent);
