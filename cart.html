@@ -190,35 +190,37 @@
                             </form>
                             <div class="profile__friends-top">
                                 <h3 class="profile__friends-title"><u>Friends</u> <span>(341)</span> online <span>(3)</span></h3>
-                                <button class="profile__friends-add"></button>
                             </div>
                             <div class="profile__friends-block">
                                <div class="profile__friends-item">
                                     <div class="profile__friends-photo">
                                         <div class="profile__friends-image">
-                                            <img src="img/user.webp" alt="">
+                                            <img src="img/user-1.png" alt="">
                                         </div>
                                         <span></span>
                                     </div>
-                                    <h4 class="profile__friends-name">Michael Daruby</h4>
+                                    <h4 class="profile__friends-name">Daniel Abbasi</h4>
+                                    <button class="profile__friends-add"></button>
                                 </div>
                                 <div class="profile__friends-item">
                                     <div class="profile__friends-photo">
                                         <div class="profile__friends-image">
-                                            <img src="img/user.webp" alt="">
+                                            <img src="img/user-2.png" alt="">
                                         </div>
                                         <span></span>
                                     </div>
                                     <h4 class="profile__friends-name">Michael Daruby</h4>
+                                    <button class="profile__friends-add"></button>
                                 </div>
                                 <div class="profile__friends-item">
                                     <div class="profile__friends-photo">
                                         <div class="profile__friends-image">
-                                            <img src="img/user.webp" alt="">
+                                            <img src="img/user-3.png" alt="">
                                         </div>
                                         <span></span>
                                     </div>
-                                    <h4 class="profile__friends-name">Michael Daruby</h4>
+                                    <h4 class="profile__friends-name">Jannet Makron</h4>
+                                    <button class="profile__friends-add"></button>
                                 </div>
                             </div>
                         </div>
@@ -373,7 +375,7 @@
                                                     <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
                                                     <p class="product__item-descr">Just Out of the Forge ...</p>
                                                     <div class="product__item-bottom">
-                                                        <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
+                                                        <button class="product__item-details">Details</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -397,7 +399,7 @@
                                                     <h4 class="product__item-title">magic item for <br>Aligato Jollof-Master</h4>
                                                     <p class="product__item-descr">Just Out of the Forge ...</p>
                                                     <div class="product__item-bottom">
-                                                        <button class="product__item-sell btn-2">Sell <span class="cart-icon"></span></button>
+                                                        <button class="product__item-details">Details</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -460,13 +462,29 @@
                     <h2 class="editProfile__title">Edit profile</h2>
                     <form class="editProfile__form" action="#">
                         <div class="editProfile__form-top">
-                            <label class="editProfile__form-image">
-                                <span class="editProfile__form-user">
-                                    <img src="img/user.webp" alt="">
-                                </span>
-                                <input type="file" name="user-image" accept="image/*">
+                            <div class="editProfile__form-photo">
+                                <div class="editProfile__form-image">
+                                    <input type="hidden" id="selectedImageFile" name="profile_image" value="1.png">
+                                    <span class="editProfile__form-user">
+                                        <div class="editProfile__form-user--image">
+                                            <img src="img/editPhoto/1.png" alt="">
+                                        </div>
+                                        <div class="editProfile__form-user--image">
+                                            <img src="img/editPhoto/2.png" alt="">
+                                        </div>
+                                        <div class="editProfile__form-user--image">
+                                            <img src="img/editPhoto/3.png" alt="">
+                                        </div>
+                                        <div class="editProfile__form-user--image">
+                                            <img src="img/editPhoto/4.png" alt="">
+                                        </div>
+                                        <div class="editProfile__form-user--image">
+                                            <img src="img/editPhoto/5.png" alt="">
+                                        </div>
+                                    </span>
+                                </div>
                                 <span class="editProfile__form-file"></span>
-                            </label>
+                            </div>
                             <div class="editProfile__form-about">
                                 <div class="editProfile__form-info">
                                     <input class="editProfile__form-username" type="text" name="username" value="Adam Orea_1235" readonly required>

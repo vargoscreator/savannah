@@ -47,3 +47,18 @@ favButtons.forEach(button => {
         }
     });
 });
+
+
+moveBlock()
+window.addEventListener('resize', moveBlock);
+function moveBlock() {
+  const profileLeftEnd = document.querySelector('.profile__left-end');
+  const profileLeft = document.querySelector('.profile__left');
+  const main = document.querySelector('main.main');
+  if (!profileLeftEnd || !profileLeft || !main) return;
+  if (window.innerWidth < 768) {
+    main.appendChild(profileLeftEnd);
+  } else {
+    profileLeft.appendChild(profileLeftEnd);
+  }
+}

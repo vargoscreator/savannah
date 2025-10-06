@@ -20,18 +20,20 @@ moveUserContent();
 window.addEventListener('resize', moveUserContent);
 
 document.addEventListener("DOMContentLoaded", () => {
-    const about = document.querySelector(".header__about");
-    const content = document.querySelector(".header__about-content");
-    const more = document.querySelector(".header__about-more");
-    content.addEventListener("click", (e) => {
-        e.stopPropagation();
-        about.classList.add("active");
-    });
-    document.addEventListener("click", (e) => {
-        if (!more.contains(e.target)) {
-            about.classList.remove("active");
-        }
-    });
+    if(document.querySelector(".header__about")){
+        const about = document.querySelector(".header__about");
+        const content = document.querySelector(".header__about-content");
+        const more = document.querySelector(".header__about-more");
+        content.addEventListener("click", (e) => {
+            e.stopPropagation();
+            about.classList.add("active");
+        });
+        document.addEventListener("click", (e) => {
+            if (!more.contains(e.target)) {
+                about.classList.remove("active");
+            }
+        });   
+    }
 });
 
 
@@ -238,24 +240,58 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     
-        const imageLabel = editForm.querySelector('.editProfile__form-image');
-        const img = imageLabel.querySelector('img');
-        const fileInput = imageLabel.querySelector('input[type="file"]');
+        // PHOTO
+        const fileButton = document.querySelector('.editProfile__form-file');
+    // Контейнер, который мы будем сдвигать
+    const userContainer = document.querySelector('.editProfile__form-user'); 
+    // Все обертки картинок (слайды)
+    const imageWrappers = document.querySelectorAll('.editProfile__form-user--image');
+    // Скрытое поле ввода
+    const inputField = document.getElementById('selectedImageFile'); 
+    
+    if (imageWrappers.length === 0 || !inputField) {
+        console.error('Не найдены картинки или поле ввода.');
+        return;
+    }
 
-        fileInput.addEventListener('change', e => {
-            const file = e.target.files[0];
-            if (!file) return;
-            if (!file.type.startsWith('image/')) {
-                fileInput.value = '';
-                alert('Please select an image file');
-                return;
-            }
-            const reader = new FileReader();
-            reader.onload = () => {
-                img.src = reader.result;
-            };
-            reader.readAsDataURL(file);
-        });
+    let currentIndex = 0; 
+    
+    // Инициализация: Устанавливаем начальное значение в input
+    // Получаем img из первой обертки
+    const firstImage = imageWrappers[0].querySelector('img');
+    if (firstImage) {
+        inputField.value = firstImage.getAttribute('src').split('/').pop();
+    }
+
+
+    // Функция переключения
+    function cycleImage() {
+        // 1. Рассчитываем новый индекс
+        currentIndex = (currentIndex + 1) % imageWrappers.length;
+        
+        // 2. Рассчитываем сдвиг (для "справа налево")
+        const offset = -currentIndex * 100;
+
+        // 3. Применяем горизонтальный сдвиг
+        userContainer.style.transform = `translateX(${offset}%)`;
+
+        // 4. Обновление значения скрытого поля ввода
+        // Находим IMG внутри активной (текущей) обертки
+        const activeWrapper = imageWrappers[currentIndex];
+        const nextImage = activeWrapper.querySelector('img');
+        
+        if (nextImage) {
+            const fullPath = nextImage.getAttribute('src');
+            // Извлекаем только имя файла (например, "2.png")
+            const fileName = fullPath.split('/').pop(); 
+            inputField.value = fileName; 
+            
+            console.log(`Сдвиг: ${offset}%. Выбрана картинка: ${fileName}`);
+        }
+    }
+
+    // Вешаем обработчик клика
+    fileButton.addEventListener('click', cycleImage);
     }
 
 });
@@ -308,10 +344,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const productForm = document.querySelector('.popupProudct__form');
+    const productForm = document.querySelector('.popupProduct__form');
     if (!productForm) return;
     const inputPrice = productForm.querySelector('input[name="price"]');
-    const errorMsg = productForm.querySelector('.popupProudct__error');
+    const errorMsg = productForm.querySelector('.popupProduct__error');
     productForm.addEventListener('submit', e => {
         e.preventDefault();
         let hasError = false;
@@ -372,4 +408,51 @@ document.addEventListener("click", (e) => {
   ) {
     headerBottom.classList.remove("active");
   }
+});
+
+
+
+document.querySelectorAll('.profile__friends-top').forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('active');
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.addEventListener("click", (e) => {
+        const btn = e.target.closest("[data-popupProduct-btn]");
+        if (btn) {
+            e.preventDefault();
+            const isInsideActivePopup = e.target.closest(".popupProduct.active");
+            if (!isInsideActivePopup) {
+                const popupName = btn.getAttribute("data-popupProduct-btn");
+                const popup = document.querySelector(`.popupProduct[data-popupProduct="${popupName}"]`);   
+                if (popup) {
+                    popup.classList.add("active");
+                }
+            }
+            return;
+        }
+        const activePopup = document.querySelector(".popupProduct.active");
+        if (!activePopup) return;
+        const closeBtn = e.target.closest(".popupProduct__close");
+        const inner = activePopup.querySelector(".popupProduct__inner");
+        if (closeBtn) {
+            activePopup.classList.remove("active");
+            return;
+        }
+        if (inner && !inner.contains(e.target)) {
+            activePopup.classList.remove("active");
+        }
+        
+    });
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+            const activePopup = document.querySelector(".popupProduct.active");
+            if (activePopup) {
+                activePopup.classList.remove("active");
+            }
+        }
+    });
 });
