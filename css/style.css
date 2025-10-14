@@ -1589,6 +1589,27 @@ a.profile__left-link:hover{
 .profile__content:not(.active){
     display: none;
 }
+
+.profile .characters__result .product__item[data-product-type="grey"] .product__item-image, 
+.profile .characters__result .product__item[data-product-type="blue-grey"] .product__item-image, 
+.profile .characters__result .product__item[data-product-type="green"] .product__item-image, 
+.profile .characters__result .product__item[data-product-type="pink"] .product__item-image, 
+.profile .characters__result .product__item[data-product-type="red"] .product__item-image, 
+.profile .characters__result .product__item[data-product-type="yellow"] .product__item-image{
+    width: 4.219vw;
+    min-width: 4.219vw;
+    height: 8.229vw;
+    margin-bottom: -0.365vw;
+}
+
+.profile .characters__result .product__item[data-product-type="blue-grey"] .product__item-image img,
+.profile .characters__result .product__item[data-product-type="pink"] .product__item-image img,
+.profile .characters__result .product__item[data-product-type="yellow"] .product__item-image img,
+.profile .characters__result .product__item[data-product-type="red"] .product__item-image img,
+.profile .characters__result .product__item[data-product-type="grey"] .product__item-image img{
+    object-fit: cover;
+}
+
 @media (max-width: 768px) {
     .profile__inner{
         gap: 60px;
@@ -1736,6 +1757,23 @@ a.profile__left-link:hover{
     .profile__left-copy{
         font-size: 10px;
         line-height: 22px;
+    }
+
+    .profile .characters__result .product__item[data-product-type="grey"] .product__item-image, 
+    .profile .characters__result .product__item[data-product-type="blue-grey"] .product__item-image, 
+    .profile .characters__result .product__item[data-product-type="green"] .product__item-image, 
+    .profile .characters__result .product__item[data-product-type="pink"] .product__item-image, 
+    .profile .characters__result .product__item[data-product-type="red"] .product__item-image, 
+    .profile .characters__result .product__item[data-product-type="yellow"] .product__item-image{
+        width: 81.005px;
+        min-width: 81.005px;
+        height: 157.997px;
+        margin-bottom: -7.008px;
+    }
+
+     .profile .characters__result .product__item-front, 
+     .profile .characters__result .product__item-back{
+        padding-bottom: 3vw;
     }
 }
 /* characters */
