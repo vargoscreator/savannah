@@ -22,6 +22,17 @@ document.addEventListener("DOMContentLoaded", function () {
       prevEl: ".storeSelects__slider-prev",
     },
     breakpoints: {
+      0: {
+        pagination: {
+          el: ".storeSelects__slider-dots",
+          clickable: true,
+        },
+      },
+      640: {
+        spaceBetween: 15,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      },
       769: {
         spaceBetween: 56,
         slidesPerView: 3,
@@ -1129,11 +1140,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuSection = document.querySelector(".headerMenuSection");
   const headerMenu = document.querySelector(".headerMenu");
   const headerMenuClose = document.querySelector(".headerMenu__close");
+  const headerContent = this.documentElement.querySelector(".header__content");
   headerBurger.addEventListener("click", () => {
     menuSection.classList.add("active");
+    headerBurger.classList.add("hidden");
+    headerContent.classList.add("hidden");
   });
   headerMenuClose.addEventListener("click", () => {
     menuSection.classList.remove("active");
+    headerBurger.classList.remove("hidden");
+    headerContent.classList.remove("hidden");
   });
   document.addEventListener("click", (e) => {
     if (
@@ -1142,6 +1158,8 @@ document.addEventListener("DOMContentLoaded", function () {
       !headerBurger.contains(e.target)
     ) {
       menuSection.classList.remove("active");
+      headerBurger.classList.remove("hidden");
+      headerContent.classList.remove("hidden");
     }
   });
   const header = document.querySelector(".header");
@@ -1188,5 +1206,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
   $("[data-tilt]").tilt({
     maxTilt: 7,
+  });
+
+  document.querySelectorAll(".flip-box").forEach((box) => {
+    box.querySelectorAll(".product__item-2-liked").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        box
+          .querySelectorAll(".product__item-2-liked")
+          .forEach((b) => b.classList.toggle("active"));
+      });
+    });
+  });
+
+  let equipSlider = new Swiper(".equip__block_mobile", {
+    // loop: true,
+    spaceBetween: 20,
+    slidesPerView: 1,
+    // slidesPerGroup: 1,
+    speed: 800,
+    allowTouchMove: true,
+    breakpoints: {
+      500: {
+        spaceBetween: 40,
+        slidesPerView: 2,
+        // slidesPerGroup: 2,
+      },
+    },
+    // navigation: {
+    //   nextEl: ".characters__slider-next",
+    //   prevEl: ".characters__slider-prev",
+    // },
   });
 });
