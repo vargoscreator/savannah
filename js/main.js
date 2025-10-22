@@ -22,6 +22,17 @@ document.addEventListener("DOMContentLoaded", function () {
       prevEl: ".storeSelects__slider-prev",
     },
     breakpoints: {
+      0: {
+        pagination: {
+          el: ".storeSelects__slider-dots",
+          clickable: true,
+        },
+      },
+      640: {
+        spaceBetween: 15,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      },
       769: {
         spaceBetween: 56,
         slidesPerView: 3,
@@ -107,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  if (window.innerWidth <= 767) {
+  if (window.innerWidth <= 768) {
     let charactersSlider = new Swiper(".characters__slider--mob", {
       loop: false,
       slidesPerView: 1,
@@ -251,34 +262,35 @@ document.addEventListener("DOMContentLoaded", function () {
           observer.disable();
         }
       }
+      if (window.innerWidth >= 769) {
+        ScrollTrigger.create({
+          trigger: ".characters",
+          start: "top top",
+          // end: () => "+=" + window.innerHeight,
+          end: () => "+=" + window.innerHeight * (charactersSlides.length - 1),
+          pin: true,
+          onEnter: () => {
+            if (!observer) createObserver();
+            else observer.enable();
+            observer.preventDefault = true;
+          },
+          onEnterBack: () => {
+            if (!observer) createObserver();
+            else observer.enable();
+            observer.preventDefault = true;
+          },
+          onLeave: () => disableObserver(),
+          onLeaveBack: () => disableObserver(),
+        });
 
-      ScrollTrigger.create({
-        trigger: ".characters",
-        start: "top top",
-        // end: () => "+=" + window.innerHeight,
-        end: () => "+=" + window.innerHeight * (charactersSlides.length - 1),
-        pin: true,
-        onEnter: () => {
-          if (!observer) createObserver();
-          else observer.enable();
-          observer.preventDefault = true;
-        },
-        onEnterBack: () => {
-          if (!observer) createObserver();
-          else observer.enable();
-          observer.preventDefault = true;
-        },
-        onLeave: () => disableObserver(),
-        onLeaveBack: () => disableObserver(),
-      });
-
-      ScrollTrigger.create({
-        trigger: ".characters__inner",
-        start: "top 70%",
-        onEnter: () => {
-          animateSlide(charactersSlides[0]);
-        },
-      });
+        ScrollTrigger.create({
+          trigger: ".characters__inner",
+          start: "top 70%",
+          onEnter: () => {
+            animateSlide(charactersSlides[0]);
+          },
+        });
+      }
     }
   }
 
@@ -1129,21 +1141,25 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuSection = document.querySelector(".headerMenuSection");
   const headerMenu = document.querySelector(".headerMenu");
   const headerMenuClose = document.querySelector(".headerMenu__close");
+  const headerInner = this.documentElement.querySelector(".header__inner");
   headerBurger.addEventListener("click", () => {
     menuSection.classList.add("active");
+    headerInner.classList.add("hidden");
   });
   headerMenuClose.addEventListener("click", () => {
     menuSection.classList.remove("active");
+    headerInner.classList.remove("hidden");
   });
-  document.addEventListener("click", (e) => {
-    if (
-      menuSection.classList.contains("active") &&
-      !headerMenu.contains(e.target) &&
-      !headerBurger.contains(e.target)
-    ) {
-      menuSection.classList.remove("active");
-    }
-  });
+  // document.addEventListener("click", (e) => {
+  //   if (
+  //     menuSection.classList.contains("active") &&
+  //     !headerMenu.contains(e.target) &&
+  //     !headerBurger.contains(e.target)
+  //   ) {
+  //     menuSection.classList.remove("active");
+  //     headerInner.classList.remove("hidden");
+  //   }
+  // });
   const header = document.querySelector(".header");
   function checkHeaderScroll() {
     if (window.scrollY > 50) {
@@ -1188,5 +1204,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
   $("[data-tilt]").tilt({
     maxTilt: 7,
+  });
+
+  document.querySelectorAll(".flip-box").forEach((box) => {
+    box.querySelectorAll(".product__item-2-liked").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        box
+          .querySelectorAll(".product__item-2-liked")
+          .forEach((b) => b.classList.toggle("active"));
+      });
+    });
+  });
+
+  let equipSlider = new Swiper(".equip__block_mobile", {
+    // loop: true,
+    spaceBetween: 20,
+    slidesPerView: 1,
+    // slidesPerGroup: 1,
+    speed: 800,
+    allowTouchMove: true,
+    breakpoints: {
+      500: {
+        spaceBetween: 40,
+        slidesPerView: 2,
+        // slidesPerGroup: 2,
+      },
+    },
+    // navigation: {
+    //   nextEl: ".characters__slider-next",
+    //   prevEl: ".characters__slider-prev",
+    // },
   });
 });

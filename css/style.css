@@ -1265,19 +1265,6 @@ button.header__user-link:not(:hover){
     opacity: 1;
 }
 
-/* .flip-box .inner {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  padding: 60px;
-  -webkit-perspective: inherit;
-  perspective: inherit;
-  z-index: 2;
-  transform: translateY(-50%) translateZ(60px) scale(.94);
-  -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
-  -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
-  top: 50%;
-} */
 
 .characters__result .product__item-list {
     font-size: 0.621vw;
