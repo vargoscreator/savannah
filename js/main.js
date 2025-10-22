@@ -378,7 +378,7 @@ document.addEventListener("DOMContentLoaded", function () {
       return part
         .split("")
         .map((char) =>
-          char === " " ? "&nbsp;" : `<span class="letter">${char}</span>`
+          char === " " ? " " : `<span class="letter">${char}</span>`
         )
         .join("");
     })
@@ -1144,11 +1144,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const headerInner = this.documentElement.querySelector(".header__inner");
   headerBurger.addEventListener("click", () => {
     menuSection.classList.add("active");
+    header.classList.add("fixed");
     headerInner.classList.add("hidden");
   });
   headerMenuClose.addEventListener("click", () => {
     menuSection.classList.remove("active");
     headerInner.classList.remove("hidden");
+    header.classList.remove("fixed");
   });
   // document.addEventListener("click", (e) => {
   //   if (
@@ -1234,5 +1236,44 @@ document.addEventListener("DOMContentLoaded", function () {
     //   nextEl: ".characters__slider-next",
     //   prevEl: ".characters__slider-prev",
     // },
+  });
+
+  const btn = document.querySelector(".hero__btn");
+  btn.querySelector(".hero-dropdown").addEventListener("click", (e) => {
+    e.preventDefault();
+    const t = btn.querySelector(".hero-target-icon");
+    const d = btn.querySelector(".hero-icon-dropdown");
+    [t.src, d.src] = [d.src, t.src];
+  });
+
+  const btn3 = document.querySelector(".hero__btn.btn-3");
+  btn3 &&
+    btn3.addEventListener(
+      "mouseenter",
+      (e) => (e.target.textContent = "COMING SOON")
+    );
+  btn3 &&
+    btn3.addEventListener(
+      "mouseleave",
+      (e) => (e.target.textContent = "PLAY ONLINE")
+    );
+
+  const buttons = [
+    { selector: ".mobileapp__btn.btn-6", defaultText: "Google play" },
+    { selector: ".mobileapp__btn.btn-5", defaultText: "App store" },
+  ];
+
+  buttons.forEach(({ selector, defaultText }) => {
+    const btn = document.querySelector(selector);
+    if (!btn) return;
+
+    const span = btn.querySelector("span");
+    if (!span) return;
+
+    btn.addEventListener(
+      "mouseenter",
+      () => (span.textContent = "COMING SOON")
+    );
+    btn.addEventListener("mouseleave", () => (span.textContent = defaultText));
   });
 });
