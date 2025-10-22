@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  if (window.innerWidth <= 767) {
+  if (window.innerWidth <= 768) {
     let charactersSlider = new Swiper(".characters__slider--mob", {
       loop: false,
       slidesPerView: 1,
@@ -262,34 +262,35 @@ document.addEventListener("DOMContentLoaded", function () {
           observer.disable();
         }
       }
+      if (window.innerWidth >= 769) {
+        ScrollTrigger.create({
+          trigger: ".characters",
+          start: "top top",
+          // end: () => "+=" + window.innerHeight,
+          end: () => "+=" + window.innerHeight * (charactersSlides.length - 1),
+          pin: true,
+          onEnter: () => {
+            if (!observer) createObserver();
+            else observer.enable();
+            observer.preventDefault = true;
+          },
+          onEnterBack: () => {
+            if (!observer) createObserver();
+            else observer.enable();
+            observer.preventDefault = true;
+          },
+          onLeave: () => disableObserver(),
+          onLeaveBack: () => disableObserver(),
+        });
 
-      ScrollTrigger.create({
-        trigger: ".characters",
-        start: "top top",
-        // end: () => "+=" + window.innerHeight,
-        end: () => "+=" + window.innerHeight * (charactersSlides.length - 1),
-        pin: true,
-        onEnter: () => {
-          if (!observer) createObserver();
-          else observer.enable();
-          observer.preventDefault = true;
-        },
-        onEnterBack: () => {
-          if (!observer) createObserver();
-          else observer.enable();
-          observer.preventDefault = true;
-        },
-        onLeave: () => disableObserver(),
-        onLeaveBack: () => disableObserver(),
-      });
-
-      ScrollTrigger.create({
-        trigger: ".characters__inner",
-        start: "top 70%",
-        onEnter: () => {
-          animateSlide(charactersSlides[0]);
-        },
-      });
+        ScrollTrigger.create({
+          trigger: ".characters__inner",
+          start: "top 70%",
+          onEnter: () => {
+            animateSlide(charactersSlides[0]);
+          },
+        });
+      }
     }
   }
 
@@ -1140,28 +1141,25 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuSection = document.querySelector(".headerMenuSection");
   const headerMenu = document.querySelector(".headerMenu");
   const headerMenuClose = document.querySelector(".headerMenu__close");
-  const headerContent = this.documentElement.querySelector(".header__content");
+  const headerInner = this.documentElement.querySelector(".header__inner");
   headerBurger.addEventListener("click", () => {
     menuSection.classList.add("active");
-    headerBurger.classList.add("hidden");
-    headerContent.classList.add("hidden");
+    headerInner.classList.add("hidden");
   });
   headerMenuClose.addEventListener("click", () => {
     menuSection.classList.remove("active");
-    headerBurger.classList.remove("hidden");
-    headerContent.classList.remove("hidden");
+    headerInner.classList.remove("hidden");
   });
-  document.addEventListener("click", (e) => {
-    if (
-      menuSection.classList.contains("active") &&
-      !headerMenu.contains(e.target) &&
-      !headerBurger.contains(e.target)
-    ) {
-      menuSection.classList.remove("active");
-      headerBurger.classList.remove("hidden");
-      headerContent.classList.remove("hidden");
-    }
-  });
+  // document.addEventListener("click", (e) => {
+  //   if (
+  //     menuSection.classList.contains("active") &&
+  //     !headerMenu.contains(e.target) &&
+  //     !headerBurger.contains(e.target)
+  //   ) {
+  //     menuSection.classList.remove("active");
+  //     headerInner.classList.remove("hidden");
+  //   }
+  // });
   const header = document.querySelector(".header");
   function checkHeaderScroll() {
     if (window.scrollY > 50) {
