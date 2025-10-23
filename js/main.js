@@ -1276,4 +1276,19 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     btn.addEventListener("mouseleave", () => (span.textContent = defaultText));
   });
+
+  if (window.innerWidth <= 768) {
+    const flipBoxes = document.querySelectorAll(".flip-box");
+
+    flipBoxes.forEach((box) => {
+      box.addEventListener("click", function (e) {
+        e.stopPropagation();
+        this.classList.toggle("active");
+      });
+    });
+
+    document.addEventListener("click", function () {
+      flipBoxes.forEach((box) => box.classList.remove("active"));
+    });
+  }
 });
