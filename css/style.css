@@ -1191,14 +1191,29 @@ button.header__user-link:not(:hover){
   transform-style: preserve-3d;
 }
 
-.flip-box:hover .flip-box-front {
-  -ms-transform: rotateY(-180deg);
-  -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-  -webkit-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+@media (min-width: 769px) {
+    .flip-box:hover .flip-box-back::before{
+        opacity: 1;
+    } 
+    .flip-box:hover .flip-box-back {
+        -ms-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+    .flip-box:hover .flip-box-front {
+        -ms-transform: rotateY(-180deg);
+        -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
 }
+
+
 
 .flip-box-back {
   position: absolute;
@@ -1213,16 +1228,6 @@ button.header__user-link:not(:hover){
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
-
-.flip-box:hover .flip-box-back {
-  -ms-transform: rotateY(0deg);
-  -webkit-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
 
 .flip-box-back::before{
     content: '';
@@ -1267,10 +1272,6 @@ button.header__user-link:not(:hover){
      border-color: transparent
 }
 
-
-.flip-box:hover .flip-box-back::before{
-    opacity: 1;
-}
 
 
 .characters__result .product__item-list {
@@ -4972,11 +4973,31 @@ button.favourites__select-btn:not(:hover){
         opacity: 0;
     }
 
-    .flip-box:hover .flip-box-front {
+    .flip-box.active .flip-box-front {
         opacity: 0;
     }
     
-    .flip-box:hover .flip-box-back{
+    .flip-box.active .flip-box-back{
+        opacity: 1;
+    }
+
+      .flip-box.active .flip-box-front {
+        -ms-transform: rotateY(-180deg);
+        -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+    .flip-box.active .flip-box-back {
+        -ms-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+    .flip-box.active .flip-box-back::before{
         opacity: 1;
     }
 
